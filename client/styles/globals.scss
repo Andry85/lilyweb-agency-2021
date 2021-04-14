@@ -1,0 +1,29 @@
+
+@import 'utils/fonts';
+@import 'utils/reset';
+@import 'utils/variables';
+
+html {
+  font-size: 62.5%;  /* 10px */
+}
+
+body {
+  font-family: $primary-font-family;
+  font-size: 1.7rem;
+  line-height: 1.9;
+  background: $bg-global;
+}
+
+a {
+  color: $links-global;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
