@@ -3,13 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-interface HeaderLogoProp {
+type HeaderLogoProp = {
   name: string;
-  color: string;
 }
 
 
-function HeaderLogo(prop: HeaderLogoProp): JSX.Element {
+function HeaderLogo({name}: HeaderLogoProp): JSX.Element {
   return (
     <div className={styles.logo}>
         <Image
@@ -19,7 +18,7 @@ function HeaderLogo(prop: HeaderLogoProp): JSX.Element {
             height={44}
           />
         <Link href="/">
-          <a style={{color: prop.color}}>{prop.name}</a>
+          <a>{name}</a>
         </Link>
     </div>
   )
