@@ -5,12 +5,13 @@ import Link from 'next/link'
 
 type HeaderLogoProp = {
   name: string;
+  ishome: boolean
 }
 
 
-function HeaderLogo({name}: HeaderLogoProp): JSX.Element {
+function HeaderLogo({name, ishome}: HeaderLogoProp): JSX.Element {
   return (
-    <div className={styles.logo}>
+    <div className={`${styles.logo} ${ishome ? `${styles.logoHome}` : ""}`}>
         <Image
             src="/images/lily.svg"
             alt=""

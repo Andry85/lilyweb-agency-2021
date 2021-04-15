@@ -23,19 +23,22 @@ export default function Layout({ children, home}) {
   let logo = data.header.logo as string;
 
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="" />
         <meta name="og:title" />
       </Head>
-      <header className={styles.header}>
         {home ? (
           <>
-            <div className={[styles.header__top, styles.header__topHome].join(' ')}>
-              <HeaderLogo name = {logo} />
-              <HeaderBurger />
-            </div>
+            <header className={[styles.header, styles.headerHome].join(' ')}>
+              <div className={styles.container}>
+                <div className={styles.header__top}>
+                  <HeaderLogo name = {logo} ishome = {true} />
+                  <HeaderBurger ishome = {true} />
+                </div>
+              </div>
+            </header>
           </>
         ) : (
           <>
@@ -44,7 +47,6 @@ export default function Layout({ children, home}) {
             </h2>
           </>
         )}
-      </header>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

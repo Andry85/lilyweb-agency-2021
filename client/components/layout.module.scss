@@ -1,3 +1,6 @@
+.wrapper {
+
+}
 .container {
     max-width: 1740px;
     margin: 0 auto;
@@ -6,13 +9,17 @@
 }
 
 .header {
-  display: flex;
   padding: 34px 0 0 0;
-  flex-direction: column;
+  background: #4923b7;
+  color: #fff;
 
   &__top {
     display: flex;
     width: 100%;
     align-items: center;
   }
+}
+.headerHome {
+  background: #f2f5f9;
+  color: #000;
 }
