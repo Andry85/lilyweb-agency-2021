@@ -4,6 +4,8 @@
   width: 23px;
   cursor: pointer;
   margin-left: auto;
+  height: 23px;
+  position: relative;
 
 
   span {
@@ -20,6 +22,7 @@
   }
 
   &__isOpened {
+    top: 10px;
     span {
       position: absolute;
       &:first-child {

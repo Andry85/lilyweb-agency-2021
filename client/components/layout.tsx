@@ -12,7 +12,7 @@ import Button from '../components/Button/Button';
 
 
 
-const fetcher = url => axios.get(url).then(res => res.data)
+const fetcher = url => axios.get(url).then(res => res.data);
 
 
 
