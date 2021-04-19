@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import {useSelector, useDispatch} from 'react-redux';  
+import {changeMenuVisibility} from "../../redux/actions/actions"; 
 import styles from './HeaderBurger.module.scss'
 import Link from 'next/link'
 
@@ -6,15 +8,13 @@ type HeaderBurgerProp = {
   ishome: boolean
 }
 
-
 function HeaderBurger({ishome}: HeaderBurgerProp): JSX.Element {
 
-  const [menuStatus, setMenuStatus] = useState(false);
-
-  console.log(menuStatus);
+  const menuStatus = useSelector((state) => state.mainMenuReducer.ismenuOpened);  
+ 	const dispatch = useDispatch();   
 
   return (
-    <div className={`${styles.burger} ${ishome ? `${styles.ishome}` : ""}`} onClick={() => setMenuStatus(!menuStatus)}>
+    <div className={`${styles.burger} ${ishome ? `${styles.ishome}` : ""}`} onClick={() => dispatch(changeMenuVisibility())}>
       <div className={`${menuStatus ? `${styles.burger__isOpened}` : ""}`}>
         <span></span>
         <span></span>

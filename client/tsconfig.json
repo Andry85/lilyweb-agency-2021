@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "redux/store.ts", "redux/actions/actions.ts", "redux/reducers/index.ts", "redux/reducers/mainMenu.ts", "redux/types/types.ts"  ],
   "exclude": [
     "node_modules"
   ]

@@ -14,9 +14,7 @@ export default function Index() {
         <Head>
           <title>Index Page</title>
         </Head>
-        <div className={styles.main}>
-          
-        </div>
+        
       </div>
     </Layout>
   )

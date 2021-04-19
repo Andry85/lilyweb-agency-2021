@@ -1,4 +1,3 @@
-import { GetStaticProps} from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from './layout.module.scss'
@@ -7,6 +6,9 @@ import useSWR from 'swr'
 import axios from 'axios'
 import HeaderLogo from '../components/HeaderLogo/HeaderLogo'
 import HeaderBurger from '../components/HeaderBurger/HeaderBurger'
+import MainMenu from '../components/MainMenu/MainMenu';
+import Button from '../components/Button/Button';
+
 
 
 
@@ -21,6 +23,8 @@ export default function Layout({ children, home}) {
   if (!data) return <div>loading...</div>
 
   let logo = data.header.logo as string;
+  let title = data.header.title as string;
+
 
   return (
     <div className={styles.wrapper}>
@@ -35,7 +39,22 @@ export default function Layout({ children, home}) {
               <div className={styles.container}>
                 <div className={styles.header__top}>
                   <HeaderLogo name = {logo} ishome = {true} />
+                  <MainMenu ishome = {true} />
                   <HeaderBurger ishome = {true} />
+                </div>
+                <div className={styles.header__middle}>
+                  <h1 className={styles.header__titleHome}>{title}</h1>
+                  <Button 
+                    href="/contact" 
+                    title="Contact now" 
+                    color = "blue" 
+                    background = "yellow" 
+                    border = "1px solid red"
+                    borderRadius = "10px"
+                    textTransform = "uppercase"
+                    colorHover = "yellow"
+                    backgroundHover = "yellow"
+                  />
                 </div>
               </div>
             </header>

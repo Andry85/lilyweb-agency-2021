@@ -1,0 +1,1 @@
+export const ISMENU_OPENED = 'ISMENU_OPENED';
