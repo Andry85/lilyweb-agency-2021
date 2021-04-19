@@ -47,15 +47,33 @@ export default function Layout({ children, home}) {
                   <Button 
                     href="/contact" 
                     title="Contact now" 
-                    color = "blue" 
-                    background = "yellow" 
-                    border = "1px solid red"
-                    borderRadius = "10px"
+                    color = "#2341dd" 
+                    background = "transparent" 
+                    border = "2px solid #2341dd"
+                    borderRadius = "30px"
                     textTransform = "uppercase"
-                    colorHover = "yellow"
-                    backgroundHover = "yellow"
+                    colorHover = "#fff"
+                    backgroundHover = "#2341dd"
+                    paddings = "10px 20px"
+                    margings = "0 auto"
+                    mobilePaddings = "5px"
+                    mobileMargings = "0 auto"
                   />
                 </div>
+                <span className={styles.animationIconOne}></span>
+                <span className={styles.animationIconTwo}></span>
+                <span className={styles.animationIconThree}></span>
+                <span className={styles.animationIconFour}></span>
+                <span className={styles.animationIconFive}></span>
+                <span className={styles.animationIconSix}></span>
+                <span className={styles.animationIconSeven}></span>
+                <span className={styles.animationIconEight}></span>
+                <span className={styles.animationIconNine}></span>
+                <span className={styles.animationIconTen}></span>
+                <span className={styles.animationIconEleven}></span>
+                <span className={styles.animationIconTwelve}></span>
+                <span className={styles.animationIconThirteen}></span>
+                <span className={styles.animationIconFourteen}></span>
               </div>
             </header>
           </>

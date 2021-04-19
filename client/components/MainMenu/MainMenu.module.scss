@@ -4,8 +4,28 @@
   display: flex;
   margin: 0 auto;
 
+  @include breakpoint(md) {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    padding: 25px;
+  }
+
   li {
     margin:  0 42px;
+
+    @include breakpoint(lg) {
+      margin:  0 30px;
+    }
+
+    @include breakpoint(md) {
+      margin: 0 42px 25px 0;
+    }
+
     a {
       color: #fff;
       font-size: 1.5rem;

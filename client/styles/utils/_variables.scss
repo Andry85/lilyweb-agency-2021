@@ -4,3 +4,23 @@ $primary-font-family: 'Poppins', sans-serif;
 $secondary-font-family: 'Montserrat', sans-serif;
 $third-font-family: 'Playfair Display', sans-serif;
 $black: #000;
+
+
+
+/*********************
+BREAKPOINTS
+*********************/
+@mixin breakpoint($point) {
+    @if $point == lg {
+      @media (max-width: 1199px) { @content ; }
+   }
+    @else if $point == md {
+      @media (max-width: 991px) { @content ; }
+   }
+     @else if $point == sm {
+      @media (max-width: 767px) { @content ; }
+   }
+    @else if $point == exsm {
+      @media (max-width: 575px)  { @content ; }
+   }
+ }

@@ -1,5 +1,13 @@
 @import "../../styles/utils/variables";
 
-.headerBtn {
-  background: red;
+.btn {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
 }

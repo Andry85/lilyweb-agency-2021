@@ -18,6 +18,16 @@
     display: flex;
     width: 100%;
     align-items: center;
+    
+    @include breakpoint(md) {
+      padding: 20px 30px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      background: #f2f5f9;
+      border-bottom: 1px solid #ddd;
+      z-index: 100;
+    }
   }
 
   &__titleHome {
@@ -29,10 +39,386 @@
     max-width: 860px;
     margin: 0 auto;
     line-height: 1.3 ;
-    padding: 186px 0 0 0;
+    padding: 186px 0 58px 0;
+
+    @include breakpoint(md) {
+      padding: 86px 0 38px 0;
+      font-size: 3rem;
+    }
+
   }
 }
 .headerHome {
-  background: #f2f5f9;
+  background: #f2f5f9 url(./img/headerHome-bg.png) center bottom no-repeat;
   color: $black;
+  height: 998px;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  @include breakpoint(md) {
+    height: auto;
+    background-size: cover;
+  }
+
+}
+
+.animationIconOne {
+  width: 100px;
+  height: 100px;
+  border: 10px solid #b8c5f7;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  top: -54px;
+  left: 549px;
+  animation-name: animationIconOne;
+  animation-duration: 2s;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+
+}
+.animationIconTwo {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ee366e;
+  border-radius: 50%;
+  position: absolute;
+  top: 174px;
+  left: -48px;
+  animation-name: animationIconTwo;
+  animation-duration: 2.5s;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.animationIconThree {
+  width: 0; 
+  height: 0; 
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 23px solid #3d60f4;
+  position: absolute;
+  top: 179px;
+  left: -52px;
+  transform:rotate(25deg);
+  animation-name: animationIconThree;
+  animation-duration: 1.5s;
+  z-index: 2;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+
+.animationIconFour {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #3d60f4;
+  border-radius: 50%;
+  position: absolute;
+  top: 548px;
+  left: -19px;
+  animation-name: animationIconFour;
+  animation-duration: 1.8s;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.animationIconFive {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 37px solid #ee366e;
+  position: absolute;
+  top: 552px;
+  left: -38px;
+  transform:rotate(20deg);
+  animation-name: animationIconFive;
+  animation-duration: 1.2s;
+  z-index: 2;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.animationIconSix {
+  background: url(./img/animation-icon_triangle.png) no-repeat;
+  width: 36px;
+  height: 35px;
+  position: absolute;
+  top: -100px;
+  left: 120px;
+  animation-name: animationIconSix;
+  animation-duration: 1.2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.animationIconSeven {
+  width: 15px;
+  height: 15px;
+  background: #3d60f4;
+  border-radius: 50%;
+  position: absolute;
+  top: 660px;
+  left: -300px;
+  animation-name: animationIconSeven;
+  animation-duration: 1.8s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.animationIconEight {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ee366e;
+  border-radius: 50%;
+  position: absolute;
+  top: 530px;
+  left: 384px;
+  animation-name: animationIconEight;
+  animation-duration: 2.5s;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.animationIconNine {
+  width: 0; 
+  height: 0; 
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 23px solid #3d60f4;
+  position: absolute;
+  top: 538px;
+  left: 378px;
+  transform:rotate(25deg);
+  animation-name: animationIconNine;
+  animation-duration: 1.5s;
+  z-index: 2;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.animationIconTen {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #3d60f4;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  right: 194px;
+  animation-name: animationIconTen;
+  animation-duration: 1.8s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  z-index: 2;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.animationIconEleven {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 37px solid #ee366e;
+  position: absolute;
+  top: 254px;
+  right: -300px;
+  transform:rotate(20deg);
+  animation-name: animationIconEleven;
+  animation-duration: 1.2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.animationIconTwelve {
+  width: 100px;
+  height: 100px;
+  border: 10px solid #b8c5f7;
+  border-radius: 50%;
+  position: absolute;
+  top: 280px;
+  right: 60px;
+  animation-name: animationIconTwelve;
+  animation-duration: 2s;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.animationIconThirteen {
+  background: url(./img/animation-icon_triangle.png) no-repeat;
+  width: 36px;
+  height: 35px;
+  position: absolute;
+  top: 600px;
+  right: -300px;
+  animation-name: animationIconThirteen;
+  animation-duration: 1.2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.animationIconFourteen {
+  width: 15px;
+  height: 15px;
+  background: #3d60f4;
+  border-radius: 50%;
+  position: absolute;
+  top: 627px;
+  right: 219px;
+  animation-name: animationIconFourteen;
+  animation-duration: 1.8s;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+
+
+@keyframes animationIconOne {
+  from {
+    top: -100px;
+  }
+  to {
+    top: -54px;
+  }
+}
+@keyframes animationIconTwo {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 174px;
+  }
+}
+@keyframes animationIconThree {
+  from {
+    top: -100px;
+    transform:rotate(360deg);
+  }
+  to {
+    top: 179px;
+    transform:rotate(25deg);
+  }
+}
+@keyframes animationIconFour {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 548px;
+  }
+}
+@keyframes animationIconFive {
+  from {
+    left: -300px;
+    transform:rotate(360deg);
+  }
+  to {
+    left: -38px;
+    transform:rotate(20deg);
+  }
+}
+@keyframes animationIconSix {
+  from {
+    top: -100px;
+    transform:rotate(360deg);
+  }
+  to {
+    top: 640px;
+    transform:rotate(0deg);
+  }
+}
+@keyframes animationIconSeven {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 136px;
+  }
+}
+@keyframes animationIconEight {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 530px;
+  }
+}
+@keyframes animationIconNine {
+  from {
+    top: -100px;
+    transform:rotate(360deg);
+  }
+  to {
+    top: 538px;
+    transform:rotate(25deg);
+  }
+}
+@keyframes animationIconTen {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 250px;
+  }
+}
+@keyframes animationIconEleven {
+  from {
+    right: -300px;
+    transform:rotate(360deg);
+  }
+  to {
+    right: 188px;
+    transform:rotate(20deg);
+  }
+}
+@keyframes animationIconTwelve {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 280px;
+  }
+}
+@keyframes animationIconThirteen {
+  from {
+    right: -300px;
+    transform:rotate(360deg);
+  }
+  to {
+    right: 216px;
+    transform:rotate(0deg);
+  }
+}
+@keyframes animationIconFourteen {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 627px;
+  }
 }
