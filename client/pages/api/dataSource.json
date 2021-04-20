@@ -4,5 +4,11 @@
         "logoHome": "#1a1c28",
         "logoInner": "#fff",
         "title": "We Discover, Design & Build Digital Experiences  to Help Brands"
+    },
+    "indexPage": {
+        "preambule" : {
+            "title": "We are helping to grow your business.",
+            "text": "A digital studio specialising in User Experience & eCommerce, we combine innovation with digital craftsmanship to help brands fulfill their potential."
+        }
     }
 }

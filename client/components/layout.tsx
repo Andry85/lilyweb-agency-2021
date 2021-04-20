@@ -8,7 +8,7 @@ import HeaderLogo from '../components/HeaderLogo/HeaderLogo'
 import HeaderBurger from '../components/HeaderBurger/HeaderBurger'
 import MainMenu from '../components/MainMenu/MainMenu';
 import Button from '../components/Button/Button';
-
+import SocialMedia from '../components/SocialMedia/SocialMedia';
 
 
 
@@ -75,6 +75,7 @@ export default function Layout({ children, home}) {
                 <span className={styles.animationIconThirteen}></span>
                 <span className={styles.animationIconFourteen}></span>
               </div>
+              <SocialMedia/>
             </header>
           </>
         ) : (

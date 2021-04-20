@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import {useSelector, useDispatch} from 'react-redux';  
+import type {RootState} from '../../redux/store';
 import {changeMenuVisibility} from "../../redux/actions/actions"; 
 import styles from './HeaderBurger.module.scss'
-import Link from 'next/link'
 
 type HeaderBurgerProp = {
   ishome: boolean
@@ -10,7 +10,7 @@ type HeaderBurgerProp = {
 
 function HeaderBurger({ishome}: HeaderBurgerProp): JSX.Element {
 
-  const menuStatus = useSelector((state) => state.mainMenuReducer.ismenuOpened);  
+  const menuStatus = useSelector((state: RootState) => state.mainMenuReducer.ismenuOpened);  
  	const dispatch = useDispatch();   
 
   return (
