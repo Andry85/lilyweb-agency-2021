@@ -2,9 +2,10 @@
 
 
 .socialMedia {
-  position: fixed;
+  position: absolute;
   right: 60px;
-  top: 410px;
+  top: 510px;
+  z-index: 10;
 
   @include breakpoint(md) {
     display: none;

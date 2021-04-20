@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from './layout.module.scss'
 import Link from 'next/link'
 import useSWR from 'swr'
@@ -14,9 +13,12 @@ import SocialMedia from '../components/SocialMedia/SocialMedia';
 
 const fetcher = url => axios.get(url).then(res => res.data);
 
+type Props = {
+  children: React.ReactNode;
+  home: boolean
+};
 
-
-export default function Layout({ children, home}) {
+export default function Layout({ children, home}: Props) {
 
   const {data, error } = useSWR('/api/data', fetcher)
   if (error) return <div>failed to load</div>
@@ -85,7 +87,7 @@ export default function Layout({ children, home}) {
             </h2>
           </>
         )}
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">

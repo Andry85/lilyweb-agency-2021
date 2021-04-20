@@ -8,7 +8,25 @@
     "indexPage": {
         "preambule" : {
             "title": "We are helping to grow your business.",
-            "text": "A digital studio specialising in User Experience & eCommerce, we combine innovation with digital craftsmanship to help brands fulfill their potential."
+            "text": "A digital studio specialising in User Experience & eCommerce, we combine innovation with digital craftsmanship to help brands fulfill their potential.",
+            "about": [
+                {
+                    "title": "What we do",
+                    "text": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia con- sequuntur magni dolores "
+                },
+                {
+                    "title": "Meet our team",
+                    "text": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia con- sequuntur magni dolores "
+                },
+                {
+                    "title": "Our Creation",
+                    "text": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia con- sequuntur magni dolores "
+                }
+            ]
+        },
+        "partners": {
+            "title": "20 YEARS EXPERIENCE",
+            "subtitle": "Over the last 20 years, we have helped and guided organisations to achieve outstanding results"
         }
     }
 }

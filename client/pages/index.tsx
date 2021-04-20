@@ -2,6 +2,10 @@ import Head from 'next/head'
 import styles from '../styles/Index.module.scss'
 import Layout from '../components/layout'
 import Button from '../components/Button/Button'
+import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMicrophoneAlt, faUserFriends, faEye} from '@fortawesome/free-solid-svg-icons'
+import Partners from '../components/Partners/Partners';
 
 
 export async function getStaticProps(context) {
@@ -54,9 +58,44 @@ export default function Index({data}) {
               />
           </div>
           <div className={styles.preambule__right}>
-          
+            <ul className={styles.aboutList}>
+              <li>
+                <span className={styles.aboutList__circle}><FontAwesomeIcon icon={faMicrophoneAlt} /></span>
+                <article className={styles.aboutList__content}>
+                  <h2>
+                    <Link href="/">
+                      <a>{data.indexPage.preambule.about[0].title}</a>
+                    </Link>
+                  </h2>
+                  <p>{data.indexPage.preambule.about[0].text}</p>
+                </article>
+              </li>
+              <li>
+                <span className={styles.aboutList__circle}><FontAwesomeIcon icon={faUserFriends} /></span>
+                <article className={styles.aboutList__content}>
+                  <h2>
+                    <Link href="/">
+                      <a>{data.indexPage.preambule.about[1].title}</a>
+                    </Link>
+                  </h2>
+                  <p>{data.indexPage.preambule.about[1].text}</p>
+                </article>
+              </li>
+              <li>
+                <span className={styles.aboutList__circle}><FontAwesomeIcon icon={faEye} /></span>
+                <article className={styles.aboutList__content}>
+                  <h2>
+                    <Link href="/">
+                      <a>{data.indexPage.preambule.about[2].title}</a>
+                    </Link>
+                  </h2>
+                  <p>{data.indexPage.preambule.about[2].text}</p>
+                </article>
+              </li>
+            </ul>
           </div>
         </div>
+        <Partners title={data.indexPage.partners.title} subtitle={data.indexPage.partners.subtitle} />
       </div>
     </Layout>
   )
