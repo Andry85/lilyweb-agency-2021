@@ -6,6 +6,11 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMicrophoneAlt, faUserFriends, faEye} from '@fortawesome/free-solid-svg-icons'
 import Partners from '../components/Partners/Partners';
+import LatestProjects from '../components/LatestProjects/LatestProjects';
+import IndexSlider from '../components/IndexSlider/IndexSlider';
+
+
+
 
 
 export async function getStaticProps(context) {
@@ -96,7 +101,9 @@ export default function Index({data}) {
           </div>
         </div>
         <Partners title={data.indexPage.partners.title} subtitle={data.indexPage.partners.subtitle} />
+        <LatestProjects title={data.indexPage.latestProject.title} text={data.indexPage.latestProject.text} />
       </div>
+      <IndexSlider dataSlider = {data.indexPage.indexSlider} />
     </Layout>
   )
 }

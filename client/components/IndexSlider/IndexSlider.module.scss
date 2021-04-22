@@ -1,0 +1,18 @@
+@import "../../styles/utils/variables";
+
+.indexSlider {
+  position: relative;
+
+  &__item {
+    display: flex!important;
+  }
+
+  &__media {
+    flex-basis: 55.26%;
+    background: #212453;
+  }
+
+  &__content {
+    flex-basis: 44.74%;
+  }
+}
