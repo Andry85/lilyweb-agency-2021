@@ -34,23 +34,74 @@
         },
         "indexSlider": [
             {
+                "id": 0,
                 "title": "The new look Classic Headphone Brand cool and creativity",
                 "text": "A digital studio specialising in User Experience & eCommerce, we combine innovation with digital craftsmanship to help brands fulfill their potential.",
                 "link": "https://github.com/",
                 "img": "/images/indexslider/001.jpg"
             },
             {
+                "id": 1,
                 "title": "The new look Classic Headphone Brand cool and creativity",
                 "text": "A digital studio specialising in User Experience & eCommerce, we combine innovation with digital craftsmanship to help brands fulfill their potential.",
                 "link": "https://github.com/",
                 "img": "/images/indexslider/002.jpg"
             },
             {
+                "id": 2,
                 "title": "The new look Classic Headphone Brand cool and creativity",
                 "text": "A digital studio specialising in User Experience & eCommerce, we combine innovation with digital craftsmanship to help brands fulfill their potential.",
                 "link": "https://github.com/",
                 "img": "/images/indexslider/003.jpg"
             }
-        ]
+        ],
+        "brandingServices": {
+            "title": "Branding services",
+            "text": "A desire to help and empower others between community contributors in technology began to grow in 2016."
+        },
+        "services": [
+            {
+                "id": 0,
+                "img": "/images/services/001.png",
+                "title": "Strategy & Planning",
+                "text": "Content Strategy, Research, Opportunity Analysis and Strategic Planning, Branding Strategy, Production Planning."
+            },
+            {
+                "id": 1,
+                "img": "/images/services/002.png",
+                "title": "Interface systems",
+                "text": "Interface design, User Flow Mapping, Wireframing and Prototyping, Visual Design, Responsive Design and UI Kits."
+            },
+            {
+                "id": 2,
+                "img": "/images/services/003.png",
+                "title": "Virtual Reality",
+                "text": "Content Strategy, Research, Opportunity Analysis and Strategic Planning, Branding Strategy, Production Planning."
+            },
+            {
+                "id": 3,
+                "img": "/images/services/004.png",
+                "title": "IOS & Android",
+                "text": "Content Strategy, Research, Opportunity Analysis and Strategic Planning, Branding Strategy, Production Planning."
+            },
+            {
+                "id": 4,
+                "img": "/images/services/005.png",
+                "title": "Web & App solutions",
+                "text": "Content Strategy, Research, Opportunity Analysis and Strategic Planning, Branding Strategy, Production Planning."
+            },
+            {
+                "id": 5,
+                "img": "/images/services/006.png",
+                "title": "Branding & Identity",
+                "text": "Content Strategy, Research, Opportunity Analysis and Strategic Planning, Branding Strategy, Production Planning."
+            }
+        ],
+        "achievement": {
+            "achievementHeader": {
+                "title": "Our achievement",
+                "text": "A digital studio specialising in User Experience & eCommerce, we combine innovation "
+            }
+        }
     }
 }

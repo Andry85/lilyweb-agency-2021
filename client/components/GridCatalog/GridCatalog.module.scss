@@ -1,0 +1,54 @@
+@import "../../styles/utils/variables";
+
+
+.gridCatalog {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px;
+    margin: 0 -30px;
+
+    @include breakpoint(md) {
+      padding: 0 15px;
+      margin: 0 -15px;
+    }
+
+  }
+
+  &__item {
+    flex-basis: 33.3%;
+
+    @include breakpoint(md) {
+      flex-basis: 50%;
+    }
+    @include breakpoint(sm) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__itemInner {
+    padding: 0 30px;
+    margin: 0 0 63px 0;
+
+    @include breakpoint(md) {
+      padding: 0px;
+      margin: 0 0 33px 0;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: #222;
+      margin: 11px 0;
+    }
+
+    p {
+      color: #7c7c7c;
+      line-height: 1.82;
+    }
+  }
+}

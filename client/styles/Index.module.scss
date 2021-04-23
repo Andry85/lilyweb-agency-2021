@@ -5,6 +5,14 @@
     max-width: 1740px;
     margin: 0 auto;
     padding: 0 10px; 
+
+    &__brands {
+        padding: 73px 0 13px 0;
+
+        @include breakpoint(md) {
+            padding: 23px 0 0 0;
+        }
+    }
 }
 
 .preambule {

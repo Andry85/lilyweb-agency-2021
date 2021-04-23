@@ -6,8 +6,10 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMicrophoneAlt, faUserFriends, faEye} from '@fortawesome/free-solid-svg-icons'
 import Partners from '../components/Partners/Partners';
-import LatestProjects from '../components/LatestProjects/LatestProjects';
+import TitleBlock from '../components/TitleBlock/TitleBlock';
 import IndexSlider from '../components/IndexSlider/IndexSlider';
+import GridCatalog from '../components/GridCatalog/GridCatalog';
+import Achievement from '../components/Achievement/Achievement';
 
 
 
@@ -101,9 +103,22 @@ export default function Index({data}) {
           </div>
         </div>
         <Partners title={data.indexPage.partners.title} subtitle={data.indexPage.partners.subtitle} />
-        <LatestProjects title={data.indexPage.latestProject.title} text={data.indexPage.latestProject.text} />
+        <TitleBlock title={data.indexPage.latestProject.title} text={data.indexPage.latestProject.text} />
       </div>
       <IndexSlider dataSlider = {data.indexPage.indexSlider} />
+      <div className={styles.container}>
+        <div className={styles.container__brands}>
+          <TitleBlock title={data.indexPage.brandingServices.title} text={data.indexPage.brandingServices.text} />
+        </div>
+        <GridCatalog dataObg = {data.indexPage.services} />
+      </div>
+      <Achievement>
+        <TitleBlock 
+          title={data.indexPage.achievement.achievementHeader.title} 
+          text={data.indexPage.achievement.achievementHeader.text} 
+          color = "#fff"
+        />
+      </Achievement>
     </Layout>
   )
 }

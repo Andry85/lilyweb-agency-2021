@@ -78,7 +78,7 @@ function Button({
   mobileMargings
 }: ButtonProp): JSX.Element {
     return (
-      <Link href={href}>
+      <Link href={href} passHref={true}>
         <BtnLink 
          className = {styles.btn} 
          color = {color}
