@@ -101,6 +101,37 @@
             "achievementHeader": {
                 "title": "Our achievement",
                 "text": "A digital studio specialising in User Experience & eCommerce, we combine innovation "
+            },
+            "cards": [
+                {
+                    "id": 0,
+                    "img": "/images/card/001.png",
+                    "title": "Happy Clients",
+                    "count": 1530
+                },
+                {
+                    "id": 1,
+                    "img": "/images/card/002.png",
+                    "title": "Employees",
+                    "count": 60
+                },
+                {
+                    "id": 2,
+                    "img": "/images/card/003.png",
+                    "title": "Project Complete",
+                    "count": 40
+                },
+                {
+                    "id": 3,
+                    "img": "/images/card/004.png",
+                    "title": "Love Us",
+                    "count": 632
+                }
+            ],
+            "experience": {
+                "title": "We are Delivering Best Services Since 1970",
+                "count": 12,
+                "subtitle": "Years of experience"
             }
         }
     }

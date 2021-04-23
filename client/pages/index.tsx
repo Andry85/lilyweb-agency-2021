@@ -34,7 +34,6 @@ export async function getStaticProps(context) {
 
 
 
-
 export default function Index({data}) {
 
 
@@ -112,7 +111,10 @@ export default function Index({data}) {
         </div>
         <GridCatalog dataObg = {data.indexPage.services} />
       </div>
-      <Achievement>
+      <Achievement 
+        dataCard = {data.indexPage.achievement.cards}
+        experience = {data.indexPage.achievement.experience}
+       >
         <TitleBlock 
           title={data.indexPage.achievement.achievementHeader.title} 
           text={data.indexPage.achievement.achievementHeader.text} 

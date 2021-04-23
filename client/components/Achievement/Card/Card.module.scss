@@ -1,0 +1,48 @@
+@import "../../../styles/utils/variables";
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  margin: 0 -15px;
+
+  &__inner {
+    flex-basis: 50%;
+    margin: 0 0 30px 0;
+
+    @include breakpoint(sm) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__inside {
+    background: #fff;
+    margin: 0 15px;
+    padding: 30px 30px 46px 30px;
+    text-align: center;
+
+    h4 {
+      font-family: $third-font-family;
+      font-size: 3.6rem;
+      color: #333;
+      font-weight: 600;
+      line-height: 1.2;
+      padding: 9px 0 0 0;
+
+      &::after {
+        content: '';
+        background: #e5e5e5;
+        width: 50px;
+        height: 2px;
+        margin: 20px auto 12px auto;
+        display: block;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: #333;
+      text-transform: uppercase;
+    }
+  }
+}
