@@ -180,3 +180,11 @@
         }
     }
 }
+
+.videoOuter {
+    transform: translateY(-50%);
+
+    @include breakpoint(md) {
+        transform: translateY(0);
+    }
+}

@@ -3,7 +3,11 @@
 
 .achievement {
   background: #1f2028;
-  padding: 74px 0 129px 0;
+  padding: 74px 0 465px 0;
+
+  @include breakpoint(md) {
+    padding-bottom: 100px;
+  }
 
   &__container {
     max-width: 1190px;

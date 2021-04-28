@@ -133,6 +133,120 @@
                 "count": 12,
                 "subtitle": "Years of experience"
             }
+        },
+        "video": {
+            "src": "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
+            "type": "video/mp4",
+            "poster": "https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+        },
+        "team": {
+            "teamHeader": {
+                "title": "Meet our team",
+                "text": "A desire to help and empower others between community contributors in technology began to grow in 2016."
+            },
+            "items": [
+                {
+                    "id": 0,
+                    "img": "/images/social/001.png",
+                    "title": "David Smith",
+                    "position": "Software Engineer",
+                    "phone": "+84 846 250 592",
+                    "socials": [
+                        {
+                            "id": 0,
+                            "icon": "facebook",
+                            "url": "https://www.facebook.com/" 
+                        },
+                        {
+                            "id": 1,
+                            "icon": "twitter",
+                            "url": "https://twitter.com/" 
+                        },
+                        {
+                            "id": 2,
+                            "icon": "vimeo",
+                            "url": "https://vimeo.com/" 
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "img": "/images/social/001.png",
+                    "title": "Eric Peterson",
+                    "position": "Software Engineer",
+                    "phone": "+84 846 250 592",
+                    "socials": [
+                        {
+                            "id": 0,
+                            "icon": "facebook",
+                            "url": "https://www.facebook.com/" 
+                        },
+                        {
+                            "id": 1,
+                            "icon": "twitter",
+                            "url": "https://twitter.com/" 
+                        },
+                        {
+                            "id": 2,
+                            "icon": "vimeo",
+                            "url": "https://vimeo.com/" 
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "img": "/images/social/001.png",
+                    "title": "Durwin Babb",
+                    "position": "Software Engineer",
+                    "phone": "+84 846 250 592",
+                    "socials": [
+                        {
+                            "id": 0,
+                            "icon": "facebook",
+                            "url": "https://www.facebook.com/" 
+                        },
+                        {
+                            "id": 1,
+                            "icon": "twitter",
+                            "url": "https://twitter.com/" 
+                        },
+                        {
+                            "id": 2,
+                            "icon": "vimeo",
+                            "url": "https://vimeo.com/" 
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "img": "/images/social/001.png",
+                    "title": "Marijn Otte",
+                    "position": "Software Engineer",
+                    "phone": "+84 846 250 592",
+                    "socials": [
+                        {
+                            "id": 0,
+                            "icon": "facebook",
+                            "url": "https://www.facebook.com/" 
+                        },
+                        {
+                            "id": 1,
+                            "icon": "twitter",
+                            "url": "https://twitter.com/" 
+                        },
+                        {
+                            "id": 2,
+                            "icon": "vimeo",
+                            "url": "https://vimeo.com/" 
+                        }
+                    ]
+                }
+            ],
+            "experience": {
+                "title": "We are Delivering Best Services Since 1970",
+                "count": 12,
+                "subtitle": "Years of experience"
+            }
         }
     }
 }

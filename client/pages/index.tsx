@@ -10,6 +10,8 @@ import TitleBlock from '../components/TitleBlock/TitleBlock';
 import IndexSlider from '../components/IndexSlider/IndexSlider';
 import GridCatalog from '../components/GridCatalog/GridCatalog';
 import Achievement from '../components/Achievement/Achievement';
+import Video from '../components/Video/Video';
+import Team from '../components/Team/Team';
 
 
 
@@ -121,6 +123,21 @@ export default function Index({data}) {
           color = "#fff"
         />
       </Achievement>
+      <div className={styles.videoOuter}>
+        <Video
+          src={data.indexPage.video.src} 
+          type={data.indexPage.video.type} 
+          poster={data.indexPage.video.poster} 
+        />
+      </div>
+      <Team 
+        dataItem = {data.indexPage.team.items}
+       >
+        <TitleBlock 
+          title={data.indexPage.team.teamHeader.title} 
+          text={data.indexPage.team.teamHeader.text} 
+        />
+      </Team>
     </Layout>
   )
 }
