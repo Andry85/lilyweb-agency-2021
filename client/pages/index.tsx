@@ -12,6 +12,7 @@ import GridCatalog from '../components/GridCatalog/GridCatalog';
 import Achievement from '../components/Achievement/Achievement';
 import Video from '../components/Video/Video';
 import Team from '../components/Team/Team';
+import Testimonials from '../components/Testimonials/Testimonials';
 
 
 
@@ -138,6 +139,23 @@ export default function Index({data}) {
           text={data.indexPage.team.teamHeader.text} 
         />
       </Team>
+      <div className={styles.testimonialsOuter}>
+        <div className={styles.testimonialsOuter__container}>
+            <Testimonials
+              text={data.indexPage.testimonials.text}
+              author={data.indexPage.testimonials.author}  
+            />
+            <div className={styles.testimonialsOuter__latestBlog}>
+              <TitleBlock 
+                title={data.indexPage.latestBlog.title} 
+                text={data.indexPage.latestBlog.text} 
+                color = "#fff"
+              />
+            </div>
+            
+        </div>
+      </div>
+      
     </Layout>
   )
 }

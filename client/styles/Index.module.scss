@@ -183,8 +183,27 @@
 
 .videoOuter {
     transform: translateY(-50%);
+    margin-bottom: -250px;
 
     @include breakpoint(md) {
         transform: translateY(0);
+        margin-bottom: 30px;
+    }
+}
+
+.testimonialsOuter {
+    background: #1935a9;
+    color: #fff;
+
+    &__container {
+        max-width: 1190px;
+        padding: 129px 10px 0 10px;
+        margin: 0 auto;
+    }
+
+    &__latestBlog {
+        border-top: 1px solid #2e4ecd;
+        margin: 95px 0 0 0;
+        padding: 50px 0 0 0;
     }
 }

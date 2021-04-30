@@ -1,2 +1,69 @@
 @import "../../../styles/utils/variables";
 
+.item {
+    display: flex;
+    padding: 0 15px;
+    margin: 0 -15px;
+
+    @include breakpoint(md) {
+        flex-wrap: wrap;
+    }
+
+    &__child {
+        flex-basis: 270px;
+        @include breakpoint(md) {
+            flex-basis: 50%;
+        }
+        @include breakpoint(sm) {
+            flex-basis: 100%;
+        }
+
+    }
+
+    &__inner {
+        border-top: 1px solid #f1f1f1;
+        padding: 40px 30px;
+        margin: 0 15px;
+
+        h4 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            padding: 20px 0 0 0;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 0 0 12px 0;
+        }
+
+        p {
+            color: #1c68ff;
+            font-size: 1.4rem;
+            position: relative;
+
+            &:before {
+                content: '';
+                width: 20px;
+                height: 1px;
+                background: #1c68ff;
+                overflow: hidden;
+                display: block;
+                margin: 0 0 14px 0;
+            }
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    padding: 0 10px;
+    margin: 0 -10px;
+
+    li {
+
+        a {
+            margin: 0 10px;
+            color: #494949;
+        }
+    }
+}

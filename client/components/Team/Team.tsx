@@ -25,9 +25,7 @@ function Team({children, dataItem}: TeamProp): JSX.Element {
     <div className={styles.team}>
       <div className={styles.team__inner}>
         {children}
-        <ul className={styles.teamList}>
-          <Item dataItem = {dataItem} />
-        </ul>
+        <Item dataItem = {dataItem} />
       </div>
     </div>
   )

@@ -247,6 +247,14 @@
                 "count": 12,
                 "subtitle": "Years of experience"
             }
+        },
+        "testimonials": {
+            "text": "Up to date it has been a pleasure working with Themebeck After 4 problematic years we finally found Stuck template. Up to date it has been a pleasure working with Themebeck. Stuck came up with the design on their first try",
+            "author": "Kenneth Roman, Author"
+        },
+        "latestBlog": {
+            "title": "Latest blog",
+            "text": "A desire to help and empower others between community contributors in technology began to grow in 2016."
         }
     }
 }
