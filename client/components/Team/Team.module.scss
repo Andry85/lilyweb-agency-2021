@@ -3,6 +3,12 @@
 
 .team {
 
+    padding: 0 0 100px 0;
+
+    @include breakpoint(md) {
+        padding-bottom: 30px;
+    }
+
     &__inner {
         max-width: 1170px;
         margin: 0 auto;

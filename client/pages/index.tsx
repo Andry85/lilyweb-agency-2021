@@ -13,6 +13,7 @@ import Achievement from '../components/Achievement/Achievement';
 import Video from '../components/Video/Video';
 import Team from '../components/Team/Team';
 import Testimonials from '../components/Testimonials/Testimonials';
+import Posts from '../components/Posts/Posts';
 
 
 
@@ -140,6 +141,7 @@ export default function Index({data}) {
         />
       </Team>
       <div className={styles.testimonialsOuter}>
+        <div className={styles.testimonialsOuter__bg}></div>
         <div className={styles.testimonialsOuter__container}>
             <Testimonials
               text={data.indexPage.testimonials.text}
@@ -152,9 +154,12 @@ export default function Index({data}) {
                 color = "#fff"
               />
             </div>
-            
         </div>
       </div>
+      <div className={styles.postsOuter}>
+        <Posts dataItem = {data.posts} />
+      </div>
+        
       
     </Layout>
   )

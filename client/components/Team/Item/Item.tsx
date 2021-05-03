@@ -14,21 +14,20 @@ function Item({dataItem}): JSX.Element {
       <ul className={styles.item}>
         {dataItem.map((element) => 
           <li key={element.id} className={styles.item__child}>
-          <div className={styles.item__inner}>  
-              <div className={styles.card__inside}>    
-                <figure>
-                  <Image
-                      src={element.img}
-                      alt=""
-                      width={150}
-                      height={150}
-                      objectFit="contain"
-                  />
-                </figure>
-                <h4>{element.title}</h4>
-                <h3>{element.position}</h3>
-                <p>{element.phone}</p>
-                <ul className={styles.socials}>
+            <div className={styles.item__inner}>     
+              <figure>
+                <Image
+                    src={element.img}
+                    alt=""
+                    width={150}
+                    height={150}
+                    objectFit="contain"
+                />
+              </figure>
+              <h4>{element.title}</h4>
+              <h3>{element.position}</h3>
+              <p>{element.phone}</p>
+              <ul className={styles.socials}>
                 {element.socials.map((el) =>
                 
                   <li key={el.id}>
@@ -37,8 +36,7 @@ function Item({dataItem}): JSX.Element {
                       </Link>
                   </li>
                 )} 
-                </ul>
-              </div>
+              </ul>
             </div>
           </li>
         )}

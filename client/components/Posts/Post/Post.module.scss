@@ -1,0 +1,87 @@
+@import "../../../styles/utils/variables";
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    margin: 0 -15px;
+
+    &__child {
+        flex-basis: 50%;
+        margin-bottom: 30px;
+
+        @include breakpoint(md) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__inner {
+        margin: 0 15px;
+    
+        figure {
+            position: relative;
+        }
+
+    }
+
+    &__date {
+        position: absolute;
+        right: 0;
+        bottom: 41px;
+        background: #fff;
+        width: 63px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 6px;
+    }
+
+    &__dateDay {
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 1.0;
+    }
+
+    &__dateMonth {
+        font-size: 1.4rem;
+    }
+
+    &__content {
+        padding: 25px 40px 25px 40px;
+
+        @include breakpoint(md) {
+            padding: 15px;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            margin: 0 0 9px 0;
+        
+            a {
+                color: #333;
+                font-weight: 500;
+            }
+
+        }
+
+        p {
+            color: #666;
+            line-height: 1.8;
+        }
+    }
+
+    &__more {
+        margin: 21px 0 0 0;
+
+        a {
+            color: #555;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            border-bottom: 1px solid;
+            padding: 0 3px;
+        }
+    }
+
+}

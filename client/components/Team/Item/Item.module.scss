@@ -10,6 +10,8 @@
     }
 
     &__child {
+        margin-bottom: 30px;
+
         flex-basis: 270px;
         @include breakpoint(md) {
             flex-basis: 50%;
@@ -21,9 +23,15 @@
     }
 
     &__inner {
-        border-top: 1px solid #f1f1f1;
+        border: 1px solid #f1f1f1;
         padding: 40px 30px;
         margin: 0 15px;
+
+        figure {
+            img {
+                border-radius: 50%;
+            }
+        }
 
         h4 {
             font-size: 1.8rem;
