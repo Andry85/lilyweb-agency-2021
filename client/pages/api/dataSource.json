@@ -255,7 +255,30 @@
         "latestBlog": {
             "title": "Latest blog",
             "text": "A desire to help and empower others between community contributors in technology began to grow in 2016."
-        }
+        },
+        "contactIndexData": {
+            "title": "We're a friendly bunch…",
+            "text": "We create projects for companies and startups with a passion for quality",
+            "subtitle": "Contact Us"
+
+        },
+       "contactsList": [
+           {
+            "id": 0,
+            "icon": "/images/contacts/location.png",
+            "text": "ADDRESS: 28 Green Tower, Street Name New York City, USA"
+           },
+           {
+            "id": 1,
+            "icon": "/images/contacts/phone.png",
+            "text": "Phone:  +84 846 250 592"
+           },
+           {
+            "id": 2,
+            "icon": "/images/contacts/email.png",
+            "text": "Email:  contact@stuck.com"
+           }
+       ]
     },
     "posts": [
         {

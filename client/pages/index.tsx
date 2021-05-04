@@ -14,6 +14,7 @@ import Video from '../components/Video/Video';
 import Team from '../components/Team/Team';
 import Testimonials from '../components/Testimonials/Testimonials';
 import Posts from '../components/Posts/Posts';
+import ContactIndex from '../components/ContactIndex/ContactIndex';
 
 
 
@@ -159,6 +160,10 @@ export default function Index({data}) {
       <div className={styles.postsOuter}>
         <Posts dataItem = {data.posts} />
       </div>
+      <ContactIndex
+       contactIndexData = {data.indexPage.contactIndexData}
+       contactsList = {data.indexPage.contactsList}
+      />
         
       
     </Layout>

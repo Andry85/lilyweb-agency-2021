@@ -1,0 +1,131 @@
+@import "../../styles/utils/variables";
+
+.contactIndex {
+  display: flex;
+  max-width: 1720px;
+  margin: 75px auto 0 auto;
+  min-height: 300px;
+
+  @include breakpoint(md) {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  &__left {
+    flex-basis: 962px;
+    position: relative;
+    display: flex;
+
+    @include breakpoint(md) {
+      flex-basis: 100%;
+      order: 2;
+    }
+  }
+
+  &__right {
+    flex-basis: 757px;
+
+    @include breakpoint(md) {
+      flex-basis: 100%;
+      order: 1;
+    }
+  }
+
+  &__form {
+    position: relative;
+    z-index: 2;
+    padding: 130px 118px 100px 100px;
+    max-width: 788px;
+    margin-left: auto;
+
+    @include breakpoint(lg) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @include breakpoint(md) {
+      max-width: 100%;
+      padding: 30px;
+    }
+  }
+
+  &__overlay {
+    background: #212453;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3000px;
+  }
+
+  &__info {
+    padding: 40px 45px 110px 81px;
+
+    @include breakpoint(lg) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @include breakpoint(md) {
+      padding: 30px;
+    }
+
+    h2 {
+      font-size: 5rem;
+      font-weight: 800;
+      padding: 50px 0 33px 0;
+
+      @include breakpoint(md) {
+        font-size: 3rem;
+        padding: 0;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+      line-height: 1.75;
+      margin: 0 25px 0 0;
+    }
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #333;
+      padding: 70px 0 24px 0;
+
+      @include breakpoint(md) {
+        padding-top: 40px;
+      }
+    }
+  }
+}
+
+.contactsList {
+
+  max-width: 330px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+    p {
+      font-size: 1.5rem;
+      line-height: 1.6;
+      color: #666;
+      padding: 0 0 0 20px;
+    }
+
+  }
+
+  &__pic {
+    background: #e2e2e2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+}
