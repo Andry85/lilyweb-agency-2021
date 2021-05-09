@@ -24,6 +24,7 @@
 
     @include breakpoint(md) {
       margin: 0 42px 25px 0;
+      border-bottom: 1px solid #ccc;
     }
 
     a {
@@ -33,11 +34,19 @@
       display: block;
       padding: 0 0 0.3rem 0;
 
+      @include breakpoint(md) {
+        padding: 0 0 1rem 0;
+      }
+
       &:hover {
         text-decoration: none;
 
         &::after {
           width: 41px;
+
+          @include breakpoint(md) {
+            width: 100%;
+          }
         }
       }
 

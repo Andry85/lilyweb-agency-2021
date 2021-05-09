@@ -278,7 +278,34 @@
             "icon": "/images/contacts/email.png",
             "text": "Email:  contact@stuck.com"
            }
-       ]
+       ],
+       "social": [
+        {
+            "id": 0,
+            "icon": "facebook",
+            "url": "https://www.facebook.com/" 
+        },
+        {
+            "id": 1,
+            "icon": "twitter",
+            "url": "https://twitter.com/" 
+        },
+        {
+            "id": 2,
+            "icon": "behance",
+            "url": "https://www.behance.net/" 
+        },
+        {
+            "id": 3,
+            "icon": "linkedin",
+            "url": "https://www.linkedin.com/" 
+        },
+        {
+            "id": 4,
+            "icon": "twitter",
+            "url": "https://twitter.com/" 
+        }
+    ]
     },
     "posts": [
         {
@@ -317,5 +344,6 @@
             "text": "Nunc in mauris a ante rhoncus tristique vitae et nisl. Quisque ullamcorper rutrum lacinia. Integer varius ornare egestas. ",
             "author": "by admin"
         }
-    ]
+    ],
+    "copyrightText": "Copyright 2021. Lily Web Agency"
 }

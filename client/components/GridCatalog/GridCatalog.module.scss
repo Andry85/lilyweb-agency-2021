@@ -9,11 +9,9 @@
   &__inner {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 30px;
     margin: 0 -30px;
 
     @include breakpoint(md) {
-      padding: 0 15px;
       margin: 0 -15px;
     }
 
@@ -35,7 +33,6 @@
     margin: 0 0 63px 0;
 
     @include breakpoint(md) {
-      padding: 0px;
       margin: 0 0 33px 0;
     }
 

@@ -8,6 +8,7 @@ import HeaderBurger from '../components/HeaderBurger/HeaderBurger'
 import MainMenu from '../components/MainMenu/MainMenu';
 import Button from '../components/Button/Button';
 import SocialMedia from '../components/SocialMedia/SocialMedia';
+import Social from './Social/Social';
 
 
 
@@ -26,6 +27,8 @@ export default function Layout({ children, home}: Props) {
 
   let logo = data.header.logo as string;
   let title = data.header.title as string;
+  let social = data.indexPage.social;
+  let copyrightText = data.copyrightText as string;
 
 
   return (
@@ -88,13 +91,23 @@ export default function Layout({ children, home}: Props) {
           </>
         )}
       <main className={styles.main}>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      {home ? (
+          <>
+            <footer className={styles.footerIndex}>
+              <div className={styles.footerIndex__inner}>
+                <HeaderLogo name = {logo} ishome = {true} />
+                <Social dataItems = {social}/>
+                <p className={styles.footerIndex__copy}>{copyrightText}</p>
+              </div>
+            </footer>
+          </>
+        ) : (
+          <>
+             <footer>
+                inner footer
+            </footer>
+          </>
+        )}
     </div>
   )
 }
