@@ -67,6 +67,20 @@
 
 }
 
+.headerInnerPage {
+  position: relative;
+
+ &::before {
+   content: '';
+   background: url(./img/innerHeader-bg.png) no-repeat;
+   width: 526px;
+   height: 674px;
+   position: absolute;
+   left: -150px;
+   top: -150px;
+ }
+}
+
 
 .footerIndex {
 

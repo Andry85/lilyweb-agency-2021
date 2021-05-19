@@ -10,6 +10,7 @@
     text-transform: uppercase;
     margin: 0 0 0 10px;
     font-weight: 800;
+    color: #fff;
 
     @include breakpoint(md) {
       font-size: 1.0rem;

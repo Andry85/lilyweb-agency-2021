@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 type HeaderLogoProp = {
   name: string;
-  ishome: boolean
+  ishome?: boolean
 }
 
 

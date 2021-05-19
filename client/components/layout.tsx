@@ -16,7 +16,7 @@ const fetcher = url => axios.get(url).then(res => res.data);
 
 type Props = {
   children: React.ReactNode;
-  home: boolean
+  home?: boolean
 };
 
 export default function Layout({ children, home}: Props) {
@@ -85,9 +85,30 @@ export default function Layout({ children, home}: Props) {
           </>
         ) : (
           <>
-            <h2>
-              Inner page
-            </h2>
+            <header className={[styles.header, styles.headerInnerPage].join(' ')}>
+              <div className={styles.container}>
+                <div className={styles.header__top}>
+                  <HeaderLogo name = {logo} />
+                  <MainMenu />
+                  <Button 
+                    href="/" 
+                    title="get a quote" 
+                    color = "#b988f8" 
+                    background = "transparent" 
+                    border = "2px solid #b988f8"
+                    borderRadius = "0px"
+                    textTransform = "uppercase"
+                    colorHover = "#fff"
+                    backgroundHover = "#4923b7"
+                    paddings = "5px 10px"
+                    margings = "0 0 0 auto"
+                    mobilePaddings = "5px"
+                    mobileMargings = "0 auto"
+                  />
+                  <HeaderBurger />
+                </div>
+              </div>
+            </header>
           </>
         )}
       <main className={styles.main}>{children}</main>

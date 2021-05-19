@@ -3,10 +3,9 @@
 .burger {
   width: 23px;
   cursor: pointer;
-  margin-left: auto;
   height: 23px;
   position: relative;
-
+  margin-left: 32px;
 
   span {
     display: block;
@@ -43,6 +42,7 @@
 
 }
 .ishome {
+  margin-left: auto;
   span {
     background: #1a1c28;
   }

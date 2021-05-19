@@ -345,5 +345,11 @@
             "author": "by admin"
         }
     ],
-    "copyrightText": "Copyright 2021. Lily Web Agency"
+    "copyrightText": "Copyright 2021. Lily Web Agency",
+    "aboutUsPage": {
+        "header": {
+            "title": "About us",
+            "subtitle": "We’re proud not to be a studio that only works in one particular sector, instead we lead by our disruptive digital service offering."
+        }
+    }
 }

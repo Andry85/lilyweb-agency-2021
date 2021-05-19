@@ -5,7 +5,7 @@ import {changeMenuVisibility} from "../../redux/actions/actions";
 import styles from './HeaderBurger.module.scss'
 
 type HeaderBurgerProp = {
-  ishome: boolean
+  ishome?: boolean
 }
 
 function HeaderBurger({ishome}: HeaderBurgerProp): JSX.Element {

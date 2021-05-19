@@ -5,7 +5,7 @@ import type {RootState} from '../../redux/store';
 
 
 type MainMenuProp = {
-  ishome: boolean
+  ishome?: boolean
 }
 
 

@@ -44,7 +44,7 @@ export default function Index({data}) {
 
   return (
     <Layout home>
-      <div className={styles.container}>
+      <div className="container">
         <Head>
           <title>Index Page</title>
         </Head>
@@ -110,8 +110,8 @@ export default function Index({data}) {
         <TitleBlock title={data.indexPage.latestProject.title} text={data.indexPage.latestProject.text} />
       </div>
       <IndexSlider dataSlider = {data.indexPage.indexSlider} />
-      <div className={styles.container}>
-        <div className={styles.container__brands}>
+      <div className="container">
+        <div className="container__brands">
           <TitleBlock title={data.indexPage.brandingServices.title} text={data.indexPage.brandingServices.text} />
         </div>
         <GridCatalog dataObg = {data.indexPage.services} />
