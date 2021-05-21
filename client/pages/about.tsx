@@ -5,13 +5,14 @@ import Button from '../components/Button/Button'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMicrophoneAlt, faUserFriends, faEye} from '@fortawesome/free-solid-svg-icons'
+import TitleBlock from '../components/TitleBlock/TitleBlock';
 
 
 
 
 
 export async function getStaticProps(context) {
-  const res = await fetch('http://localhost:3000/api/data');
+  const res = await fetch('http://localhost:4000/api/data');
   const data = await res.json()
 
   if (!data) {
@@ -44,7 +45,7 @@ export default function About({data}) {
           </div>  
         </div>
       <div className="container">
-
+        <TitleBlock title={data.indexPage.latestProject.title} text={data.indexPage.latestProject.text} />
       </div>
     </Layout>
   )

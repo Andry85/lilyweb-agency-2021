@@ -16,6 +16,7 @@ type ButtonProp = {
   margings?: string,
   mobilePaddings?: string,
   mobileMargings?: string,
+  width?: string,
 }
 
 
@@ -28,6 +29,7 @@ const BtnLink = styled.a`
     text-transform: uppercase;
     padding: 10px 20px;
     margin: 0 auto;
+    width: 200px;
     &:hover {
       background: #2341dd;
       color: #fff;
@@ -48,6 +50,7 @@ const BtnLink = styled.a`
       text-transform: ${props.textTransform};
       padding: ${props.paddings};
       margin: ${props.margings};
+      width: ${props.width};
       &:hover {
         background: ${props.backgroundHover};
         color: ${props.colorHover};
@@ -75,7 +78,8 @@ function Button({
   paddings,
   margings,
   mobilePaddings,
-  mobileMargings
+  mobileMargings,
+  width
 }: ButtonProp): JSX.Element {
     return (
       <Link href={href} passHref={true}>
@@ -92,6 +96,7 @@ function Button({
          margings = {margings} 
          mobilePaddings = {mobilePaddings}
          mobileMargings = {mobileMargings}
+         width = {width}
          >
            {title}
         </BtnLink>

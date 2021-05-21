@@ -2,9 +2,9 @@
 
 .btn {
   display: flex;
-  width: 200px;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
 
   &:hover {
     text-decoration: none;

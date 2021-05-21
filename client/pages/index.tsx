@@ -21,7 +21,7 @@ import ContactIndex from '../components/ContactIndex/ContactIndex';
 
 
 export async function getStaticProps(context) {
-  const res = await fetch('http://localhost:3000/api/data');
+  const res = await fetch('http://localhost:4000/api/data');
   const data = await res.json()
 
   if (!data) {

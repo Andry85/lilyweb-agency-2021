@@ -9,6 +9,7 @@ import MainMenu from '../components/MainMenu/MainMenu';
 import Button from '../components/Button/Button';
 import SocialMedia from '../components/SocialMedia/SocialMedia';
 import Social from './Social/Social';
+import Search from './Search/Search';
 
 
 
@@ -104,7 +105,11 @@ export default function Layout({ children, home}: Props) {
                     margings = "0 0 0 auto"
                     mobilePaddings = "5px"
                     mobileMargings = "0 auto"
+                    width= "160px"
                   />
+                  <div className={styles.header__search}>
+                    <Search/>
+                  </div>
                   <HeaderBurger />
                 </div>
               </div>
