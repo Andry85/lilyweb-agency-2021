@@ -350,6 +350,10 @@
         "header": {
             "title": "About us",
             "subtitle": "We’re proud not to be a studio that only works in one particular sector, instead we lead by our disruptive digital service offering."
+        },
+        "offer": {
+            "title": "We are providing best service since 1999 to present",
+            "text": "We are trying to deliver 100% quality"
         }
     }
 }

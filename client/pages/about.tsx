@@ -45,7 +45,9 @@ export default function About({data}) {
           </div>  
         </div>
       <div className="container">
-        <TitleBlock title={data.indexPage.latestProject.title} text={data.indexPage.latestProject.text} />
+        <div className={styles.offer}>
+          <TitleBlock title={data.aboutUsPage.offer.title} text={data.aboutUsPage.offer.text} />
+        </div>
       </div>
     </Layout>
   )
