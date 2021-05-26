@@ -5,7 +5,8 @@ import Button from '../components/Button/Button'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMicrophoneAlt, faUserFriends, faEye} from '@fortawesome/free-solid-svg-icons'
-import TitleBlock from '../components/TitleBlock/TitleBlock';
+import TitleText from '../components/TitleText/TitleText';
+import Offer from '../components/Offer/Offer';
 
 
 
@@ -44,10 +45,26 @@ export default function About({data}) {
             <h3 className="headerBottom__subtitle">{data.aboutUsPage.header.subtitle}</h3>
           </div>  
         </div>
-      <div className="container">
+     
         <div className={styles.offer}>
-          <TitleBlock title={data.aboutUsPage.offer.title} text={data.aboutUsPage.offer.text} />
-        </div>
+          <div className="container">
+            <TitleText
+              title={data.aboutUsPage.offer.title} 
+              text={data.aboutUsPage.offer.text}
+              wrapperPaddings = "40px 10px 40px 10px"
+              wrapperMobilePaddings = "10px 10px 10px 10px"
+              wrapperMaxWidth = "770px"
+              wrapperMargings = "0 auto"
+              wrapperMobileMargings = "10px 0 10px 0"
+              titlePaddings = "0 0 34px 0"
+            />
+            <Offer
+               src={data.indexPage.video.src} 
+               type={data.indexPage.video.type} 
+               poster={data.indexPage.video.poster} 
+               offerList = {data.aboutUsPage.offerList}
+            />
+          </div>
       </div>
     </Layout>
   )

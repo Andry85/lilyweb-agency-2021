@@ -354,6 +354,26 @@
         "offer": {
             "title": "We are providing best service since 1999 to present",
             "text": "We are trying to deliver 100% quality"
-        }
+        },
+        "offerList": [
+            {
+             "id": 0,
+             "icon": "/images/offers/icon-mission.png",
+             "title": "Our mission",
+             "text": "Phasellus et elit eget purus efficitur dignissim. Sed eget pretium quam, non rutrum nisi. "
+            },
+            {
+                "id": 1,
+                "icon": "/images/offers/icon-support.png",
+                "title": "Our vision",
+                "text": "Phasellus et elit eget purus efficitur dignissim. Sed eget pretium quam, non rutrum nisi. "
+            },
+            {
+                "id": 2,
+                "icon": "/images/offers/icon-vision.png",
+                "title": "Dedicated support",
+                "text": "Phasellus et elit eget purus efficitur dignissim. Sed eget pretium quam, non rutrum nisi. "
+            }
+        ]
     }
 }
