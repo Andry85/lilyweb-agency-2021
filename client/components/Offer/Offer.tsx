@@ -41,7 +41,7 @@ function Offer({src, type, poster, offerList}: OfferProp): JSX.Element {
     <div className={styles.offer}>
       <div className={styles.offer__wrapper}> 
         <div className={styles.offer__col_1}>
-          <ul  className={styles.offersList}>
+          <ul className={styles.offersList}>
             {offerList.map((item) => 
               <li key={item.id} className={styles.offersList__item}>     
                   <div className={styles.offersList__pic}>
@@ -60,10 +60,12 @@ function Offer({src, type, poster, offerList}: OfferProp): JSX.Element {
           </ul>
         </div>
         <div className={styles.offer__col_2}>
-          <video id="vid" poster={poster}>
-            <source src={src} type={type} />
-          </video>
-          <button className={`${styles.video__play} ${play ? `${styles.videoPlayActive}` : ""}`} onClick= {() => playPause()}>Play/Pause</button>
+          <div className={styles.offer__video}>
+            <video id="vid" poster={poster}>
+              <source src={src} type={type} />
+            </video>
+            <button className={`${styles.offer__play} ${play ? `${styles.offerPlayActive}` : ""}`} onClick= {() => playPause()}>Play/Pause</button>
+          </div>
         </div>  
       </div> 
     </div>

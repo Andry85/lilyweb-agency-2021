@@ -1,8 +1,4 @@
 @import "../styles/utils/variables";
-.wrapper {
-
-}
-
 
 .main {
   overflow-x: hidden;
@@ -30,9 +26,9 @@
       position: fixed;
       left: 0;
       top: 0;
-      background: #f2f5f9;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #b988f8;
       z-index: 100;
+      background: #4923b7;
     }
   }
 
@@ -64,6 +60,11 @@
   overflow-x: hidden;
   background-size: cover;
 
+  .header__top {
+    background: #f2f5f9;
+    border-bottom: 1px solid #ddd;
+  }
+
   @include breakpoint(md) {
     height: auto;
   }
@@ -76,12 +77,14 @@
  &::before {
    content: '';
    background: url(./img/innerHeader-bg.png) no-repeat;
+   background-size: cover;
    width: 526px;
    height: 674px;
    position: absolute;
    left: -150px;
    top: -150px;
  }
+
 }
 
 

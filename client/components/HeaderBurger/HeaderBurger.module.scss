@@ -24,6 +24,11 @@
     top: 10px;
     span {
       position: absolute;
+
+      @include breakpoint(md) {
+        background: #1a1c28;
+      }
+      
       &:first-child {
         display: none;
       }

@@ -51,8 +51,8 @@ export default function About({data}) {
             <TitleText
               title={data.aboutUsPage.offer.title} 
               text={data.aboutUsPage.offer.text}
-              wrapperPaddings = "40px 10px 40px 10px"
-              wrapperMobilePaddings = "10px 10px 10px 10px"
+              wrapperPaddings = "40px 10px 75px 10px"
+              wrapperMobilePaddings = "10px 10px 50px 10px"
               wrapperMaxWidth = "770px"
               wrapperMargings = "0 auto"
               wrapperMobileMargings = "10px 0 10px 0"
