@@ -66,6 +66,25 @@ export default function About({data}) {
             />
           </div>
       </div>
+
+      <div className="container__inner">
+        <TitleText
+          title={data.aboutUsPage.work.title} 
+          text={data.aboutUsPage.work.text}
+          titleTextAlign = "left"
+          textTextAlign = "left"
+          titleFontSize = "5rem"
+          wrapperPaddings = "40px 10px 75px 10px"
+          wrapperMobilePaddings = "10px 10px 50px 10px"
+          wrapperMaxWidth = "700px"
+          wrapperMargings = "0"
+          wrapperMobileMargings = "10px 0 10px 0"
+          titlePaddings = "79px 0 19px 0"
+          textTextTransform = "none"
+          textLineHeight = "1.5"
+        />
+      </div>
+
     </Layout>
   )
 }

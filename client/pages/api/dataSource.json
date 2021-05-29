@@ -355,6 +355,10 @@
             "title": "We are providing best service since 1999 to present",
             "text": "We are trying to deliver 100% quality"
         },
+        "work": {
+            "title": "How we work",
+            "text": "We bet in individual approach to each customer using frame works to achieve maximum productivity and efficiency."
+        },
         "offerList": [
             {
              "id": 0,
