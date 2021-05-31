@@ -392,12 +392,34 @@
             },
             {
                 "id": 1,
-                "title": "Strategy & Planning",
-                "img": "/images/about-list/001.png",
+                "title": "UX Design & Prototyping",
+                "img": "/images/about-list/002.png",
                 "list": [
                     "We create a detailed work plan and design the best approach to meet the goals.",
-                    "We colect maximum information before kickoff the project.",
-                    "For a better understanding of each of our clients "
+                    "we colect maximum information before kickoff the project.",
+                    "For a better understanding of each of our clients"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Project Delivered & Support",
+                "img": "/images/about-list/003.png",
+                "list": [
+                    "While using wireframes and grid system",
+                    "we will identify the future looks of the user interface",
+                    "UX design is important to let clients visualise how the project will look in the future.",
+                    "clients visualise how the project will look in the future."
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Project Delivered & Support",
+                "img": "/images/about-list/004.png",
+                "list": [
+                    "While using wireframes and grid system",
+                    "we will identify the future looks of the user interface",
+                    "UX design is important to let clients visualise how the project will look in the future.",
+                    "clients visualise how the project will look in the future."
                 ]
             }
         ]

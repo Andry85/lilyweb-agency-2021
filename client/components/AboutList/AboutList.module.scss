@@ -1,2 +1,74 @@
 @import "../../styles/utils/variables";
 
+.aboutList {
+    &__inner {
+        padding: 17px 0 0 0;
+    }
+
+    &__item {
+        margin: 0 0 69px 0;
+        
+        figure {
+            float: right;
+            margin: 0 0 0 30px;
+        }
+
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        &:nth-child(2n) {
+            figure {
+                float: left;
+                margin: 0 30px 0 0;
+            }
+
+            h3 {
+                text-align: right;
+            }
+
+            ul {
+                text-align: right;
+
+                li {
+                    padding: 0 32px 0 0;
+
+                    &::before {
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+        }
+
+        h3 {
+            font-size: 3.6rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        ul {
+            padding: 30px 0 0 0;
+
+            li {
+                color: #666;
+                font-weight: 500;
+                position: relative;
+                padding: 0 0 0 32px;
+                margin: 0 0 15px 0;
+
+                &::before {
+                    content: '';
+                    background: url(./img/circle.png) no-repeat;
+                    width: 21px;
+                    height: 21px;
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                }
+            }
+        }
+    }
+}

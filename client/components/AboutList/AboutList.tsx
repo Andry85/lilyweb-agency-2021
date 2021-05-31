@@ -24,8 +24,8 @@ function AboutList({obj}: AboutListProp): JSX.Element {
                 <Image
                     src={item.img}
                     alt=""
-                    width={68}
-                    height={68}
+                    width={250}
+                    height={250}
                     objectFit="contain"
                 />
             </figure>
