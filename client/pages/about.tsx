@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMicrophoneAlt, faUserFriends, faEye} from '@fortawesome/free-solid-svg-icons'
 import TitleText from '../components/TitleText/TitleText';
 import Offer from '../components/Offer/Offer';
+import AboutList from '../components/AboutList/AboutList';
 
 
 
@@ -83,6 +84,7 @@ export default function About({data}) {
           textTextTransform = "none"
           textLineHeight = "1.5"
         />
+        <AboutList obj = {data.aboutUsPage.aboutList} />
       </div>
 
     </Layout>

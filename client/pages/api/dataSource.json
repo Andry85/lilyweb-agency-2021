@@ -378,6 +378,28 @@
                 "title": "Dedicated support",
                 "text": "Phasellus et elit eget purus efficitur dignissim. Sed eget pretium quam, non rutrum nisi. "
             }
+        ],
+        "aboutList":  [
+            {
+                "id": 0,
+                "title": "Strategy & Planning",
+                "img": "/images/about-list/001.png",
+                "list": [
+                    "We create a detailed work plan and design the best approach to meet the goals.",
+                    "We colect maximum information before kickoff the project.",
+                    "For a better understanding of each of our clients "
+                ]
+            },
+            {
+                "id": 1,
+                "title": "Strategy & Planning",
+                "img": "/images/about-list/001.png",
+                "list": [
+                    "We create a detailed work plan and design the best approach to meet the goals.",
+                    "We colect maximum information before kickoff the project.",
+                    "For a better understanding of each of our clients "
+                ]
+            }
         ]
     }
 }
