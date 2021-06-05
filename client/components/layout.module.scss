@@ -91,6 +91,7 @@
 
 
 .footerIndex {
+  
 
   &__inner {
     max-width: 1190px;
@@ -112,6 +113,10 @@
     color: #e1e1e1;
     margin: 0 10px;
   }
+}
+
+.footerIndexInnarPages {
+  border-top: 1px solid #f3f3f3;
 }
 
 

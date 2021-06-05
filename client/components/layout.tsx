@@ -117,23 +117,13 @@ export default function Layout({ children, home}: Props) {
           </>
         )}
       <main className={styles.main}>{children}</main>
-      {home ? (
-          <>
-            <footer className={styles.footerIndex}>
-              <div className={styles.footerIndex__inner}>
-                <HeaderLogo name = {logo} ishome = {true} />
-                <Social dataItems = {social}/>
-                <p className={styles.footerIndex__copy}>{copyrightText}</p>
-              </div>
-            </footer>
-          </>
-        ) : (
-          <>
-             <footer>
-                inner footer
-            </footer>
-          </>
-        )}
+      <footer className={`${styles.footerIndex} ${home ? "" : `${styles.footerIndexInnarPages}`}`}>
+        <div className={styles.footerIndex__inner}>
+          <HeaderLogo name = {logo} ishome = {true} />
+          <Social dataItems = {social}/>
+          <p className={styles.footerIndex__copy}>{copyrightText}</p>
+        </div>
+      </footer>
     </div>
   )
 }

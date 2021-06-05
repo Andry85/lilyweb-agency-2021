@@ -422,6 +422,30 @@
                     "clients visualise how the project will look in the future."
                 ]
             }
-        ]
+        ],
+        "aboutSlider": [
+            {
+                "id": 0,
+                "title": "John Doe",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra justo quis ligula ullamcorper scelerisque. Quisque tempor nulla quis sapien malesuada ultricies. Nullam sapien elit, laoreet congue sapien eget, suscipit imperdiet nisi. ",
+                "img": "/images/aboutslider/001.jpg"
+            },
+            {
+                "id": 1,
+                "title": "John Doe",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra justo quis ligula ullamcorper scelerisque. Quisque tempor nulla quis sapien malesuada ultricies. Nullam sapien elit, laoreet congue sapien eget, suscipit imperdiet nisi. ",
+                "img": "/images/aboutslider/002.jpg"
+            },
+            {
+                "id": 2,
+                "title": "John Doe",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra justo quis ligula ullamcorper scelerisque. Quisque tempor nulla quis sapien malesuada ultricies. Nullam sapien elit, laoreet congue sapien eget, suscipit imperdiet nisi. ",
+                "img": "/images/aboutslider/001.jpg"
+            }
+        ],
+        "testemonials": {
+            "title": "Listen from our customers",
+            "subtitle": "Read what our client saying about us"
+        }
     }
 }

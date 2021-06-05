@@ -8,6 +8,8 @@ import { faMicrophoneAlt, faUserFriends, faEye} from '@fortawesome/free-solid-sv
 import TitleText from '../components/TitleText/TitleText';
 import Offer from '../components/Offer/Offer';
 import AboutList from '../components/AboutList/AboutList';
+import AboutSlider from '../components/AboutSlider/AboutSlider';
+import Partners from '../components/Partners/Partners';
 
 
 
@@ -86,6 +88,14 @@ export default function About({data}) {
         />
         <AboutList obj = {data.aboutUsPage.aboutList} />
       </div>
+
+      <div className={styles.aboutSlider}>
+        <div className="container__inner">
+          <AboutSlider dataSlider = {data.aboutUsPage.aboutSlider} testemonials = {data.aboutUsPage.testemonials} />
+        </div>
+      </div>
+
+      <Partners title={data.indexPage.partners.title} subtitle={data.indexPage.partners.subtitle} />
 
     </Layout>
   )
