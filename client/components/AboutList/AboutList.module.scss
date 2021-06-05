@@ -11,6 +11,12 @@
         figure {
             float: right;
             margin: 0 0 0 30px;
+
+            @include breakpoint(md) {
+                float: none;
+                margin: 0 0 30px 0;
+                text-align: center;
+            }
         }
 
         &::after {
@@ -23,21 +29,43 @@
             figure {
                 float: left;
                 margin: 0 30px 0 0;
+
+                @include breakpoint(md) {
+                    float: none;
+                    margin: 0 0 30px 0;
+                }
             }
 
             h3 {
                 text-align: right;
+
+                @include breakpoint(md) {
+                    text-align: center;
+                }
             }
 
             ul {
                 text-align: right;
 
+                @include breakpoint(md) {
+                    text-align: left;
+                }
+
                 li {
                     padding: 0 32px 0 0;
+
+                    @include breakpoint(md) {
+                        padding: 0 0 0 32px;
+                    }
 
                     &::before {
                         left: auto;
                         right: 0;
+
+                        @include breakpoint(md) {
+                            right: auto;
+                            left: 0;
+                        }
                     }
                 }
             }

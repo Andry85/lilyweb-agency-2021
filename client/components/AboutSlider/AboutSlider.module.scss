@@ -7,23 +7,44 @@
     font-size: 5rem;
     font-weight: 600;
     padding: 0 170px 14px 0;
+
+    @include breakpoint(md) {
+      font-size: 3rem;
+      padding-right: 0;
+    }
+
   }
 
   &__subtitle {
     font-size: 2rem;
     color: #555;
     padding: 0 0 82px 0;
+
+    @include breakpoint(md) {
+      font-size: 1.5rem;
+    }
+
   }
 
   &__item {
     display: flex;
     align-items: center;
+
+    @include breakpoint(md) {
+      flex-direction: column;
+      padding-bottom: 80px;
+    }
   }
 
   &__media {
     flex-basis: 270px;
     margin: 0 100px 0 0;
     flex-shrink: 0;
+
+    @include breakpoint(md) {
+      margin: 0 0 50px 0;
+      width: 270px;
+    }
 
     img {
       border-radius: 50%;
@@ -63,7 +84,8 @@
   z-index: 2;
 
   @include breakpoint(md) {
-    
+    top: auto;
+    bottom: 0;
   }
 
   &:hover {
@@ -89,7 +111,8 @@
   z-index: 2;
 
   @include breakpoint(md) {
-    
+    top: auto;
+    bottom: 0;
   }
 
   &:hover {

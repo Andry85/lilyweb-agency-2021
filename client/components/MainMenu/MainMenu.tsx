@@ -1,6 +1,7 @@
 import styles from './MainMenu.module.scss'
 import Link from 'next/link'
-import {useSelector} from 'react-redux';  
+import {useSelector, useDispatch} from 'react-redux'; 
+import {changeMenuVisibility} from "../../redux/actions/actions"; 
 import type {RootState} from '../../redux/store';
 
 
@@ -11,13 +12,14 @@ type MainMenuProp = {
 
 function MainMenu({ishome}: MainMenuProp): JSX.Element {
 
-  const menuStatus = useSelector((state: RootState) => state.mainMenuReducer.ismenuOpened);  
+  const menuStatus = useSelector((state: RootState) => state.mainMenuReducer.ismenuOpened); 
+  const dispatch = useDispatch(); 
   if (menuStatus) {
     return (
       <ul className={`${styles.mainMenu} ${ishome ? `${styles.mainMenuHome}` : ""}`}>
         <li>
           <Link href="/">
-            <a>Home</a>
+            <a onClick={() => dispatch(changeMenuVisibility())}>Home</a>
           </Link>
         </li>  
         <li>
@@ -27,7 +29,7 @@ function MainMenu({ishome}: MainMenuProp): JSX.Element {
         </li> 
         <li>
           <Link href="/about">
-            <a>About Us</a>
+            <a onClick={() => dispatch(changeMenuVisibility())}>About Us</a>
           </Link>
         </li> 
         <li>
