@@ -1,10 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/About.module.scss'
 import Layout from '../components/layout'
-import Button from '../components/Button/Button'
-import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMicrophoneAlt, faUserFriends, faEye} from '@fortawesome/free-solid-svg-icons'
 import TitleText from '../components/TitleText/TitleText';
 import Offer from '../components/Offer/Offer';
 import AboutList from '../components/AboutList/AboutList';

@@ -447,5 +447,11 @@
             "title": "Listen from our customers",
             "subtitle": "Read what our client saying about us"
         }
+    },
+    "servicePage": {
+        "header": {
+            "title": "Services",
+            "subtitle": "We’re proud not to be a studio that only works in one particular sector, instead we lead by our disruptive digital service offering."
+        }
     }
 }
