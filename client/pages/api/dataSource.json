@@ -452,6 +452,16 @@
         "header": {
             "title": "Services",
             "subtitle": "We’re proud not to be a studio that only works in one particular sector, instead we lead by our disruptive digital service offering."
+        },
+        "serviceData": {
+            "title": "Partner with a Reliable & Experienced Digital Studio",
+            "subtitle": "Enter your details & we'll be in touch to discuss your project",
+            "person": {
+                "pic": "/images/contacts/phone.png",
+                "email": "davidmiler@gmail.com",
+                "phone": "44(0) 121 288 1482"
+
+            }
         }
     }
 }

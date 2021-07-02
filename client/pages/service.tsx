@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Sevice.module.scss'
 import Layout from '../components/layout'
 import GridCatalog from '../components/GridCatalog/GridCatalog';
+import ContactService from '../components/ContactService/ContactService';
 
 
 
@@ -26,7 +27,7 @@ export async function getStaticProps(context) {
 
 
 
-export default function About({data}) {
+export default function Service({data}) {
 
 
   return (
@@ -45,6 +46,12 @@ export default function About({data}) {
       <div className={styles.servicesCatalog}>
         <GridCatalog dataObg = {data.indexPage.services} />
       </div>
+
+      <div className={styles.contactServiceWrapper}>
+        <ContactService сontactServiceData = {data.servicePage.serviceData}/>
+      </div>
+
+      
 
     
 
