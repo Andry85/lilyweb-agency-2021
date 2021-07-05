@@ -26,12 +26,14 @@ function ContactService({сontactServiceData}: сontactServiceProp): JSX.Element
           <h2>{сontactServiceData.title}</h2>
           <h3>{сontactServiceData.subtitle}</h3>
           <div className={styles.сontactServicePersone}>
-            <Image
-              src={сontactServiceData.person.pic}
-              alt=""
-              width={80}
-              height={80}
-            />
+            <div className={styles.сontactServicePersone__pic}>  
+              <Image
+                src={сontactServiceData.person.pic}
+                alt=""
+                width={80}
+                height={80}
+              />
+            </div>
             <div className={styles.сontactServicePersone__email}>
               {сontactServiceData.person.email}
             </div>
@@ -42,7 +44,7 @@ function ContactService({сontactServiceData}: сontactServiceProp): JSX.Element
         </div>
       </div>
       <div className={styles.сontactService__right}>
-        <div className={styles.contactIndex__info}>
+        <div className={styles.сontactService__info}>
           
           <div className={styles.сontactService__form}>
             <FormContactService/>

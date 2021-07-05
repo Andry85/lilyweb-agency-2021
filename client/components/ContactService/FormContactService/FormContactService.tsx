@@ -8,6 +8,8 @@ import {
   Field,
   FieldProps,
 } from 'formik';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLongArrowAltRight} from '@fortawesome/free-solid-svg-icons'
 
 interface MyFormValues {
   firstName: string;
@@ -35,16 +37,30 @@ export const FormContactService: React.FC<{}> = () => {
         }}
       >
         <Form>
-          <Field name="firstName" placeholder="Enter Full Name" />
-          <Field name="email" placeholder="Enter email address" />
-          <Field name="phoneNamber" placeholder="Enter phone number" />
-          
-          <Field name="help" as="select">
-            <option value="">How can we help?</option>
-            <option value="green">Green</option>
-            <option value="blue">Blue</option>
-          </Field>
-          <button type="submit">Request Callback</button>
+          <div className={styles.formService__row}>
+            <Field name="firstName" placeholder="Enter Full Name" />
+          </div>
+          <div className={styles.formService__row}>
+            <Field name="email" placeholder="Enter email address" />
+          </div>
+          <div className={styles.formService__row}>
+            <Field name="phoneNamber" placeholder="Enter phone number" />
+          </div>
+          <div className={styles.formService__row}>
+            <div className={styles.formService__select}>
+              <Field name="help" as="select">
+                <option value="">How can we help?</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+              </Field>
+            </div>
+          </div>
+          <div className={styles.formService__row}>
+            <button type="submit">
+              Request Callback
+              <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span>
+            </button>
+          </div>
         </Form>
       </Formik>
     </div>

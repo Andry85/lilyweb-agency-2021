@@ -106,6 +106,7 @@ export default function Layout({ children, home}: Props) {
                     mobilePaddings = "5px"
                     mobileMargings = "0 auto"
                     width= "160px"
+                    fontSizeMobile = "1.2rem"
                   />
                   <div className={styles.header__search}>
                     <Search/>

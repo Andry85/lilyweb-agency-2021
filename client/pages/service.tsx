@@ -48,7 +48,9 @@ export default function Service({data}) {
       </div>
 
       <div className={styles.contactServiceWrapper}>
-        <ContactService сontactServiceData = {data.servicePage.serviceData}/>
+        <div className={styles.contactServiceWrapper__inner}>
+          <ContactService сontactServiceData = {data.servicePage.serviceData}/>
+        </div>
       </div>
 
       
