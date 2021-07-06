@@ -1,1 +1,2 @@
 export const ISMENU_OPENED = 'ISMENU_OPENED';
+export const CHANGE_CATEGORY = 'CHANGE_CATEGORY';

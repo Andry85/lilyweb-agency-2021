@@ -1,0 +1,23 @@
+@import "./utils/variables";
+
+.worksWrapper {
+    padding: 112px 0 80px 0;
+
+    &__body {
+        max-width: 1190px;
+        margin: 0 auto;
+        padding: 0 0 73px 0;
+    }
+
+    &__title {
+        font-size: 5rem;
+        font-weight: bold;
+        margin: 0 0 12px 0;
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        color: #555;
+    }
+}
+

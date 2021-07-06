@@ -12,7 +12,7 @@ import Partners from '../components/Partners/Partners';
 
 
 export async function getStaticProps(context) {
-  const res = await fetch('http://localhost:4000/api/data');
+  const res = await fetch('http://localhost:5000/api/data');
   const data = await res.json()
 
   if (!data) {

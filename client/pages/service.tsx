@@ -5,11 +5,8 @@ import GridCatalog from '../components/GridCatalog/GridCatalog';
 import ContactService from '../components/ContactService/ContactService';
 
 
-
-
-
 export async function getStaticProps(context) {
-  const res = await fetch('http://localhost:4000/api/data');
+  const res = await fetch('http://localhost:5000/api/data');
   const data = await res.json()
 
   if (!data) {
@@ -25,11 +22,7 @@ export async function getStaticProps(context) {
   }
 }
 
-
-
 export default function Service({data}) {
-
-
   return (
     <Layout>
         <Head>
@@ -40,23 +33,15 @@ export default function Service({data}) {
             <h2 className="headerBottom__title">{data.servicePage.header.title}</h2>
             <h3 className="headerBottom__subtitle">{data.servicePage.header.subtitle}</h3>
           </div>  
-        </div>
-     
-      
+        </div>    
       <div className={styles.servicesCatalog}>
         <GridCatalog dataObg = {data.indexPage.services} />
       </div>
-
       <div className={styles.contactServiceWrapper}>
         <div className={styles.contactServiceWrapper__inner}>
           <ContactService сontactServiceData = {data.servicePage.serviceData}/>
         </div>
       </div>
-
-      
-
-    
-
     </Layout>
   )
 }

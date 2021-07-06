@@ -463,5 +463,137 @@
 
             }
         }
+    },
+    "worksPage": {
+        "header": {
+            "title": "Our works",
+            "subtitle": "We’re proud not to be a studio that only works in one particular sector, instead we lead by our disruptive digital service offering."
+        },
+        "body": {
+            "title": "Our works",
+            "subtitle": "See our latest works that we have done"
+        },
+        "categories": [
+            {
+                "id": 0,
+                "title": "All Categories",
+                "works": [
+                    {
+                        "id": 0,
+                        "title": "Design Studio inc",
+                        "description": "Brand Identity & Experience",
+                        "pic": "/images/indexslider/001.jpg",
+                        "link": "https://github.com/",
+                        "innerLink": "/work_1"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Design Studio inc",
+                        "description": "Brand Identity & Experience",
+                        "pic": "/images/indexslider/001.jpg",
+                        "link": "https://github.com/",
+                        "innerLink": "/work_1"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Design Studio inc",
+                        "description": "Brand Identity & Experience",
+                        "pic": "/images/indexslider/001.jpg",
+                        "link": "https://github.com/",
+                        "innerLink": "/work_1"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Design Studio inc",
+                        "description": "Brand Identity & Experience",
+                        "pic": "/images/indexslider/001.jpg",
+                        "link": "https://github.com/",
+                        "innerLink": "/work_1"
+                    },
+                    {
+                        "id": 4,
+                        "title": "Design Studio inc",
+                        "description": "Brand Identity & Experience",
+                        "pic": "/images/indexslider/001.jpg",
+                        "link": "https://github.com/",
+                        "innerLink": "/work_1"
+                    },
+                    {
+                        "id": 5,
+                        "title": "Design Studio inc",
+                        "description": "Brand Identity & Experience",
+                        "pic": "/images/indexslider/001.jpg",
+                        "link": "https://github.com/",
+                        "innerLink": "/work_1"
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "title": "Agency",
+                "works": [
+                    {
+                        "id": 0,
+                        "title": "Design Studio inc",
+                        "description": "Brand Identity & Experience",
+                        "pic": "/images/indexslider/001.jpg",
+                        "link": "https://github.com/",
+                        "innerLink": "/work_1"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Design Studio inc",
+                        "description": "Brand Identity & Experience",
+                        "pic": "/images/indexslider/001.jpg",
+                        "link": "https://github.com/",
+                        "innerLink": "/work_1"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Advertising",
+                "works": [
+                    {
+                        "id": 0,
+                        "title": "Design Studio inc",
+                        "description": "Brand Identity & Experience",
+                        "pic": "/images/indexslider/001.jpg",
+                        "link": "https://github.com/",
+                        "innerLink": "/work_1"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Design Studio inc",
+                        "description": "Brand Identity & Experience",
+                        "pic": "/images/indexslider/001.jpg",
+                        "link": "https://github.com/",
+                        "innerLink": "/work_1"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Branding",
+                "works": [
+                    {
+                        "id": 0,
+                        "title": "Design Studio inc",
+                        "description": "Brand Identity & Experience",
+                        "pic": "/images/indexslider/001.jpg",
+                        "link": "https://github.com/",
+                        "innerLink": "/work_1"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Design Studio inc",
+                        "description": "Brand Identity & Experience",
+                        "pic": "/images/indexslider/001.jpg",
+                        "link": "https://github.com/",
+                        "innerLink": "/work_1"
+                    }
+                ]
+            }
+        ]
     }
 }

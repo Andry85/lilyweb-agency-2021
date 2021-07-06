@@ -33,8 +33,8 @@ function MainMenu({ishome}: MainMenuProp): JSX.Element {
           </Link>
         </li> 
         <li>
-          <Link href="/work">
-            <a>Work</a>
+          <Link href="/works">
+            <a>Works</a>
           </Link>
         </li> 
         <li>
