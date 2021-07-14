@@ -38,6 +38,7 @@ export default function Layout({ children, home}: Props) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="" />
         <meta name="og:title" />
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
       </Head>
         {home ? (
           <>

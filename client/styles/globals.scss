@@ -77,3 +77,23 @@ img {
     max-width: 870px;
   }
 }
+
+.grid {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+.grid-item { 
+  width: 33.3%; 
+  height: 450px;
+  position: relative;
+
+  &:nth-child(2n) {
+    height: 615px;
+  }
+  &:nth-child(3n) {
+    height: 290px;
+  }
+ 
+}
