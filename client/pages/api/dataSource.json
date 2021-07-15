@@ -473,6 +473,10 @@
             "title": "Our works",
             "subtitle": "See our latest works that we have done"
         },
+        "getStarted": {
+            "title": "Have a project in your mind?",
+            "subtitle": "It’s simple just contact with us and one of our team member will assist you how to start."
+        },
         "categories": [
             {
                 "id": 0,

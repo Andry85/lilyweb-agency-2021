@@ -18,7 +18,9 @@ type ButtonProp = {
   mobileMargings?: string,
   width?: string,
   fontSize?: string,
-  fontSizeMobile?: string
+  fontSizeMobile?: string,
+  fontWeight?: string,
+  widthMobile?: string
 }
 
 
@@ -54,6 +56,7 @@ const BtnLink = styled.a`
       margin: ${props.margings};
       width: ${props.width};
       font-size: ${props.fontSize};
+      font-weight: ${props.fontWeight};
       &:hover {
         background: ${props.backgroundHover};
         color: ${props.colorHover};
@@ -63,6 +66,7 @@ const BtnLink = styled.a`
         padding: ${props.mobilePaddings};
         margin: ${props.mobileMargings};
         font-size: ${props.fontSizeMobile};
+        width: ${props.widthMobile};
       }
 
     `};
@@ -85,7 +89,9 @@ function Button({
   mobileMargings,
   width,
   fontSize,
-  fontSizeMobile
+  fontSizeMobile,
+  fontWeight,
+  widthMobile
 }: ButtonProp): JSX.Element {
     return (
       <Link href={href} passHref={true}>
@@ -104,7 +110,9 @@ function Button({
          mobileMargings = {mobileMargings}
          width = {width}
          fontSize = {fontSize}
-          fontSizeMobile = {fontSizeMobile}
+         fontWeight = {fontWeight}
+         fontSizeMobile = {fontSizeMobile}
+         widthMobile = {widthMobile}
          >
            {title}
         </BtnLink>

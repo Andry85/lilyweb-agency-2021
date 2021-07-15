@@ -62,6 +62,11 @@ img {
   padding: 154px 0 60px 0;
   min-height: 522px;
 
+  @include breakpoint(md) {
+    padding: 80px 0;
+    min-height: auto;
+  }
+
 
   &__title {
     font-size: 7rem;
@@ -89,11 +94,21 @@ img {
   height: 450px;
   position: relative;
 
+  @include breakpoint(sm) {
+    height: 225px;
+    width: 100%;
+  }
+
   &:nth-child(2n) {
     height: 615px;
+
+    @include breakpoint(sm) {
+      height: 305px;
+    }
   }
   &:nth-child(3n) {
     height: 290px;
+
   }
  
 }

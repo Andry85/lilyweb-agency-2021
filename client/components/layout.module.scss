@@ -85,7 +85,13 @@
    position: absolute;
    left: -150px;
    top: -150px;
+
+   @include breakpoint(md) {
+    display: none;
+   }
+
  }
+ 
 
 }
 
