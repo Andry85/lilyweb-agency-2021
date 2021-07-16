@@ -24,7 +24,7 @@ export async function getStaticProps(context) {
   }
 }
 
-export default function Service({data}) {
+export default function Works({data}) {
   return (
     <Layout>
         <Head>

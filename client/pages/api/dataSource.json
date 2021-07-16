@@ -480,6 +480,7 @@
         "categories": [
             {
                 "id": 0,
+                "path": "one",
                 "title": "All Categories",
                 "works": [
                     {
@@ -488,7 +489,7 @@
                         "description": "Brand Identity & Experience",
                         "pic": "/images/indexslider/001.jpg",
                         "link": "https://github.com/",
-                        "innerLink": "/work_1"
+                        "innerLink": "/work/1"
                     },
                     {
                         "id": 1,
@@ -534,6 +535,7 @@
             },
             {
                 "id": 1,
+                "path": "two",
                 "title": "Agency",
                 "works": [
                     {
@@ -556,6 +558,7 @@
             },
             {
                 "id": 2,
+                "path": "three",
                 "title": "Advertising",
                 "works": [
                     {
@@ -578,6 +581,7 @@
             },
             {
                 "id": 3,
+                "path": "four",
                 "title": "Branding",
                 "works": [
                     {
