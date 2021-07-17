@@ -489,7 +489,7 @@
                         "description": "Brand Identity & Experience",
                         "pic": "/images/indexslider/001.jpg",
                         "link": "https://github.com/",
-                        "innerLink": "/work/1"
+                        "innerLink": "work/001"
                     },
                     {
                         "id": 1,
@@ -497,7 +497,7 @@
                         "description": "Brand Identity & Experience",
                         "pic": "/images/indexslider/001.jpg",
                         "link": "https://github.com/",
-                        "innerLink": "/work_1"
+                        "innerLink": "work/002"
                     },
                     {
                         "id": 2,
@@ -505,7 +505,7 @@
                         "description": "Brand Identity & Experience",
                         "pic": "/images/indexslider/001.jpg",
                         "link": "https://github.com/",
-                        "innerLink": "/work_1"
+                        "innerLink": "work/003"
                     },
                     {
                         "id": 3,
@@ -513,7 +513,7 @@
                         "description": "Brand Identity & Experience",
                         "pic": "/images/aboutslider/001.jpg",
                         "link": "https://github.com/",
-                        "innerLink": "/work_1"
+                        "innerLink": "work/004"
                     },
                     {
                         "id": 4,
@@ -521,7 +521,7 @@
                         "description": "Brand Identity & Experience",
                         "pic": "/images/indexslider/001.jpg",
                         "link": "https://github.com/",
-                        "innerLink": "/work_1"
+                        "innerLink": "work/005"
                     },
                     {
                         "id": 5,
@@ -529,7 +529,7 @@
                         "description": "Brand Identity & Experience",
                         "pic": "/images/indexslider/001.jpg",
                         "link": "https://github.com/",
-                        "innerLink": "/work_1"
+                        "innerLink": "work/006"
                     }
                 ]
             },
@@ -544,7 +544,7 @@
                         "description": "Brand Identity & Experience",
                         "pic": "/images/indexslider/001.jpg",
                         "link": "https://github.com/",
-                        "innerLink": "/work_1"
+                        "innerLink": "work/007"
                     },
                     {
                         "id": 1,
@@ -552,7 +552,7 @@
                         "description": "Brand Identity & Experience",
                         "pic": "/images/indexslider/001.jpg",
                         "link": "https://github.com/",
-                        "innerLink": "/work_1"
+                        "innerLink": "work/008"
                     }
                 ]
             },
@@ -567,7 +567,7 @@
                         "description": "Brand Identity & Experience",
                         "pic": "/images/indexslider/001.jpg",
                         "link": "https://github.com/",
-                        "innerLink": "/work_1"
+                        "innerLink": "work/009"
                     },
                     {
                         "id": 1,
@@ -575,7 +575,7 @@
                         "description": "Brand Identity & Experience",
                         "pic": "/images/indexslider/001.jpg",
                         "link": "https://github.com/",
-                        "innerLink": "/work_1"
+                        "innerLink": "work/010"
                     }
                 ]
             },

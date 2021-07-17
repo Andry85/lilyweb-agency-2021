@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../../styles/Work.module.scss'
 import Layout from '../../components/layout'
+import { useRouter } from 'next/router'
 
 
 
@@ -12,15 +13,25 @@ export async function getStaticPaths() {
   const res = await fetch('http://localhost:5000/api/data')
   const posts = await res.json()
 
+  
   // Get the paths we want to pre-render based on posts
   const resultList = posts.worksPage.categories;
 
-  
 
-  const paths = resultList.map((post) => ({
-    params: { id: post.path },
-  }));
+  const innerLink = resultList.map(function (element) {
+    return element.works.map(function (el) {
+      return el.innerLink;
+    });
+  })
 
+
+  const flatLinks = innerLink.flat();
+
+  const paths = flatLinks.map(function (element) {
+      return {
+        params: { id: element }
+      }
+  })
 
   console.log(paths);
 
@@ -37,15 +48,34 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
-  const res = await fetch(`http://localhost:5000/api/data/${params.id}`)
-  const post = await res.json()
+  const res = await fetch(`http://localhost:5000/api/data`);
+  const jsonObj = await res.json()
 
+  const resultList = jsonObj.worksPage.categories;
+
+  console.log(resultList);
+
+
+
+  const innerLink = resultList.map(function (element) {
+    return element.works;
+  })
+
+
+
+
+  const work = innerLink.find(function (element) {
+    return element.innerLink == params.id;
+  })
+
+ 
   // Pass post data to the page via props
-  return { props: { post } }
+  return { props: { work } }
 }
 
 
-export default function Work({post}) {
+export default function Work({work}) {
+
 
   return (
     <Layout>
