@@ -1,10 +1,6 @@
 import Head from 'next/head'
 import styles from '../../styles/Work.module.scss'
 import Layout from '../../components/layout'
-import { useRouter } from 'next/router'
-
-
-
 
 
 // This function gets called at build time
@@ -20,7 +16,7 @@ export async function getStaticPaths() {
 
   const innerLink = resultList.map(function (element) {
     return element.works.map(function (el) {
-      return el.innerLink;
+      return el.id.toString();
     });
   })
 
@@ -33,56 +29,60 @@ export async function getStaticPaths() {
       }
   })
 
-  console.log(paths);
-
-
-
-
-
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
-  return { paths, fallback: false }
+  return { paths, fallback: true }
 }
 
 // This also gets called at build time
 export async function getStaticProps({ params }) {
+
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
   const res = await fetch(`http://localhost:5000/api/data`);
   const jsonObj = await res.json()
 
+  if (!jsonObj) {
+    return {
+      notFound: true,
+    }
+  }
+
   const resultList = jsonObj.worksPage.categories;
-
-  console.log(resultList);
-
-
-
   const innerLink = resultList.map(function (element) {
     return element.works;
-  })
+  });
 
+  const flatLinks = innerLink.flat();
+  const works = flatLinks.find(function (element) {
+    return element.id == params.id;
+  });
 
-
-
-  const work = innerLink.find(function (element) {
-    return element.innerLink == params.id;
-  })
-
- 
   // Pass post data to the page via props
-  return { props: { work } }
+  return { 
+    props: { 
+      works,
+      jsonObj
+    } 
+  }
 }
 
-
-export default function Work({work}) {
-
+export default function Work({works,jsonObj}) {
 
   return (
     <Layout>
         <Head>
           <title>Work</title>
         </Head>
+        <div className="headerBottom">
+          <div className="container__inner">
+            <h2 className="headerBottom__title">{jsonObj.worksPageDetail.header.title}</h2>
+            <h3 className="headerBottom__subtitle">{jsonObj.worksPageDetail.header.subtitle}</h3>
+          </div>  
+        </div>  
           
+          {works.title}
+          {works.description}
          
       
     </Layout>

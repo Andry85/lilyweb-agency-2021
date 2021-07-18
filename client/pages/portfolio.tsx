@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Works.module.scss'
+import styles from '../styles/Portfolio.module.scss'
 import Layout from '../components/layout'
 import WorkTabs from '../components/WorkTabs/WorkTabs';
 import TitleText from '../components/TitleText/TitleText';
@@ -24,7 +24,7 @@ export async function getStaticProps(context) {
   }
 }
 
-export default function Works({data}) {
+export default function Portfolio({data}) {
   return (
     <Layout>
         <Head>
