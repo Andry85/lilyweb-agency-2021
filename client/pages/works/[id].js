@@ -79,10 +79,60 @@ export default function Work({works,jsonObj}) {
             <h2 className="headerBottom__title">{jsonObj.worksPageDetail.header.title}</h2>
             <h3 className="headerBottom__subtitle">{jsonObj.worksPageDetail.header.subtitle}</h3>
           </div>  
+        </div>
+        <div className={styles.workWrapper}>
+            <h3 className={styles.workWrapper__cat}>{works.cat}</h3>
+            <h2 className={styles.workWrapper__title}>{works.title}</h2>
+            <div className={styles.workPreambule}>
+              <div className={styles.workPreambule__left}>
+                <p className={styles.workPreambule__smallDesc}>{works.smallDesc}</p>
+                <p className={styles.workPreambule__longDesc}>{works.longDesc}</p>
+              </div>
+              <div className={styles.workPreambule__right}>
+                <aside>
+                  <ul>
+                    <li>
+                      <h4>Client</h4>
+                      <p>{works.client}</p>
+                    </li>
+                    <li>
+                      <h4>Technology</h4>
+                      <p>{works.technology}</p>
+                    </li>
+                    <li>
+                      <h4>Created Date</h4>
+                      <p>{works.createdDate}</p>
+                    </li>
+                    <li>
+                      <h4>Website</h4>
+                      <p>{works.link}</p>
+                    </li>
+                  </ul>
+                </aside>
+              </div>
+            </div>
+            <ul className={styles.workImages}>
+              {works.images.map((item, index) => (
+                  <li key={index}>
+                    <img src={item} />
+                  </li>
+              ))}
+            </ul>
+            <div className={styles.workPostambule}>
+                <h2 className={styles.workPostambule__title}>{works.prew.title}</h2>
+                <p className={styles.workPostambule__desc}>{works.prew.desc}</p>
+                <div className={styles.workPostambule__content}>
+                  <div className={styles.workPostambule__mobile}>
+                    <img src={works.prew.mobilePic} />
+                  </div>
+                  <div className={styles.workPostambule__desktop}>
+                  <img src={works.prew.desktopPic} />
+                  </div>
+                </div>
+            </div>
         </div>  
           
-          {works.title}
-          {works.description}
+          
          
       
     </Layout>
