@@ -159,3 +159,73 @@
         display: flex;
     }
 }
+
+.reviewWrapper {
+    padding: 53px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__pic {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__text {
+        background: #f8f8f8;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        blockquote {
+            text-align: center;
+            
+            p {
+                font-size: 2rem;
+                line-height: 1.7;
+                color: #3e3e3e;
+            }
+        }
+
+    }
+
+    &__q {
+        background: url(../public/images/work/q.png) no-repeat;
+        width: 28px;
+        height: 24px;
+        display: inline-block;
+        margin: 0 0 35px 0;
+    }
+
+    &__author {
+        color: #666;
+        font-size: 1.5rem;
+        padding: 42px 0 20px 0;
+
+        &::before {
+            content: '';
+            width: 34px;
+            height: 1px;
+            background: #666;
+            display: inline-block;
+            margin: 0 11px 0 0;
+            position: relative;
+            top: -4px;
+        }
+    }
+
+    &__video {
+        > div {
+            height: 100%;
+
+            > div {
+                height: 100%;
+            }
+        }
+    }
+
+}

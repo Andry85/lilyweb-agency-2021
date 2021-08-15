@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../../styles/Work.module.scss'
 import Layout from '../../components/layout'
+import Video from '../../components/Video/Video'
 
 
 // This function gets called at build time
@@ -129,6 +130,25 @@ export default function Work({works,jsonObj}) {
                   <img src={works.prew.desktopPic} />
                   </div>
                 </div>
+            </div>
+            <div className={styles.reviewWrapper}>
+              <div className={styles.reviewWrapper__pic}>
+                <img src={works.testimonial.authorPic} />
+              </div>
+              <div className={styles.reviewWrapper__text}>
+                <blockquote>
+                  <span className={styles.reviewWrapper__q}></span>
+                  <p>{works.testimonial.text}</p>
+                </blockquote>
+                <div className={styles.reviewWrapper__author}>{works.testimonial.author}</div>
+              </div>
+              <div className={styles.reviewWrapper__video}>
+              <Video
+                  src={works.testimonial.video.src} 
+                  type={works.testimonial.video.type} 
+                  poster={works.testimonial.video.poster} 
+                />
+              </div>
             </div>
         </div>  
           
