@@ -2,6 +2,8 @@ import Head from 'next/head'
 import styles from '../../styles/Work.module.scss'
 import Layout from '../../components/layout'
 import Video from '../../components/Video/Video'
+import SocialMediaDark from '../../components/SocialMediaDark/SocialMediaDark'
+import Pagination from '../../components/Pagination/Pagination'
 
 
 // This function gets called at build time
@@ -150,6 +152,8 @@ export default function Work({works,jsonObj}) {
                 />
               </div>
             </div>
+            <SocialMediaDark/>
+            <Pagination/>
         </div>  
           
           
