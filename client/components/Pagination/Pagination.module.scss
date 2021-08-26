@@ -3,4 +3,49 @@
 
 .pagination {
   
+
+  &__wrapper {
+    border-top: 1px solid #f2f2f2;
+    padding: 60px 0 120px 0;
+  }
+
+  &__inner {
+      max-width: 1190px;
+      padding: 0 10px;
+      margin: 0 auto;
+  }
+
+  &__list {
+      display: flex;
+  }
+
+  &__item {
+      flex-basis: 50%;
+      text-align: right;
+
+      &:first-child {
+          text-align: left;
+      }
+
+      a {
+          &:hover {
+              text-decoration: none;
+          }
+
+          div {
+              color: #666;
+              text-transform: uppercase;
+              font-size: 1.5rem;
+
+              span {
+                  padding: 0 5px;
+              }
+          }
+
+          h3 {
+            color: #333;
+            font-size: 2rem;
+          }
+      }
+  }
 }
