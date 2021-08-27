@@ -3,6 +3,10 @@
 .workWrapper {
     padding: 123px 0 0 0;
 
+    @include breakpoint(md) {
+        padding: 40px 0;
+    }
+
     &__cat {
         text-align: center;
         font-size: 2rem;
@@ -25,20 +29,33 @@
 .workPreambule {
 
     max-width: 1190px;
-    padding: 10px 0;
     margin: 0 auto;
     border-top: 1px solid #f3f3f3;
-    padding: 67px 0 120px 0;
+    padding: 67px 10px 120px 10px;
     display: flex;
     justify-content: space-between;
+
+    @include breakpoint(md) {
+        flex-wrap: wrap;
+        padding: 25px 10px;
+    }
 
 
     &__left {
         flex-basis: 770px;
+
+        @include breakpoint(md) {
+            flex-basis: 100%;
+        }
     }
 
     &__right {
         flex-basis: 270px;
+
+        @include breakpoint(md) {
+            flex-basis: 100%;
+            padding: 35px 0 0 0;
+        }
 
         aside {
             ul {
@@ -88,6 +105,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 
+    @include breakpoint(md) {
+        grid-template-columns: 1fr;
+    }
+
     li {
         img {
             width: 100%;
@@ -98,7 +119,7 @@
 .workPostambule {
 
     max-width: 1190px;
-    padding: 10px 0;
+    padding: 0 10px;
     margin: 0 auto;
 
     &__title {
@@ -129,6 +150,22 @@
         margin: 0 0 0 -126px;
         padding: 69px 49px 86px 148px;
 
+        @include breakpoint(lg) {
+            width: 244px;
+            height: 394px;
+            padding: 35px 25px 43px 74px;
+            margin: 0 0 0 140px;
+        }
+
+        @include breakpoint(md) {
+            margin: 0 0 0 40px;
+        }
+
+        @include breakpoint(sm) {
+            display: none;
+        }
+
+
         img {
             width: 100%;
             height: 100%;
@@ -147,11 +184,33 @@
         flex-shrink: 0;
         padding: 43px 190px 170px 180px;
 
+        @include breakpoint(lg) {
+            width: 533px;
+            height: 324px;
+            padding: 21px 95px 85px 90px;
+            margin: 80px 0 0 0px;
+
+            @include breakpoint(md) {
+                margin: 50px 0 0 -70px;
+            }
+
+            @include breakpoint(sm) {
+                width: 355px;
+                height: 216px;
+                padding: 14px 63px 56px 60px;
+                margin: 0 auto;
+            }
+        }
+
         img {
             width: 100%;
             height: 100%;
             border-radius: 15px;
             object-fit: cover;
+
+            @include breakpoint(sm) {
+               border-radius: 3px;
+            }
         }
     }
 
@@ -164,6 +223,14 @@
     padding: 53px 0 0 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @include breakpoint(lg) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(sm) {
+        grid-template-columns: 1fr;
+    }
 
     &__pic {
         img {
@@ -226,6 +293,21 @@
                 height: 100%;
             }
         }
+
+        @include breakpoint(lg) {
+            grid-row-start: 1; 
+            grid-row-end: 2; 
+            grid-column-start: 1;   
+            grid-column-end: 3; 
+        }
+
+        @include breakpoint(sm) {
+            grid-row-start: 1; 
+            grid-row-end: 2; 
+            grid-column-start: 1;   
+            grid-column-end: 2;
+        }
+
     }
 
 }

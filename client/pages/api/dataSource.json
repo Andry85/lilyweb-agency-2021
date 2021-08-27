@@ -448,6 +448,24 @@
             "subtitle": "Read what our client saying about us"
         }
     },
+    "contantPage": {
+        "header": {
+            "title": "Contact us",
+            "subtitle": "We’re proud not to be a studio that only works in one particular sector, instead we lead by our disruptive digital service offering."
+        },
+        "offer": {
+            "title": "Get in touch",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus dignissim lacus, et rhoncus ex lacinia et. Nunc vel neque sed sem fringilla condimentum."
+        },
+        "form": {
+            "title": "Contact Information",
+            "subtitle": "Drop us a Line",
+            "adress": "28 Green Tower, Street Name New York City,",
+            "phone": "+84 846 250 592",
+            "email": "contact@stuck.com",
+            "website": "demostuck.com"
+        }
+    },
     "servicePage": {
         "header": {
             "title": "Services",
