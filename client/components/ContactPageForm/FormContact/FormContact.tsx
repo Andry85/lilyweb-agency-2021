@@ -8,8 +8,8 @@ import {
   Field,
   FieldProps,
 } from 'formik';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLongArrowAltRight} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 
 interface MyFormValues {
   firstName: string;
@@ -45,26 +45,26 @@ export const FormContact: React.FC<{}> = () => {
             <label>Name:</label>
             <Field name="firstName" placeholder="David Miller" />
           </div>
-          <div className={styles.formService__col}>
+          <div className={styles.form__col}>
             <label>Email:</label>
             <Field name="email" placeholder="davidmiller@gmail.com" />
           </div>
-          <div className={styles.formService__col}>
+          <div className={styles.form__col}>
             <label>Subject:</label>
             <Field name="subject:" placeholder="your subject" />
           </div>
-          <div className={styles.formService__col}>
+          <div className={styles.form__col}>
             <label>Phone:</label>
             <Field name="phone" placeholder="+880859545" />
           </div>
-          <div className={styles.formService__col}>
+          <div className={`${styles.form__col} ${styles.form__colArear}`}>
             <label>Message:</label>
-            <Field name="message" placeholder="Hello, do you have time to talk with me?" />
+            <Field name="message" placeholder="Hello, do you have time to talk with me?" as="textarea" />
           </div>
           
-          <div className={styles.formService__row}>
+          <div className={`${styles.form__col} ${styles.form__colSubmit}`}>
             <button type="submit">
-              Request Callback
+              <FontAwesomeIcon icon={faPaperPlane} />
             </button>
           </div>
         </Form>

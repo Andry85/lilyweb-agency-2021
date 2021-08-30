@@ -464,6 +464,10 @@
             "phone": "+84 846 250 592",
             "email": "contact@stuck.com",
             "website": "demostuck.com"
+        },
+        "map": {
+            "title": "Find us on map",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus dignissim lacus, et rhoncus ex lacinia et. Nunc vel neque sed sem fringilla condimentum. "
         }
     },
     "servicePage": {
