@@ -1,0 +1,53 @@
+@import "./utils/variables";
+
+.blogsWrapper {
+   background: #f6f6f6;
+
+    &__container {
+        max-width: 1170px;
+        margin: 0 auto; 
+        padding: 130px 0;
+    }
+}
+
+.blogsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+    &__item {
+        background: #fff;
+    }
+
+    &__img {
+        position: relative;
+
+        img {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+       
+    }
+
+    &__date {
+        display: inline-block;
+        padding: 5px 18px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    &__pic {
+        figcaption {
+            font-size: 2rem;
+            color: #333;
+            margin: 20px;
+            font-weight: 500;
+        }
+       
+    }
+}

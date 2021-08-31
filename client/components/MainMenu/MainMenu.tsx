@@ -38,7 +38,7 @@ function MainMenu({ishome}: MainMenuProp): JSX.Element {
           </Link>
         </li> 
         <li>
-          <Link href="/blog">
+          <Link href="/blogs">
             <a>Blog</a>
           </Link>
         </li>
