@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Blogs.module.scss'
 import Layout from '../components/layout'
 import Link from 'next/link'
+import PaginationBlog from '../components/PaginationBlog/PaginationBlog'
 
 
 
@@ -63,6 +64,7 @@ export default function Blogs({data}) {
                   </li>
               )}
             </ul>
+            <PaginationBlog/>
           </div>
         </div>
 

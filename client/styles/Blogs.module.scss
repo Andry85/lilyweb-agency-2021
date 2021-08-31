@@ -22,6 +22,7 @@
 
     &__img {
         position: relative;
+        border-radius: 4px;
 
         img {
             border-top-left-radius: 4px;
@@ -47,7 +48,63 @@
             color: #333;
             margin: 20px;
             font-weight: 500;
+            position: relative;
+            padding: 0 0 14px 0;
+
+            &::before,
+            &::after {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background: #ededed;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+
+            &::after {
+                bottom: 4px;
+            }
         }
-       
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        color: #666;
+        line-height: 1.73;
+        padding: 3px 20px 20px 20px;
+    }
+
+    &__footer {
+        border-top: 1px solid #ededed;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+
+        img {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+
+        span {
+            color: #888;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            padding: 0 0 0 10px;
+        }
+    }
+
+    &__link {
+        a {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+        }
     }
 }

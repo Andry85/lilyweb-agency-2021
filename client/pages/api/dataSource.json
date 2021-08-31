@@ -998,6 +998,30 @@
                     "name": "by admin"
                 },
                 "path": "https://github.com/"
+            },
+            {
+                "id": 3,
+                "pic": "/images/indexslider/001.jpg",
+                "title": "Before you start to write, have a clear understanding",
+                "date": "02 SEPTEMBER 2017",
+                "text": "Before you even write anything, you need to pick a topic for your blog post. The topic can be pretty general to start with.",
+                "author": {
+                    "avatar": "/images/indexslider/001.jpg",
+                    "name": "by admin"
+                },
+                "path": "https://github.com/"
+            },
+            {
+                "id": 4,
+                "pic": "/images/indexslider/001.jpg",
+                "title": "Before you start to write, have a clear understanding",
+                "date": "02 SEPTEMBER 2017",
+                "text": "Before you even write anything, you need to pick a topic for your blog post. The topic can be pretty general to start with.",
+                "author": {
+                    "avatar": "/images/indexslider/001.jpg",
+                    "name": "by admin"
+                },
+                "path": "https://github.com/"
             }
         ]
     }
