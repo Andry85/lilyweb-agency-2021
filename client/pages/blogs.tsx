@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Head from 'next/head'
 import styles from '../styles/Blogs.module.scss'
 import Layout from '../components/layout'
@@ -25,6 +26,14 @@ export async function getStaticProps(context) {
 }
 
 export default function Blogs({data}) {
+
+  const [activePage, setActivePage] = useState(0);
+  const perPage = 4;
+  const totalPage = data.blogPage.blogList.length;
+  const dataList = data.blogPage.blogList.slice(0, perPage);
+  const paginatorList = Math.ceil(totalPage / perPage);
+
+
   return (
     <Layout>
         <Head>
@@ -40,7 +49,7 @@ export default function Blogs({data}) {
         <div className={styles.blogsWrapper}>
           <div className={styles.blogsWrapper__container}>
             <ul className={styles.blogsList}>
-              {data.blogPage.blogList.map((item) => 
+              {dataList.map((item) => 
                   <li key={item.id} className={styles.blogsList__item}>     
                       <figure className={styles.blogsList__pic}>
                         <div className={styles.blogsList__img}>
@@ -64,7 +73,10 @@ export default function Blogs({data}) {
                   </li>
               )}
             </ul>
-            <PaginationBlog/>
+            <PaginationBlog
+              paginatorList = {paginatorList}
+            
+            />
           </div>
         </div>
 

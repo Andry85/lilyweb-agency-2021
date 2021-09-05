@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 
 type PaginationBlogProp = {
+  paginatorList: number,
   prevW: {
     id: number;
     title: string;
@@ -17,7 +18,15 @@ type PaginationBlogProp = {
           
 
 
-function PaginationBlog({prevW, nextW}: PaginationBlogProp): JSX.Element {
+function PaginationBlog({prevW, nextW, paginatorList}: PaginationBlogProp): JSX.Element {
+
+  const paginatorListArr = [];
+
+  for(let i = 0; i < paginatorList; i++) {
+    paginatorListArr.push(i);
+  }
+
+  console.log(paginatorListArr);
 
   // const prevUrl = prevW.innerLink;
   // const prevUrlArr = prevUrl.split('/');
@@ -42,6 +51,20 @@ function PaginationBlog({prevW, nextW}: PaginationBlogProp): JSX.Element {
                   </a> 
                 </Link>
               </li>
+
+              {paginatorListArr.map((item) => 
+
+                <li key={item} className={styles.paginationBlog__item}>
+                  <Link href="#">
+                    <a>
+                      <div>
+                        <span>{item + 1}</span>
+                      </div>
+                    </a> 
+                  </Link>
+                </li>
+              )}
+
               <li className={styles.paginationBlog__item}>
                 <Link href='#'>
                   <a>
