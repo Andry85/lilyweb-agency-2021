@@ -19,7 +19,7 @@
     &__item {
         margin: 0 5px;
 
-        a {
+        i {
             border: 1px solid #efefef;
             border-radius: 2px;
             background: #fff;
@@ -27,6 +27,8 @@
             display: block;
             line-height: 40px;
             padding: 0 18px;
+            font-style: normal;
+            cursor: pointer;
 
             &:hover {
                 color: #fff;

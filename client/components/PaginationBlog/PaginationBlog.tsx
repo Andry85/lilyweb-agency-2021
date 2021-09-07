@@ -1,24 +1,20 @@
+import React, { useState } from 'react';
 import styles from './PaginationBlog.module.scss'
-import Link from 'next/link'
 
 
 type PaginationBlogProp = {
+  childToParent: (childdata: any) => void,
+  prevPage: (childdata: any) => void,
   paginatorList: number,
-  prevW: {
-    id: number;
-    title: string;
-    innerLink: string;
-  },
-  nextW: {
-    id: number;
-    title: string;
-    innerLink: string;
-  }
+  currentPage: number,
+  step: number
 }
+
           
 
 
-function PaginationBlog({prevW, nextW, paginatorList}: PaginationBlogProp): JSX.Element {
+function PaginationBlog({paginatorList, childToParent, currentPage, step, prevPage}: PaginationBlogProp): JSX.Element {
+  const [current, setCurrent] = useState(0);
 
   const paginatorListArr = [];
 
@@ -26,15 +22,10 @@ function PaginationBlog({prevW, nextW, paginatorList}: PaginationBlogProp): JSX.
     paginatorListArr.push(i);
   }
 
-  console.log(paginatorListArr);
+  console.log('currentPage', currentPage);
+  console.log('step', step);
 
-  // const prevUrl = prevW.innerLink;
-  // const prevUrlArr = prevUrl.split('/');
-  // const prevUrlLink = prevUrlArr[prevUrlArr.length -1];
 
-  // const nextUrl = nextW.innerLink;
-  // const nextUrlArr = nextUrl.split('/');
-  // const nextUrlLink = nextUrlArr[nextUrlArr.length -1];
 
 
   return (
@@ -43,36 +34,35 @@ function PaginationBlog({prevW, nextW, paginatorList}: PaginationBlogProp): JSX.
         <div className={styles.paginationBlog__inner}>
           <ul className={styles.paginationBlog__list}>
               <li className={styles.paginationBlog__item}>
-                <Link href="#">
-                  <a>
+                  <i onClick={() => {
+                      prevPage(current)
+                    }}>
                     <div className={styles.paginationBlog__prew}>
                       <span>Prev</span>
                     </div>
-                  </a> 
-                </Link>
+                  </i> 
               </li>
 
               {paginatorListArr.map((item) => 
 
                 <li key={item} className={styles.paginationBlog__item}>
-                  <Link href="#">
-                    <a>
+                    <i onClick={() => {
+                      childToParent(item + 1)
+                      setCurrent(item + 1)
+                    }}>
                       <div>
                         <span>{item + 1}</span>
                       </div>
-                    </a> 
-                  </Link>
+                    </i> 
                 </li>
               )}
 
               <li className={styles.paginationBlog__item}>
-                <Link href='#'>
-                  <a>
+                    <i>
                     <div className={styles.paginationBlog__next}>
                       <span>Next</span>
                     </div>
-                  </a>
-                </Link>
+                  </i>
               </li>
           </ul>
         </div>

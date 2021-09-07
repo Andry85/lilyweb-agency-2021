@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
 import styles from '../styles/Blogs.module.scss'
 import Layout from '../components/layout'
@@ -30,8 +30,49 @@ export default function Blogs({data}) {
   const [activePage, setActivePage] = useState(0);
   const perPage = 4;
   const totalPage = data.blogPage.blogList.length;
-  const dataList = data.blogPage.blogList.slice(0, perPage);
   const paginatorList = Math.ceil(totalPage / perPage);
+  const dataList = data.blogPage.blogList;
+  console.log(dataList);
+
+
+  const childToParent = (childdata) => {
+    console.log(childdata);
+    setActivePage(childdata);
+    
+  }
+
+  
+
+  var step = perPage;
+  var currentPage = activePage;
+  if (activePage !== 0) {
+    step = perPage * activePage;
+    currentPage = step - perPage;
+  }
+
+
+  
+
+  const prevPage = (data) => {
+
+    if (activePage !== 0) {
+      step = step - 4;
+      currentPage = currentPage - 4;
+
+      console.log('step', step);
+      console.log('currentPage', currentPage);
+    }
+
+
+  }
+
+  let dataListRender = dataList.slice(currentPage, step);
+
+
+  
+  
+
+  console.log(dataListRender);
 
 
   return (
@@ -49,7 +90,7 @@ export default function Blogs({data}) {
         <div className={styles.blogsWrapper}>
           <div className={styles.blogsWrapper__container}>
             <ul className={styles.blogsList}>
-              {dataList.map((item) => 
+              {dataListRender.map((item) => 
                   <li key={item.id} className={styles.blogsList__item}>     
                       <figure className={styles.blogsList__pic}>
                         <div className={styles.blogsList__img}>
@@ -75,6 +116,10 @@ export default function Blogs({data}) {
             </ul>
             <PaginationBlog
               paginatorList = {paginatorList}
+              childToParent={childToParent}
+              currentPage = {currentPage}
+              step = {step}
+              prevPage={prevPage}
             
             />
           </div>
