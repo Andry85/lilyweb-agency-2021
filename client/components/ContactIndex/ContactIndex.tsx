@@ -1,6 +1,7 @@
 import styles from './ContactIndex.module.scss'
 import {FormContact} from './FormContact/FormContact';
-import Image from 'next/image'
+import Image from 'next/image';
+
 
 
 

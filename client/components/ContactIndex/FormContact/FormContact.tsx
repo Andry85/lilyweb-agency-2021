@@ -9,6 +9,7 @@ import {
   FieldProps,
 } from 'formik';
 
+
 interface MyFormValues {
   firstName: string;
   lastName: string;
@@ -30,7 +31,7 @@ export const FormContact: React.FC<{}> = () => {
         initialValues={initialValues}
         onSubmit={(values, actions) => {
           console.log({ values, actions });
-          alert(JSON.stringify(values, null, 2));
+          alert(JSON.stringify(values));
           actions.setSubmitting(false);
         }}
       >
