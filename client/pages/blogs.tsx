@@ -32,47 +32,40 @@ export default function Blogs({data}) {
   const totalPage = data.blogPage.blogList.length;
   const paginatorList = Math.ceil(totalPage / perPage);
   const dataList = data.blogPage.blogList;
-  console.log(dataList);
 
 
   const childToParent = (childdata) => {
     console.log(childdata);
     setActivePage(childdata);
-    
   }
 
   
-
-  var step;
-  var currentPage;
-
-
-
-  function showPages() {
-
-    step = perPage;
-    currentPage = activePage;
+  let step = perPage;
+  let currentPage = activePage;
   
 
-    if (activePage !== 0) {
-      step = perPage * activePage;
-      currentPage = step - perPage;
+  if (activePage !== 0) {
+    step = perPage * activePage;
+    currentPage = step - perPage;
+  }
+
+
+  const prevPage = (data) => {
+
+    if (activePage > 1) {
+      setActivePage(activePage - 1);
     }
 
   }
-  showPages()
 
-  
-  const prevPage = (data) => {
-    setActivePage(activePage - 1);
+  const nextPage = (data) => {
+    
+    if (activePage < paginatorList) {
+      setActivePage(activePage + 1);
+    }
   }
   
-
-
   let dataListRender = dataList.slice(currentPage, step);
-
-
-
 
   return (
     <Layout>
@@ -119,6 +112,7 @@ export default function Blogs({data}) {
               currentPage = {currentPage}
               step = {step}
               prevPage={prevPage}
+              nextPage = {nextPage}
             
             />
           </div>

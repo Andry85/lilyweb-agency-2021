@@ -5,6 +5,7 @@ import styles from './PaginationBlog.module.scss'
 type PaginationBlogProp = {
   childToParent: (childdata: any) => void,
   prevPage: (childdata: any) => void,
+  nextPage: (childdata: any) => void,
   paginatorList: number,
   currentPage: number,
   step: number
@@ -12,21 +13,13 @@ type PaginationBlogProp = {
 
           
 
-
-function PaginationBlog({paginatorList, childToParent, currentPage, step, prevPage}: PaginationBlogProp): JSX.Element {
+function PaginationBlog({paginatorList, childToParent, currentPage, step, prevPage, nextPage}: PaginationBlogProp): JSX.Element {
   const [current, setCurrent] = useState(0);
-
   const paginatorListArr = [];
 
   for(let i = 0; i < paginatorList; i++) {
     paginatorListArr.push(i);
   }
-
-  console.log('currentPage', currentPage);
-  console.log('step', step);
-
-
-
 
   return (
     <div className={styles.paginationBlog}>
@@ -58,11 +51,13 @@ function PaginationBlog({paginatorList, childToParent, currentPage, step, prevPa
               )}
 
               <li className={styles.paginationBlog__item}>
-                    <i>
-                    <div className={styles.paginationBlog__next}>
-                      <span>Next</span>
-                    </div>
-                  </i>
+                    <i onClick={() => {
+                        nextPage(current)
+                      }}>
+                      <div className={styles.paginationBlog__prew}>
+                        <span>Next</span>
+                      </div>
+                    </i> 
               </li>
           </ul>
         </div>
