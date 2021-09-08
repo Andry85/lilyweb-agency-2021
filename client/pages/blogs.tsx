@@ -43,36 +43,35 @@ export default function Blogs({data}) {
 
   
 
-  var step = perPage;
-  var currentPage = activePage;
-  if (activePage !== 0) {
-    step = perPage * activePage;
-    currentPage = step - perPage;
-  }
+  var step;
+  var currentPage;
 
 
+
+  function showPages() {
+
+    step = perPage;
+    currentPage = activePage;
   
 
-  const prevPage = (data) => {
-
     if (activePage !== 0) {
-      step = step - 4;
-      currentPage = currentPage - 4;
-
-      console.log('step', step);
-      console.log('currentPage', currentPage);
+      step = perPage * activePage;
+      currentPage = step - perPage;
     }
 
-
   }
+  showPages()
+
+  
+  const prevPage = (data) => {
+    setActivePage(activePage - 1);
+  }
+  
+
 
   let dataListRender = dataList.slice(currentPage, step);
 
 
-  
-  
-
-  console.log(dataListRender);
 
 
   return (
