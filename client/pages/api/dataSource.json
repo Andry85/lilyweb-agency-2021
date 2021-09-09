@@ -973,7 +973,22 @@
                     "avatar": "/images/indexslider/001.jpg",
                     "name": "by admin"
                 },
-                "path": "https://github.com/"
+                "path": "blog/0",
+                "details": {
+                    "gallery": [
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg",
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg"
+                    ],
+                    "title": "Has your blog focus shifted in recent months?",
+                    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. ",
+                    "cile": {
+                        "text": "It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose wisely",
+                        "auth": "David Leo"
+                    },
+                    "postText": "Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate,"
+                }
             },
             {
                 "id": 1,
@@ -985,7 +1000,22 @@
                     "avatar": "/images/indexslider/001.jpg",
                     "name": "by admin"
                 },
-                "path": "https://github.com/"
+                "path": "blog/1",
+                "details": {
+                    "gallery": [
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg",
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg"
+                    ],
+                    "title": "Has your blog focus shifted in recent months?",
+                    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. ",
+                    "cile": {
+                        "text": "It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose wisely",
+                        "auth": "David Leo"
+                    },
+                    "postText": "Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate,"
+                }
             },
             {
                 "id": 2,
@@ -997,7 +1027,22 @@
                     "avatar": "/images/indexslider/001.jpg",
                     "name": "by admin"
                 },
-                "path": "https://github.com/"
+                "path": "blog/2",
+                "details": {
+                    "gallery": [
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg",
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg"
+                    ],
+                    "title": "Has your blog focus shifted in recent months?",
+                    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. ",
+                    "cile": {
+                        "text": "It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose wisely",
+                        "auth": "David Leo"
+                    },
+                    "postText": "Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate,"
+                }
             },
             {
                 "id": 3,
@@ -1009,7 +1054,22 @@
                     "avatar": "/images/indexslider/001.jpg",
                     "name": "by admin"
                 },
-                "path": "https://github.com/"
+                "path": "blog/3",
+                "details": {
+                    "gallery": [
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg",
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg"
+                    ],
+                    "title": "Has your blog focus shifted in recent months?",
+                    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. ",
+                    "cile": {
+                        "text": "It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose wisely",
+                        "auth": "David Leo"
+                    },
+                    "postText": "Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate,"
+                }
             },
             {
                 "id": 4,
@@ -1021,7 +1081,22 @@
                     "avatar": "/images/indexslider/001.jpg",
                     "name": "by admin"
                 },
-                "path": "https://github.com/"
+                "path": "blog/4",
+                "details": {
+                    "gallery": [
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg",
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg"
+                    ],
+                    "title": "Has your blog focus shifted in recent months?",
+                    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. ",
+                    "cile": {
+                        "text": "It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose wisely",
+                        "auth": "David Leo"
+                    },
+                    "postText": "Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate,"
+                }
             },
             {
                 "id": 5,
@@ -1033,7 +1108,22 @@
                     "avatar": "/images/indexslider/001.jpg",
                     "name": "by admin"
                 },
-                "path": "https://github.com/"
+                "path": "blog/5",
+                "details": {
+                    "gallery": [
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg",
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg"
+                    ],
+                    "title": "Has your blog focus shifted in recent months?",
+                    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. ",
+                    "cile": {
+                        "text": "It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose wisely",
+                        "auth": "David Leo"
+                    },
+                    "postText": "Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate,"
+                }
             },
             {
                 "id": 6,
@@ -1045,7 +1135,22 @@
                     "avatar": "/images/indexslider/001.jpg",
                     "name": "by admin"
                 },
-                "path": "https://github.com/"
+                "path": "blog/6",
+                "details": {
+                    "gallery": [
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg",
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg"
+                    ],
+                    "title": "Has your blog focus shifted in recent months?",
+                    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. ",
+                    "cile": {
+                        "text": "It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose wisely",
+                        "auth": "David Leo"
+                    },
+                    "postText": "Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate,"
+                }
             },
             {
                 "id": 7,
@@ -1057,7 +1162,22 @@
                     "avatar": "/images/indexslider/001.jpg",
                     "name": "by admin"
                 },
-                "path": "https://github.com/"
+                "path": "blog/7",
+                "details": {
+                    "gallery": [
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg",
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg"
+                    ],
+                    "title": "Has your blog focus shifted in recent months?",
+                    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. ",
+                    "cile": {
+                        "text": "It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose wisely",
+                        "auth": "David Leo"
+                    },
+                    "postText": "Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate,"
+                }
             },
             {
                 "id": 8,
@@ -1069,7 +1189,22 @@
                     "avatar": "/images/indexslider/001.jpg",
                     "name": "by admin"
                 },
-                "path": "https://github.com/"
+                "path": "blog/8",
+                "details": {
+                    "gallery": [
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg",
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg"
+                    ],
+                    "title": "Has your blog focus shifted in recent months?",
+                    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. ",
+                    "cile": {
+                        "text": "It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose wisely",
+                        "auth": "David Leo"
+                    },
+                    "postText": "Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate,"
+                }
             },
             {
                 "id": 9,
@@ -1081,7 +1216,22 @@
                     "avatar": "/images/indexslider/001.jpg",
                     "name": "by admin"
                 },
-                "path": "https://github.com/"
+                "path": "blog/9",
+                "details": {
+                    "gallery": [
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg",
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg"
+                    ],
+                    "title": "Has your blog focus shifted in recent months?",
+                    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. ",
+                    "cile": {
+                        "text": "It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose wisely",
+                        "auth": "David Leo"
+                    },
+                    "postText": "Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate,"
+                }
             },
             {
                 "id": 10,
@@ -1093,7 +1243,22 @@
                     "avatar": "/images/indexslider/001.jpg",
                     "name": "by admin"
                 },
-                "path": "https://github.com/"
+                "path": "blog/10",
+                "details": {
+                    "gallery": [
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg",
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg"
+                    ],
+                    "title": "Has your blog focus shifted in recent months?",
+                    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. ",
+                    "cile": {
+                        "text": "It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose wisely",
+                        "auth": "David Leo"
+                    },
+                    "postText": "Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate,"
+                }
             },
             {
                 "id": 11,
@@ -1105,7 +1270,22 @@
                     "avatar": "/images/indexslider/001.jpg",
                     "name": "by admin"
                 },
-                "path": "https://github.com/"
+                "path": "blog/11",
+                "details": {
+                    "gallery": [
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg",
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg"
+                    ],
+                    "title": "Has your blog focus shifted in recent months?",
+                    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. ",
+                    "cile": {
+                        "text": "It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose wisely",
+                        "auth": "David Leo"
+                    },
+                    "postText": "Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate,"
+                }
             },
             {
                 "id": 12,
@@ -1117,7 +1297,22 @@
                     "avatar": "/images/indexslider/001.jpg",
                     "name": "by admin"
                 },
-                "path": "https://github.com/"
+                "path": "blog/12",
+                "details": {
+                    "gallery": [
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg",
+                        "/images/aboutslider/001.jpg",
+                        "/images/aboutslider/002.jpg"
+                    ],
+                    "title": "Has your blog focus shifted in recent months?",
+                    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. ",
+                    "cile": {
+                        "text": "It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose wisely",
+                        "auth": "David Leo"
+                    },
+                    "postText": "Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere. Proin tincidunt fermentum arcu. Nam ac elementum nibh. Donec facilisis interdum orci sit amet ullamcorper. Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate,"
+                }
             }
         ]
     }

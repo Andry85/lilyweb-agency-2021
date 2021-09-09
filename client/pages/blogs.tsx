@@ -86,7 +86,9 @@ export default function Blogs({data}) {
                   <li key={item.id} className={styles.blogsList__item}>     
                       <figure className={styles.blogsList__pic}>
                         <div className={styles.blogsList__img}>
-                          <img src={item.pic} />
+                          <Link href={item.path}>
+                            <a><img src={item.pic} /></a>
+                          </Link>
                           <span className={styles.blogsList__date}>{item.date}</span>
                         </div> 
                         <figcaption>{item.title}</figcaption>
