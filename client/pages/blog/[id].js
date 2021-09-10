@@ -107,7 +107,7 @@ export default function Work({resultBlog,jsonObj}) {
               <span>|</span>
               <p>{resultBlog.date}</p>
             </div>
-            <div class="addthis_sharing_toolbox"></div>
+            <div className="addthis_sharing_toolbox"></div>
           </div>
         </div>
 
