@@ -2,6 +2,9 @@ import Head from 'next/head'
 import styles from '../../styles/Blog.module.scss'
 import Layout from '../../components/layout'
 import BlogSlider from '../../components/BlogSlider/BlogSlider'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faQuoteLeft} from '@fortawesome/free-solid-svg-icons';
+
 
 
 // This function gets called at build time
@@ -82,16 +85,29 @@ export default function Work({resultBlog,jsonObj}) {
 
         <div className={styles.blogDeatilPage}>
           <BlogSlider dataSlider = {resultBlog.details.gallery} />
-          <h1>{resultBlog.details.title}</h1>
-          <p>{resultBlog.details.text}</p>
-          <blockquote>
-            <p>{resultBlog.details.cile.text}</p>
-            <span>{resultBlog.details.cile.auth}</span>
-          </blockquote>
-          <p>{resultBlog.details.postText}</p>
-          <div>
-            <p>{resultBlog.author.name}</p>
-            <p>{resultBlog.date}</p>
+          <h1 className={styles.blogDeatilPage__title}>{resultBlog.details.title}</h1>
+          <p className={styles.blogDeatilPage__text}>{resultBlog.details.text}</p>
+
+          {resultBlog.details.cite && 
+            <blockquote className={styles.blogDeatilPage__cite}>
+              <p className={styles.blogDeatilPage__citeText}>
+                <span className={styles.blogDeatilPage__citeIcon}>
+                  <FontAwesomeIcon icon={faQuoteLeft} />
+                </span>
+                {resultBlog.details.cite.text}
+                </p>
+              <p className={styles.blogDeatilPage__citeAuth}>{resultBlog.details.cite.auth}</p>
+            </blockquote>
+          }
+          
+          <p className={styles.blogDeatilPage__postText}>{resultBlog.details.postText}</p>
+          <div className={styles.blogDeatilPage__info}>
+            <div  className={styles.blogDeatilPage__auth}>
+              <p>{resultBlog.author.name}</p>
+              <span>|</span>
+              <p>{resultBlog.date}</p>
+            </div>
+            <div class="addthis_sharing_toolbox"></div>
           </div>
         </div>
 

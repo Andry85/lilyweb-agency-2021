@@ -39,6 +39,7 @@ export default function Layout({ children, home}: Props) {
         <meta name="description" content="" />
         <meta name="og:title" />
         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fa50fc57dde6683" />
       </Head>
         {home ? (
           <>
