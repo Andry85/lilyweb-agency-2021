@@ -2,9 +2,30 @@ import React, { Component } from 'react';
 import styles from './SimpleMap.module.scss'
 import GoogleMapReact from 'google-map-react';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+type AnyReactComponentProps = { text: string; lat: number; lng: number;} & typeof defaultProps;
 
-class SimpleMap extends Component {
+const defaultProps = {
+  text: 'My Marker',
+  lat: 59.955413,
+  lng: 30.337844
+};
+
+
+
+const AnyReactComponent = (props: AnyReactComponentProps) => <div>{props.text}</div>;
+
+AnyReactComponent.defaultProps = defaultProps;
+
+type SimpleMapProps = typeof SimpleMap.defaultProps & {
+  center: {
+    lat: number;
+    lng: number;
+  },
+  zoom: number;
+};
+
+
+class SimpleMap extends Component<SimpleMapProps>  {
   static defaultProps = {
     center: {
       lat: 59.95,

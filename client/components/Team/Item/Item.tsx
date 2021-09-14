@@ -6,9 +6,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab} from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
 
+type ItemProps = {
+  dataItem: {
+    id: number;
+    img: string;
+    title: string;
+    position: string;
+    phone: string;
+    socials: {
+      id: number;
+      icon: string;
+      url: string; 
+    }[];
+  }[];
+};
 
 
-function Item({dataItem}): JSX.Element {
+
+function Item({dataItem}: ItemProps): JSX.Element {
 
   return (
       <ul className={styles.item}>
