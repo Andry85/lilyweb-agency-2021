@@ -3,13 +3,15 @@ import Link from 'next/link'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab} from '@fortawesome/free-brands-svg-icons'
+import { IconName } from '@fortawesome/fontawesome-common-types';
 library.add(fab)
 
 
 type SocialProp = {
   dataItems: {
     id: number;
-    url: string
+    url: string;
+    icon: IconName;
   }[];
 }
 

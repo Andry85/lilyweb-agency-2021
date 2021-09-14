@@ -13,7 +13,7 @@ import { faLongArrowAltRight} from '@fortawesome/free-solid-svg-icons'
 
 interface MyFormValues {
   firstName: string;
-  phone: number;
+  phoneNamber: string;
   email: string;
   help: string;
 }
