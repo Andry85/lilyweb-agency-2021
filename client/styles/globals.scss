@@ -88,27 +88,23 @@ img {
   margin: 0 10px;
   position: relative;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include breakpoint(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr;
+  }
+
 }
 .grid-item { 
-  width: 33.3%; 
   height: 450px;
   position: relative;
 
   @include breakpoint(sm) {
-    height: 225px;
-    width: 100%;
+    height: 350px;
   }
-
-  &:nth-child(2n) {
-    height: 615px;
-
-    @include breakpoint(sm) {
-      height: 305px;
-    }
-  }
-  &:nth-child(3n) {
-    height: 290px;
-
-  }
- 
 }

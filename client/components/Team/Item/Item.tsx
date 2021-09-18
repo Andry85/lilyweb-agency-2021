@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab} from '@fortawesome/free-brands-svg-icons'
+import { IconName } from '@fortawesome/fontawesome-svg-core';
 library.add(fab)
 
 type ItemProps = {
@@ -47,7 +48,7 @@ function Item({dataItem}: ItemProps): JSX.Element {
                 
                   <li key={el.id}>
                       <Link href={el.url}>
-                        <a><FontAwesomeIcon icon={["fab", `${el.icon}`]} /></a>
+                        <a><FontAwesomeIcon icon={["fab", `${el.icon as IconName}`]} /></a>
                       </Link>
                   </li>
                 )} 

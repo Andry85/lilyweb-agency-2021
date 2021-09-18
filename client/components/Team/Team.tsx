@@ -10,10 +10,11 @@ type TeamProp = {
     id: number;
     img: string;
     title: string;
-    pisition: string;
+    position: string;
     phone: string;
     socials: {
       id: number;
+      icon: string;
       url: string
     }[];
   }[];

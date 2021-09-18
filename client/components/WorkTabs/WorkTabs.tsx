@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import styles from './WorkTabs.module.scss'
 import {useSelector, useDispatch} from 'react-redux'; 
 import {changeCategoryID} from "../../redux/actions/actions"; 
@@ -23,24 +22,12 @@ type WorkTabsProp = {
     }[];
   }[];
 }
-          
+      
 
 function WorkTabs({categories}: WorkTabsProp): JSX.Element {
 
   const tabActive = useSelector((state: RootState) => state.workTabs.idCategory); 
   const dispatch = useDispatch(); 
-
-  useEffect(() => {
-    setTimeout(function(){
-      var elem = document.querySelector('.grid');
-      var msnry = new Masonry( elem, {
-        // options
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-item',
-        percentPosition: true
-      });
-     }, 500);
-  });
 
   return (
     <div className={styles.workTabs}>
