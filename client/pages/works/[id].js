@@ -24,7 +24,7 @@ export async function getStaticPaths() {
   })
 
 
-  const flatLinks = innerLink.flat();
+  const flatLinks = innerLink.reduce((acc, val) => acc.concat(val), []);
 
   const paths = flatLinks.map(function (element) {
       return {
@@ -56,7 +56,7 @@ export async function getStaticProps({ params }) {
     return element.works;
   });
 
-  const flatWorksinCategory = worksinCategory.flat();
+  const flatWorksinCategory = worksinCategory.reduce((acc, val) => acc.concat(val), []);
   const resultWork = flatWorksinCategory.find(function (element) {
     return element.id == params.id;
   });
