@@ -6,47 +6,29 @@ import type {RootState} from '../../redux/store';
 
 
 type MainMenuProp = {
-  ishome?: boolean
+  ishome?: boolean,
+  pagesList: {
+    id: number;
+    name: string;
+    path: string;
+  }[]
 }
 
 
-function MainMenu({ishome}: MainMenuProp): JSX.Element {
+function MainMenu({ishome, pagesList}: MainMenuProp): JSX.Element {
 
   const menuStatus = useSelector((state: RootState) => state.mainMenuReducer.ismenuOpened); 
   const dispatch = useDispatch(); 
   if (menuStatus) {
     return (
       <ul className={`${styles.mainMenu} ${ishome ? `${styles.mainMenuHome}` : ""}`}>
-        <li>
-          <Link href="/">
-            <a onClick={() => dispatch(changeMenuVisibility())}>Home</a>
-          </Link>
-        </li>  
-        <li>
-          <Link href="/service">
-            <a>Service</a>
-          </Link>
-        </li> 
-        <li>
-          <Link href="/about">
-            <a onClick={() => dispatch(changeMenuVisibility())}>About Us</a>
-          </Link>
-        </li> 
-        <li>
-          <Link href="/portfolio">
-            <a>Works</a>
-          </Link>
-        </li> 
-        <li>
-          <Link href="/blogs">
-            <a>Blog</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact">
-            <a>Contact</a>
-          </Link>
-        </li>  
+        {pagesList.map((item) => {
+          <li key={item.id}>
+            <Link href={item.path}>
+              <a onClick={() => dispatch(changeMenuVisibility())}>{item.name}</a>
+            </Link>
+          </li>  
+        })}
       </ul>
     )
   } else {

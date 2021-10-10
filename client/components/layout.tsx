@@ -30,6 +30,7 @@ export default function Layout({ children, home}: Props) {
   let title = data.header.title as string;
   let social = data.indexPage.social;
   let copyrightText = data.copyrightText as string;
+  let paesList = data.pages;
 
 
   return (
@@ -47,7 +48,7 @@ export default function Layout({ children, home}: Props) {
               <div className={styles.container}>
                 <div className={styles.header__top}>
                   <HeaderLogo name = {logo} ishome = {true} />
-                  <MainMenu ishome = {true} />
+                  <MainMenu ishome = {true} pagesList = {paesList} />
                   <HeaderBurger ishome = {true} />
                 </div>
                 <div className={styles.header__middle}>
@@ -92,7 +93,7 @@ export default function Layout({ children, home}: Props) {
               <div className={styles.container}>
                 <div className={styles.header__top}>
                   <HeaderLogo name = {logo} />
-                  <MainMenu />
+                  <MainMenu  pagesList = {paesList} />
                   <Button 
                     href="/" 
                     title="get a quote" 
