@@ -18,17 +18,18 @@ type MainMenuProp = {
 function MainMenu({ishome, pagesList}: MainMenuProp): JSX.Element {
 
   const menuStatus = useSelector((state: RootState) => state.mainMenuReducer.ismenuOpened); 
-  const dispatch = useDispatch(); 
+  
+  
   if (menuStatus) {
     return (
       <ul className={`${styles.mainMenu} ${ishome ? `${styles.mainMenuHome}` : ""}`}>
-        {pagesList.map((item) => {
+        {pagesList.map((item) =>
           <li key={item.id}>
             <Link href={item.path}>
-              <a onClick={() => dispatch(changeMenuVisibility())}>{item.name}</a>
+              <a>{item.name}</a>
             </Link>
           </li>  
-        })}
+        )}
       </ul>
     )
   } else {

@@ -33,11 +33,6 @@
         },
         {
             "id": 5,
-            "name": "Blog",
-            "path": "/blogs"
-        },
-        {
-            "id": 6,
             "name": "Contact",
             "path": "/contact"
         }
