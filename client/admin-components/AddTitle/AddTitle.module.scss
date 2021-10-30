@@ -1,0 +1,29 @@
+@import "../../styles/utils/variables";
+
+.addTitle {
+    padding: 15px;
+
+    label {
+        display: block;
+    }
+
+    input {
+        width: 100%;
+        display: block;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        padding: 5px;
+        cursor: pointer;
+    }
+}
+
+.error {
+    color: red;
+}
+
+.message {
+    color: green;
+}

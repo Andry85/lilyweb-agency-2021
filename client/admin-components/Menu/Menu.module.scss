@@ -1,0 +1,14 @@
+@import "../../styles/utils/variables";
+
+.menu {
+
+    padding: 50px 0;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__item {
+        padding: 10px 25px;
+    }
+}
