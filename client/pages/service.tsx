@@ -4,25 +4,9 @@ import Layout from '../components/layout'
 import GridCatalog from '../components/GridCatalog/GridCatalog';
 import ContactService from '../components/ContactService/ContactService';
 
+import data from '../pages/api/dataSource.json';
 
-export async function getStaticProps(context) {
-  const res = await fetch('http://localhost:5000/api/data');
-  const data = await res.json()
-
-  if (!data) {
-    return {
-      notFound: true,
-    }
-  }
-
-  return {
-    props: {
-      data: data
-    }, // will be passed to the page component as props
-  }
-}
-
-export default function Service({data}) {
+export default function Service() {
   return (
     <Layout>
         <Head>

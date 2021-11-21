@@ -5,16 +5,15 @@ import Video from '../../components/Video/Video'
 import SocialMediaDark from '../../components/SocialMediaDark/SocialMediaDark'
 import Pagination from '../../components/Pagination/Pagination'
 
+import data from '../../pages/api/dataSource.json';
+
 
 // This function gets called at build time
 export async function getStaticPaths() {
   // Call an external API endpoint to get posts
-  const res = await fetch('http://localhost:5000/api/data')
-  const posts = await res.json()
 
-  
   // Get the paths we want to pre-render based on posts
-  const resultList = posts.worksPage.categories;
+  const resultList = data.worksPage.categories;
 
 
   const innerLink = resultList.map(function (element) {
@@ -34,7 +33,7 @@ export async function getStaticPaths() {
 
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
-  return { paths, fallback: true }
+  return { paths, fallback: false }
 }
 
 // This also gets called at build time
@@ -42,16 +41,8 @@ export async function getStaticProps({ params }) {
 
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
-  const res = await fetch(`http://localhost:5000/api/data`);
-  const jsonObj = await res.json()
 
-  if (!jsonObj) {
-    return {
-      notFound: true,
-    }
-  }
-
-  const categories = jsonObj.worksPage.categories;
+  const categories = data.worksPage.categories;
   const worksinCategory = categories.map(function (element) {
     return element.works;
   });
@@ -89,14 +80,13 @@ export async function getStaticProps({ params }) {
   return { 
     props: { 
       resultWork,
-      jsonObj,
       nextWork,
       prevWork
     } 
   }
 }
 
-export default function Work({resultWork,jsonObj, nextWork, prevWork}) {
+export default function Work({resultWork, nextWork, prevWork}) {
 
   return (
     <Layout>
@@ -105,8 +95,8 @@ export default function Work({resultWork,jsonObj, nextWork, prevWork}) {
         </Head>
         <div className="headerBottom">
           <div className="container__inner">
-            <h2 className="headerBottom__title">{jsonObj.worksPageDetail.header.title}</h2>
-            <h3 className="headerBottom__subtitle">{jsonObj.worksPageDetail.header.subtitle}</h3>
+            <h2 className="headerBottom__title">{data.worksPageDetail.header.title}</h2>
+            <h3 className="headerBottom__subtitle">{data.worksPageDetail.header.subtitle}</h3>
           </div>  
         </div>
         <div className={styles.workWrapper}>

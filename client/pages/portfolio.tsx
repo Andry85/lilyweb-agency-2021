@@ -5,26 +5,10 @@ import WorkTabs from '../components/WorkTabs/WorkTabs';
 import TitleText from '../components/TitleText/TitleText';
 import Button from '../components/Button/Button'
 
+import data from '../pages/api/dataSource.json';
 
 
-export async function getStaticProps(context) {
-  const res = await fetch('http://localhost:5000/api/data');
-  const data = await res.json()
-
-  if (!data) {
-    return {
-      notFound: true,
-    }
-  }
-
-  return {
-    props: {
-      data: data
-    }, // will be passed to the page component as props
-  }
-}
-
-export default function Portfolio({data}) {
+export default function Portfolio() {
   return (
     <Layout>
         <Head>

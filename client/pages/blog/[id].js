@@ -6,16 +6,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faQuoteLeft} from '@fortawesome/free-solid-svg-icons';
 
 
+import data from '../../pages/api/dataSource.json';
+
+
 
 // This function gets called at build time
 export async function getStaticPaths() {
   // Call an external API endpoint to get posts
-  const res = await fetch('http://localhost:5000/api/data')
-  const posts = await res.json()
-
   
   // Get the paths we want to pre-render based on posts
-  const resultList = posts.blogPage.blogList;
+  const resultList = data.blogPage.blogList;
   const innerLink = resultList.map(function (element) {
       return element.id.toString();
   })
@@ -30,7 +30,7 @@ export async function getStaticPaths() {
 
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
-  return { paths, fallback: true }
+  return { paths, fallback: false }
 }
 
 // This also gets called at build time
@@ -38,16 +38,9 @@ export async function getStaticProps({ params }) {
 
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
-  const res = await fetch(`http://localhost:5000/api/data`);
-  const jsonObj = await res.json()
 
-  if (!jsonObj) {
-    return {
-      notFound: true,
-    }
-  }
 
-  const resultList = jsonObj.blogPage.blogList;
+  const resultList = data.blogPage.blogList;
 
 
   const resultBlog = resultList.find(function (element) {
@@ -64,12 +57,11 @@ export async function getStaticProps({ params }) {
   return { 
     props: { 
       resultBlog,
-      jsonObj,
     } 
   }
 }
 
-export default function Work({resultBlog,jsonObj}) {
+export default function Work({resultBlog}) {
 
   return (
     <Layout>
@@ -78,8 +70,8 @@ export default function Work({resultBlog,jsonObj}) {
         </Head>
         <div className="headerBottom">
           <div className="container__inner">
-            <h2 className="headerBottom__title">{jsonObj.blogPage.header.title}</h2>
-            <h3 className="headerBottom__subtitle">{jsonObj.blogPage.header.subtitle}</h3>
+            <h2 className="headerBottom__title">{data.blogPage.header.title}</h2>
+            <h3 className="headerBottom__subtitle">{data.blogPage.header.subtitle}</h3>
           </div>  
         </div>
 

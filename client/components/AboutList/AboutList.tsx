@@ -9,7 +9,7 @@ type AboutListProp = {
     id: number;
     title: string;
     img: string;
-    list: [];
+    list: Array<string>;
   }[];
 }
           
