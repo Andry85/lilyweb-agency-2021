@@ -14,5 +14,5 @@ module.exports = {
         "/portfolio": { page: "/portfolio" },
       }
     },
-    // assetPrefix: '/lilyweb-agency-2021/',
+    assetPrefix: '..',
   }
