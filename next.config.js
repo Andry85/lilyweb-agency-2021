@@ -9,4 +9,5 @@ module.exports = {
         '/': { page: '/' }
       }
     },
+    assetPrefix: '/lilyweb-agency-2021/'
   }
