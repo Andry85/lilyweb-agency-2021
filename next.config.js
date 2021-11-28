@@ -6,14 +6,7 @@ module.exports = {
     },
     exportPathMap: function () {
       return {
-        "/": { page: "/" },
-        "/about": { page: "/about" },
-        "/blogs": { page: "/blogs" },
-        "/contact": { page: "/contact" },
-        "/service": { page: "/service" },
-        "/portfolio": { page: "/portfolio" },
+        '/': { page: '/' }
       }
     },
-    assetPrefix: '/lilyweb-agency-2021/',
-    trailingSlash: true,
   }
