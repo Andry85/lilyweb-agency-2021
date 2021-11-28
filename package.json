@@ -8,7 +8,7 @@
     "build": "next build && next export -o docs",
     "export": "next export",
     "start": "next start",
-    "deploy": "next build && next export -o docs && git checkout -- docs/CNAME && git checkout -- docs/.nojekyll && git add docs && git commit -m \"chore: regen site\" && git push origin static-generation--master"
+    "deploy": "npm run build && git checkout -- ./docs/CNAME ./docs/.nojekyll && git add ./docs && git commit -m \"chore(site): regen\" && git push origin static-generation--master"
   },
   "dependencies": {
     "@babel/runtime": "7.0.0-beta.55",
