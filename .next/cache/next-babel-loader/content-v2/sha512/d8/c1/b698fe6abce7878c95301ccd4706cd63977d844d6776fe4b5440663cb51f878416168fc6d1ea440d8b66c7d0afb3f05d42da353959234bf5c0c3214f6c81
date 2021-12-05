@@ -1,0 +1,1 @@
+{"ast":null,"code":"import data from './dataSource.json';\nexport default ((req, res) => {\n  res.status(200).json(data);\n});","map":null,"metadata":{},"sourceType":"module"}
