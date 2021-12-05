@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { ISMENU_OPENED, CHANGE_CATEGORY } from '../types/types';\nexport const changeMenuVisibility = () => {\n  return {\n    type: ISMENU_OPENED\n  };\n};\nexport const changeCategoryID = id => {\n  return {\n    type: CHANGE_CATEGORY,\n    payload: id\n  };\n};","map":null,"metadata":{},"sourceType":"module"}
