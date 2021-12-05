@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { combineReducers } from 'redux';\nimport mainMenuReducer from './mainMenu';\nimport workTabs from './workTabs';\nexport default combineReducers({\n  mainMenuReducer: mainMenuReducer,\n  workTabs: workTabs\n});","map":null,"metadata":{},"sourceType":"module"}
