@@ -10,6 +10,8 @@ import Button from '../components/Button/Button';
 import SocialMedia from '../components/SocialMedia/SocialMedia';
 import Social from './Social/Social';
 import Search from './Search/Search';
+import {useSelector, useDispatch} from 'react-redux'; 
+import {changeUserStatus} from "../redux/actions/actions"; 
 
 
 
@@ -21,6 +23,10 @@ type Props = {
 };
 
 export default function Layout({ children, home}: Props) {
+
+  const userStatus = useSelector((state: RootState) => state.userStatusReducer.isuserLogined); 
+
+  console.log(userStatus);
 
   const {data, error } = useSWR('/api/data', fetcher)
   if (error) return <div>failed to load</div>
@@ -128,6 +134,9 @@ export default function Layout({ children, home}: Props) {
           <p className={styles.footerIndex__copy}>{copyrightText}</p>
         </div>
       </footer>
+      {userStatus && (
+                    <span>User is logined</span>
+                  )}
     </div>
   )
 }
