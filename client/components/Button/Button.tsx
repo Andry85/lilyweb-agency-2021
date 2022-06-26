@@ -33,7 +33,7 @@ const BtnLink = styled.a`
     text-transform: uppercase;
     padding: 10px 20px;
     margin: 0 auto;
-    width: 200px;
+    width: max-content;
     &:hover {
       background: #2341dd;
       color: #fff;
@@ -73,13 +73,13 @@ const BtnLink = styled.a`
 
 `
 
-function Button({ 
-  href, 
-  title, 
-  color, 
-  background, 
-  border, 
-  borderRadius, 
+function Button({
+  href,
+  title,
+  color,
+  background,
+  border,
+  borderRadius,
   textTransform,
   colorHover,
   backgroundHover,
@@ -93,30 +93,30 @@ function Button({
   fontWeight,
   widthMobile
 }: ButtonProp): JSX.Element {
-    return (
-      <Link href={href} passHref={true}>
-        <BtnLink 
-         className = {styles.btn} 
-         color = {color}
-         background = {background} 
-         border = {border} 
-         borderRadius = {borderRadius} 
-         textTransform  = {textTransform} 
-         colorHover = {colorHover} 
-         backgroundHover = {backgroundHover} 
-         paddings = {paddings} 
-         margings = {margings} 
-         mobilePaddings = {mobilePaddings}
-         mobileMargings = {mobileMargings}
-         width = {width}
-         fontSize = {fontSize}
-         fontWeight = {fontWeight}
-         fontSizeMobile = {fontSizeMobile}
-         widthMobile = {widthMobile}
-         >
-           {title}
-        </BtnLink>
-      </Link>
-    )
+  return (
+    <Link href={href} passHref={true}>
+      <BtnLink
+        className={styles.btn}
+        color={color}
+        background={background}
+        border={border}
+        borderRadius={borderRadius}
+        textTransform={textTransform}
+        colorHover={colorHover}
+        backgroundHover={backgroundHover}
+        paddings={paddings}
+        margings={margings}
+        mobilePaddings={mobilePaddings}
+        mobileMargings={mobileMargings}
+        width={width}
+        fontSize={fontSize}
+        fontWeight={fontWeight}
+        fontSizeMobile={fontSizeMobile}
+        widthMobile={widthMobile}
+      >
+        {title}
+      </BtnLink>
+    </Link>
+  )
 }
 export default Button

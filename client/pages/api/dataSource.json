@@ -3,7 +3,7 @@
         "logo": "Lily web agency",
         "logoHome": "#1a1c28",
         "logoInner": "#fff",
-        "title": "We Discover, Design & Build Digital Experiences  to Help Brands"
+        "title": "Ми відкриваємо, проектуємо та створюємо цифрові рішення"
     },
     "pages": [
         {
@@ -38,9 +38,7 @@
         }
     ],
     "indexPage": {
-        "preambule" : {
-            "title": "We are helping to grow your business.",
-            "text": "A digital studio specialising in User Experience & eCommerce, we combine innovation with digital craftsmanship to help brands fulfill their potential.",
+        "preambule": {
             "about": [
                 {
                     "title": "What we do",
@@ -187,17 +185,17 @@
                         {
                             "id": 0,
                             "icon": "facebook",
-                            "url": "https://www.facebook.com/" 
+                            "url": "https://www.facebook.com/"
                         },
                         {
                             "id": 1,
                             "icon": "twitter",
-                            "url": "https://twitter.com/" 
+                            "url": "https://twitter.com/"
                         },
                         {
                             "id": 2,
                             "icon": "vimeo",
-                            "url": "https://vimeo.com/" 
+                            "url": "https://vimeo.com/"
                         }
                     ]
                 },
@@ -211,17 +209,17 @@
                         {
                             "id": 0,
                             "icon": "facebook",
-                            "url": "https://www.facebook.com/" 
+                            "url": "https://www.facebook.com/"
                         },
                         {
                             "id": 1,
                             "icon": "twitter",
-                            "url": "https://twitter.com/" 
+                            "url": "https://twitter.com/"
                         },
                         {
                             "id": 2,
                             "icon": "vimeo",
-                            "url": "https://vimeo.com/" 
+                            "url": "https://vimeo.com/"
                         }
                     ]
                 },
@@ -235,17 +233,17 @@
                         {
                             "id": 0,
                             "icon": "facebook",
-                            "url": "https://www.facebook.com/" 
+                            "url": "https://www.facebook.com/"
                         },
                         {
                             "id": 1,
                             "icon": "twitter",
-                            "url": "https://twitter.com/" 
+                            "url": "https://twitter.com/"
                         },
                         {
                             "id": 2,
                             "icon": "vimeo",
-                            "url": "https://vimeo.com/" 
+                            "url": "https://vimeo.com/"
                         }
                     ]
                 },
@@ -259,17 +257,17 @@
                         {
                             "id": 0,
                             "icon": "facebook",
-                            "url": "https://www.facebook.com/" 
+                            "url": "https://www.facebook.com/"
                         },
                         {
                             "id": 1,
                             "icon": "twitter",
-                            "url": "https://twitter.com/" 
+                            "url": "https://twitter.com/"
                         },
                         {
                             "id": 2,
                             "icon": "vimeo",
-                            "url": "https://vimeo.com/" 
+                            "url": "https://vimeo.com/"
                         }
                     ]
                 }
@@ -292,52 +290,51 @@
             "title": "We're a friendly bunch…",
             "text": "We create projects for companies and startups with a passion for quality",
             "subtitle": "Contact Us"
-
         },
-       "contactsList": [
-           {
-            "id": 0,
-            "icon": "/images/contacts/location.png",
-            "text": "ADDRESS: 28 Green Tower, Street Name New York City, USA"
-           },
-           {
-            "id": 1,
-            "icon": "/images/contacts/phone.png",
-            "text": "Phone:  +84 846 250 592"
-           },
-           {
-            "id": 2,
-            "icon": "/images/contacts/email.png",
-            "text": "Email:  contact@stuck.com"
-           }
-       ],
-       "social": [
-        {
-            "id": 0,
-            "icon": "facebook",
-            "url": "https://www.facebook.com/" 
-        },
-        {
-            "id": 1,
-            "icon": "twitter",
-            "url": "https://twitter.com/" 
-        },
-        {
-            "id": 2,
-            "icon": "behance",
-            "url": "https://www.behance.net/" 
-        },
-        {
-            "id": 3,
-            "icon": "linkedin",
-            "url": "https://www.linkedin.com/" 
-        },
-        {
-            "id": 4,
-            "icon": "twitter",
-            "url": "https://twitter.com/" 
-        }
-    ]
+        "contactsList": [
+            {
+                "id": 0,
+                "icon": "/images/contacts/location.png",
+                "text": "ADDRESS: 28 Green Tower, Street Name New York City, USA"
+            },
+            {
+                "id": 1,
+                "icon": "/images/contacts/phone.png",
+                "text": "Phone:  +84 846 250 592"
+            },
+            {
+                "id": 2,
+                "icon": "/images/contacts/email.png",
+                "text": "Email:  contact@stuck.com"
+            }
+        ],
+        "social": [
+            {
+                "id": 0,
+                "icon": "facebook",
+                "url": "https://www.facebook.com/"
+            },
+            {
+                "id": 1,
+                "icon": "twitter",
+                "url": "https://twitter.com/"
+            },
+            {
+                "id": 2,
+                "icon": "behance",
+                "url": "https://www.behance.net/"
+            },
+            {
+                "id": 3,
+                "icon": "linkedin",
+                "url": "https://www.linkedin.com/"
+            },
+            {
+                "id": 4,
+                "icon": "twitter",
+                "url": "https://twitter.com/"
+            }
+        ]
     },
     "posts": [
         {
@@ -393,10 +390,10 @@
         },
         "offerList": [
             {
-             "id": 0,
-             "icon": "/images/offers/icon-mission.png",
-             "title": "Our mission",
-             "text": "Phasellus et elit eget purus efficitur dignissim. Sed eget pretium quam, non rutrum nisi. "
+                "id": 0,
+                "icon": "/images/offers/icon-mission.png",
+                "title": "Our mission",
+                "text": "Phasellus et elit eget purus efficitur dignissim. Sed eget pretium quam, non rutrum nisi. "
             },
             {
                 "id": 1,
@@ -411,7 +408,7 @@
                 "text": "Phasellus et elit eget purus efficitur dignissim. Sed eget pretium quam, non rutrum nisi. "
             }
         ],
-        "aboutList":  [
+        "aboutList": [
             {
                 "id": 0,
                 "title": "Strategy & Planning",
@@ -514,7 +511,6 @@
                 "pic": "/images/social/001.jpg",
                 "email": "davidmiler@gmail.com",
                 "phone": "44(0) 121 288 1482"
-
             }
         }
     },

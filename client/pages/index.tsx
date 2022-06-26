@@ -15,21 +15,23 @@ import Team from '../components/Team/Team';
 import Testimonials from '../components/Testimonials/Testimonials';
 import Posts from '../components/Posts/Posts';
 import ContactIndex from '../components/ContactIndex/ContactIndex';
-import { getWorks, getPosts } from '../utils/wordpress';
+import { getPage } from '../utils/wordpress';
 
 
 
 
 
 export async function getStaticProps(context) {
+
   const res = await fetch('http://localhost:5000/api/data');
   const data = await res.json()
 
-  const posts = await getPosts();
-  const works = await getWorks();
+  const page = await getPage(13);
 
 
-  if (!posts || !works) {
+
+
+  if (!data || !page) {
     return {
       notFound: true,
     }
@@ -37,8 +39,8 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      posts,
-      works
+      data,
+      page
     }, // will be passed to the page component as props
     revalidate: 10, // In seconds
   }
@@ -46,10 +48,12 @@ export async function getStaticProps(context) {
 
 
 
-export default function Index({ data }) {
+
+export default function Index({ data, page }) {
 
 
   return (
+
     <Layout home>
       <div className="container">
         <Head>
@@ -57,11 +61,11 @@ export default function Index({ data }) {
         </Head>
         <div className={styles.preambule}>
           <div className={styles.preambule__left}>
-            <h2>{data.indexPage.preambule.title}</h2>
-            <p>{data.indexPage.preambule.text}</p>
+            <h2>{page.acf.preambule_title}</h2>
+            <p>{page.acf.preambule_text}</p>
             <Button
               href="/about"
-              title="More about us"
+              title={page.acf.preambule_link_more_text}
               color="#fff"
               background="#2341dd"
               border="2px solid #2341dd"
