@@ -86,10 +86,10 @@ export default function Index({ data, page }) {
                 <article className={styles.aboutList__content}>
                   <h2>
                     <Link href="/">
-                      <a>{data.indexPage.preambule.about[0].title}</a>
+                      <a>{page.acf.preambule_block_1_text}</a>
                     </Link>
                   </h2>
-                  <p>{data.indexPage.preambule.about[0].text}</p>
+                  <p>{page.acf.preambule_block_1_description}</p>
                 </article>
               </li>
               <li>
@@ -97,10 +97,10 @@ export default function Index({ data, page }) {
                 <article className={styles.aboutList__content}>
                   <h2>
                     <Link href="/">
-                      <a>{data.indexPage.preambule.about[1].title}</a>
+                      <a>{page.acf.preambule_block_2_text}</a>
                     </Link>
                   </h2>
-                  <p>{data.indexPage.preambule.about[1].text}</p>
+                  <p>{page.acf.preambule_block_2_description}</p>
                 </article>
               </li>
               <li>
@@ -108,16 +108,20 @@ export default function Index({ data, page }) {
                 <article className={styles.aboutList__content}>
                   <h2>
                     <Link href="/">
-                      <a>{data.indexPage.preambule.about[2].title}</a>
+                      <a>{page.acf.preambule_block_3_text}</a>
                     </Link>
                   </h2>
-                  <p>{data.indexPage.preambule.about[2].text}</p>
+                  <p>{page.acf.preambule_block_3_description}</p>
                 </article>
               </li>
             </ul>
           </div>
         </div>
-        <Partners title={data.indexPage.partners.title} subtitle={data.indexPage.partners.subtitle} />
+        <Partners
+          title={page.acf.partners_title}
+          subtitle={page.acf.partners_description}
+          images={[page.acf.partners_1, page.acf.partners_2, page.acf.partners_3, page.acf.partners_4]}
+        />
         <TitleBlock title={data.indexPage.latestProject.title} text={data.indexPage.latestProject.text} />
       </div>
       <IndexSlider dataSlider={data.indexPage.indexSlider} />

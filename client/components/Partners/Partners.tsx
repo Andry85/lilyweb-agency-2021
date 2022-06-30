@@ -5,49 +5,28 @@ import Image from 'next/image'
 
 type PartnersProp = {
   title: string,
-  subtitle: string
+  subtitle: string,
+  images: Array<object>,
 }
-          
 
-function Partners({title, subtitle}: PartnersProp): JSX.Element {
+
+function Partners({ title, subtitle, images }: PartnersProp): JSX.Element {
   return (
     <div className={styles.partners}>
-        <h2>{title}</h2>
-        <h3>{subtitle}</h3>
-        <ul className={styles.partnersList}>
+      <h2>{title}</h2>
+      <h3>{subtitle}</h3>
+      <ul className={styles.partnersList}>
+        {images.map((item) =>
           <li>
             <Image
-              src="/images/partners/01.png"
-              alt=""
-              width={272}
-              height={103}
+              src={item.url}
+              alt={item.alt}
+              width={item.width}
+              height={item.height}
             />
           </li>
-          <li>
-            <Image
-              src="/images/partners/02.png"
-              alt=""
-              width={272}
-              height={103}
-            />
-          </li>
-          <li>
-            <Image
-              src="/images/partners/03.png"
-              alt=""
-              width={272}
-              height={103}
-            />
-          </li>
-          <li>
-            <Image
-              src="/images/partners/04.png"
-              alt=""
-              width={272}
-              height={103}
-            />
-          </li>
-        </ul>
+        )}
+      </ul>
     </div>
   )
 }
