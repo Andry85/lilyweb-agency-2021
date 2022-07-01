@@ -38,14 +38,6 @@
         }
     ],
     "indexPage": {
-        "partners": {
-            "title": "20 YEARS EXPERIENCE",
-            "subtitle": "Over the last 20 years, we have helped and guided organisations to achieve outstanding results"
-        },
-        "latestProject": {
-            "title": "Latest Project",
-            "text": "A digital studio specialising in User Experience & eCommerce, we combine innovation with digital craftsmanship to help brands"
-        },
         "indexSlider": [
             {
                 "id": 0,

@@ -16,8 +16,8 @@ function Partners({ title, subtitle, images }: PartnersProp): JSX.Element {
       <h2>{title}</h2>
       <h3>{subtitle}</h3>
       <ul className={styles.partnersList}>
-        {images.map((item) =>
-          <li>
+        {images.map((item, index) =>
+          <li key={index}>
             <Image
               src={item.url}
               alt={item.alt}

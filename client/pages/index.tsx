@@ -122,9 +122,24 @@ export default function Index({ data, page }) {
           subtitle={page.acf.partners_description}
           images={[page.acf.partners_1, page.acf.partners_2, page.acf.partners_3, page.acf.partners_4]}
         />
-        <TitleBlock title={data.indexPage.latestProject.title} text={data.indexPage.latestProject.text} />
+        <TitleBlock title={page.acf.latest_project_title} text={page.acf.latest_project_subtitle} />
       </div>
-      <IndexSlider dataSlider={data.indexPage.indexSlider} />
+      <IndexSlider dataSlider={[
+        {
+          "id": 0,
+          "title": page.acf.latest_project_work_1_title,
+          "text": page.acf.latest_project_work_1_desc,
+          "link": page.acf.latest_project_work_1_url,
+          "img": page.acf.latest_project_work_1_img.url
+        },
+        {
+          "id": 1,
+          "title": page.acf.latest_project_work_2_title,
+          "text": page.acf.latest_project_work_2_desc,
+          "link": page.acf.latest_project_work_2_url,
+          "img": page.acf.latest_project_work_2_img.url
+        },
+      ]} />
       <div className="container">
         <div className="container__brands">
           <TitleBlock title={data.indexPage.brandingServices.title} text={data.indexPage.brandingServices.text} />
