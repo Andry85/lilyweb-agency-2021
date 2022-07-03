@@ -17,7 +17,7 @@ type IndexSliderProp = {
 
 
 function NextArrow(props) {
-  const {onClick } = props;
+  const { onClick } = props;
   return (
     <div
       className={styles.nextArrow}
@@ -27,7 +27,7 @@ function NextArrow(props) {
 }
 
 function PrevArrow(props) {
-  const {onClick} = props;
+  const { onClick } = props;
   return (
     <div
       className={styles.prevArrow}
@@ -50,40 +50,40 @@ export default class IndexSlider extends Component<IndexSliderProp, {}>  {
     return (
       <div className={styles.indexSlider}>
         <Slider {...settings}>
-        {this.props.dataSlider.map((item) =>
-          <div key={item.id} className={styles.indexSlider__item}>
-            <div className={styles.indexSlider__media}>
-              <Image
-                src={item.img}
-                alt=""
-                width={1067}
-                height={700}
-                layout="responsive"
-            />
-            </div>
-            <div className={styles.indexSlider__content}>
-              <div className={styles.indexSlider__contentInner}>
-                <h2>{item.title}</h2>
-                <p>{item.text}</p>
-                <Button 
-                    href={item.link} 
-                    title="Live Project" 
-                    color = "#2341dd" 
-                    background = "transparent" 
-                    border = "2px solid #2341dd"
-                    borderRadius = "0px"
-                    textTransform = "uppercase"
-                    colorHover = "#fff"
-                    backgroundHover = "#2341dd"
-                    paddings = "10px 20px"
-                    margings = "43px 0 0 0"
-                    mobilePaddings = "5px"
-                    mobileMargings = "23px 0 0 0"
+          {this.props.dataSlider.map((item) =>
+            <div key={item.id} className={styles.indexSlider__item}>
+              <div className={styles.indexSlider__media}>
+                <Image
+                  src={item.img}
+                  alt=""
+                  width={1067}
+                  height={700}
+                  layout="responsive"
+                />
+              </div>
+              <div className={styles.indexSlider__content}>
+                <div className={styles.indexSlider__contentInner}>
+                  <h2>{item.title}</h2>
+                  <p>{item.text}</p>
+                  <Button
+                    href={item.link}
+                    title="Переглянути проект"
+                    color="#2341dd"
+                    background="transparent"
+                    border="2px solid #2341dd"
+                    borderRadius="0px"
+                    textTransform="uppercase"
+                    colorHover="#fff"
+                    backgroundHover="#2341dd"
+                    paddings="10px 20px"
+                    margings="43px 0 0 0"
+                    mobilePaddings="5px"
+                    mobileMargings="23px 0 0 0"
                   />
                 </div>
+              </div>
             </div>
-          </div>
-        )}
+          )}
         </Slider>
       </div>
     );

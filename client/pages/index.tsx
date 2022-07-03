@@ -142,9 +142,17 @@ export default function Index({ data, page }) {
       ]} />
       <div className="container">
         <div className="container__brands">
-          <TitleBlock title={data.indexPage.brandingServices.title} text={data.indexPage.brandingServices.text} />
+          <TitleBlock title={page.acf.services_title} text={page.acf.services_desc} />
         </div>
         <GridCatalog dataObg={data.indexPage.services} />
+        <GridCatalog dataObg={[
+          {
+            "id": 0,
+            "img": page.acf.services_block_1_image.url,
+            "title": page.acf.services_block_1_title,
+            "text": page.acf.services_block_1_text
+          },
+        ]} />
       </div>
       <Achievement
         dataCard={data.indexPage.achievement.cards}
