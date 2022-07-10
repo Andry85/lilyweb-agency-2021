@@ -19,10 +19,12 @@
 
   &__item {
     flex-basis: 33.3%;
+    min-width: 0;
 
     @include breakpoint(md) {
       flex-basis: 50%;
     }
+
     @include breakpoint(sm) {
       flex-basis: 100%;
     }

@@ -5,3 +5,9 @@ export async function getPage(id) {
     const page = await pageRes.json();
     return page;
 }
+
+export async function getServices() {
+    const servicesRes = await fetch(BASE_URL + '/services?_embed');
+    const services = await servicesRes.json();
+    return services;
+}

@@ -15,7 +15,7 @@ import Team from '../components/Team/Team';
 import Testimonials from '../components/Testimonials/Testimonials';
 import Posts from '../components/Posts/Posts';
 import ContactIndex from '../components/ContactIndex/ContactIndex';
-import { getPage } from '../utils/wordpress';
+import { getPage, getServices } from '../utils/wordpress';
 
 
 
@@ -27,11 +27,14 @@ export async function getStaticProps(context) {
   const data = await res.json()
 
   const page = await getPage(13);
+  const services = await getServices();
 
 
 
 
-  if (!data || !page) {
+
+
+  if (!data || !page || !services) {
     return {
       notFound: true,
     }
@@ -40,7 +43,8 @@ export async function getStaticProps(context) {
   return {
     props: {
       data,
-      page
+      page,
+      services
     }, // will be passed to the page component as props
     revalidate: 10, // In seconds
   }
@@ -49,8 +53,9 @@ export async function getStaticProps(context) {
 
 
 
-export default function Index({ data, page }) {
+export default function Index({ data, page, services }) {
 
+  console.log(services);
 
   return (
 
@@ -144,15 +149,8 @@ export default function Index({ data, page }) {
         <div className="container__brands">
           <TitleBlock title={page.acf.services_title} text={page.acf.services_desc} />
         </div>
-        <GridCatalog dataObg={data.indexPage.services} />
-        <GridCatalog dataObg={[
-          {
-            "id": 0,
-            "img": page.acf.services_block_1_image.url,
-            "title": page.acf.services_block_1_title,
-            "text": page.acf.services_block_1_text
-          },
-        ]} />
+        {/* <GridCatalog dataObg={data.indexPage.services} /> */}
+        <GridCatalog services={services} />
       </div>
       <Achievement
         dataCard={data.indexPage.achievement.cards}
