@@ -11,3 +11,15 @@ export async function getServices() {
     const services = await servicesRes.json();
     return services;
 }
+
+export async function getlastProject() {
+    const lastProjectRes = await fetch(BASE_URL + '/last-project?_embed');
+    const pastProject = await lastProjectRes.json();
+    return pastProject;
+}
+
+export async function getBrands() {
+    const brandsRes = await fetch(BASE_URL + '/brands?_embed');
+    const brands = await brandsRes.json();
+    return brands;
+}

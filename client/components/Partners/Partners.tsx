@@ -6,7 +6,16 @@ import Image from 'next/image'
 type PartnersProp = {
   title: string,
   subtitle: string,
-  images: Array<object>,
+  images: {
+    acf: {
+      image: {
+        url: string,
+        title: string,
+        width: number,
+        height: number,
+      }
+    }
+  }[],
 }
 
 
@@ -19,10 +28,10 @@ function Partners({ title, subtitle, images }: PartnersProp): JSX.Element {
         {images.map((item, index) =>
           <li key={index}>
             <Image
-              src={item.url}
-              alt={item.alt}
-              width={item.width}
-              height={item.height}
+              src={item.acf.image.url}
+              alt={item.acf.image.title}
+              width={item.acf.image.width}
+              height={item.acf.image.height}
             />
           </li>
         )}

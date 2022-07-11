@@ -15,7 +15,7 @@ import Team from '../components/Team/Team';
 import Testimonials from '../components/Testimonials/Testimonials';
 import Posts from '../components/Posts/Posts';
 import ContactIndex from '../components/ContactIndex/ContactIndex';
-import { getPage, getServices } from '../utils/wordpress';
+import { getPage, getServices, getlastProject, getBrands } from '../utils/wordpress';
 
 
 
@@ -28,13 +28,13 @@ export async function getStaticProps(context) {
 
   const page = await getPage(13);
   const services = await getServices();
+  const lastProject = await getlastProject();
+  const brands = await getBrands();
 
 
 
 
-
-
-  if (!data || !page || !services) {
+  if (!data || !page || !services || !lastProject || !brands) {
     return {
       notFound: true,
     }
@@ -44,7 +44,9 @@ export async function getStaticProps(context) {
     props: {
       data,
       page,
-      services
+      services,
+      lastProject,
+      brands,
     }, // will be passed to the page component as props
     revalidate: 10, // In seconds
   }
@@ -53,9 +55,8 @@ export async function getStaticProps(context) {
 
 
 
-export default function Index({ data, page, services }) {
+export default function Index({ data, page, services, lastProject, brands }) {
 
-  console.log(services);
 
   return (
 
@@ -125,31 +126,15 @@ export default function Index({ data, page, services }) {
         <Partners
           title={page.acf.partners_title}
           subtitle={page.acf.partners_description}
-          images={[page.acf.partners_1, page.acf.partners_2, page.acf.partners_3, page.acf.partners_4]}
+          images={brands}
         />
         <TitleBlock title={page.acf.latest_project_title} text={page.acf.latest_project_subtitle} />
       </div>
-      <IndexSlider dataSlider={[
-        {
-          "id": 0,
-          "title": page.acf.latest_project_work_1_title,
-          "text": page.acf.latest_project_work_1_desc,
-          "link": page.acf.latest_project_work_1_url,
-          "img": page.acf.latest_project_work_1_img.url
-        },
-        {
-          "id": 1,
-          "title": page.acf.latest_project_work_2_title,
-          "text": page.acf.latest_project_work_2_desc,
-          "link": page.acf.latest_project_work_2_url,
-          "img": page.acf.latest_project_work_2_img.url
-        },
-      ]} />
+      <IndexSlider dataSlider={lastProject} />
       <div className="container">
         <div className="container__brands">
           <TitleBlock title={page.acf.services_title} text={page.acf.services_desc} />
         </div>
-        {/* <GridCatalog dataObg={data.indexPage.services} /> */}
         <GridCatalog services={services} />
       </div>
       <Achievement
