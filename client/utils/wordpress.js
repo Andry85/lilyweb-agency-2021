@@ -23,3 +23,9 @@ export async function getBrands() {
     const brands = await brandsRes.json();
     return brands;
 }
+
+export async function getAchievements() {
+    const achievementsRes = await fetch(BASE_URL + '/achievements?_embed');
+    const achievements = await achievementsRes.json();
+    return achievements;
+}

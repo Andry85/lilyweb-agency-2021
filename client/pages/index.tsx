@@ -15,7 +15,7 @@ import Team from '../components/Team/Team';
 import Testimonials from '../components/Testimonials/Testimonials';
 import Posts from '../components/Posts/Posts';
 import ContactIndex from '../components/ContactIndex/ContactIndex';
-import { getPage, getServices, getlastProject, getBrands } from '../utils/wordpress';
+import { getPage, getServices, getlastProject, getBrands, getAchievements } from '../utils/wordpress';
 
 
 
@@ -30,11 +30,12 @@ export async function getStaticProps(context) {
   const services = await getServices();
   const lastProject = await getlastProject();
   const brands = await getBrands();
+  const achievements = await getAchievements();
 
 
 
 
-  if (!data || !page || !services || !lastProject || !brands) {
+  if (!data || !page || !services || !lastProject || !brands || !achievements) {
     return {
       notFound: true,
     }
@@ -47,6 +48,7 @@ export async function getStaticProps(context) {
       services,
       lastProject,
       brands,
+      achievements,
     }, // will be passed to the page component as props
     revalidate: 10, // In seconds
   }
@@ -55,7 +57,7 @@ export async function getStaticProps(context) {
 
 
 
-export default function Index({ data, page, services, lastProject, brands }) {
+export default function Index({ data, page, services, lastProject, brands, achievements }) {
 
 
   return (
@@ -138,12 +140,16 @@ export default function Index({ data, page, services, lastProject, brands }) {
         <GridCatalog services={services} />
       </div>
       <Achievement
-        dataCard={data.indexPage.achievement.cards}
-        experience={data.indexPage.achievement.experience}
+        dataCard={achievements}
+        experience={{
+          'count': page.acf.achievement_box_years,
+          'title': page.acf.achievement_box_title,
+          'subtitle': page.acf.achievement_box_text
+        }}
       >
         <TitleBlock
-          title={data.indexPage.achievement.achievementHeader.title}
-          text={data.indexPage.achievement.achievementHeader.text}
+          title={page.acf.achievement_title}
+          text={page.acf.achievement_desc}
           color="#fff"
         />
       </Achievement>
@@ -187,6 +193,6 @@ export default function Index({ data, page, services, lastProject, brands }) {
       />
 
 
-    </Layout>
+    </Layout >
   )
 }
