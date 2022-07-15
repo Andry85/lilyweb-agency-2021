@@ -15,7 +15,7 @@ import Team from '../components/Team/Team';
 import Testimonials from '../components/Testimonials/Testimonials';
 import Posts from '../components/Posts/Posts';
 import ContactIndex from '../components/ContactIndex/ContactIndex';
-import { getPage, getServices, getlastProject, getBrands, getAchievements } from '../utils/wordpress';
+import { getPage, getServices, getlastProject, getBrands, getAchievements, getTeam } from '../utils/wordpress';
 
 
 
@@ -31,11 +31,12 @@ export async function getStaticProps(context) {
   const lastProject = await getlastProject();
   const brands = await getBrands();
   const achievements = await getAchievements();
+  const team = await getTeam();
 
 
 
 
-  if (!data || !page || !services || !lastProject || !brands || !achievements) {
+  if (!data || !page || !services || !lastProject || !brands || !achievements || !team) {
     return {
       notFound: true,
     }
@@ -49,6 +50,7 @@ export async function getStaticProps(context) {
       lastProject,
       brands,
       achievements,
+      team,
     }, // will be passed to the page component as props
     revalidate: 10, // In seconds
   }
@@ -57,7 +59,7 @@ export async function getStaticProps(context) {
 
 
 
-export default function Index({ data, page, services, lastProject, brands, achievements }) {
+export default function Index({ data, page, services, lastProject, brands, achievements, team }) {
 
 
   return (
@@ -93,7 +95,7 @@ export default function Index({ data, page, services, lastProject, brands, achie
                 <span className={styles.aboutList__circle}><FontAwesomeIcon icon={faMicrophoneAlt} /></span>
                 <article className={styles.aboutList__content}>
                   <h2>
-                    <Link href="/">
+                    <Link href="#services">
                       <a>{page.acf.preambule_block_1_text}</a>
                     </Link>
                   </h2>
@@ -104,7 +106,7 @@ export default function Index({ data, page, services, lastProject, brands, achie
                 <span className={styles.aboutList__circle}><FontAwesomeIcon icon={faUserFriends} /></span>
                 <article className={styles.aboutList__content}>
                   <h2>
-                    <Link href="/">
+                    <Link href="#ourteam">
                       <a>{page.acf.preambule_block_2_text}</a>
                     </Link>
                   </h2>
@@ -115,7 +117,7 @@ export default function Index({ data, page, services, lastProject, brands, achie
                 <span className={styles.aboutList__circle}><FontAwesomeIcon icon={faEye} /></span>
                 <article className={styles.aboutList__content}>
                   <h2>
-                    <Link href="/">
+                    <Link href="#ourWorks">
                       <a>{page.acf.preambule_block_3_text}</a>
                     </Link>
                   </h2>
@@ -132,9 +134,11 @@ export default function Index({ data, page, services, lastProject, brands, achie
         />
         <TitleBlock title={page.acf.latest_project_title} text={page.acf.latest_project_subtitle} />
       </div>
-      <IndexSlider dataSlider={lastProject} />
+      <div id="ourWorks">
+        <IndexSlider dataSlider={lastProject} />
+      </div>
       <div className="container">
-        <div className="container__brands">
+        <div className="container__brands" id="services">
           <TitleBlock title={page.acf.services_title} text={page.acf.services_desc} />
         </div>
         <GridCatalog services={services} />
@@ -155,19 +159,21 @@ export default function Index({ data, page, services, lastProject, brands, achie
       </Achievement>
       <div className={styles.videoOuter}>
         <Video
-          src={data.indexPage.video.src}
-          type={data.indexPage.video.type}
-          poster={data.indexPage.video.poster}
+          src={page.acf.video_url}
+          type={page.acf.video_url_type}
+          poster={page.acf.video_poster}
         />
       </div>
-      <Team
-        dataItem={data.indexPage.team.items}
-      >
-        <TitleBlock
-          title={data.indexPage.team.teamHeader.title}
-          text={data.indexPage.team.teamHeader.text}
-        />
-      </Team>
+      <div id="ourteam">
+        <Team
+          dataItem={team}
+        >
+          <TitleBlock
+            title={page.acf.our_team_title}
+            text={page.acf.our_team_desc}
+          />
+        </Team>
+      </div>
       <div className={styles.testimonialsOuter}>
         <div className={styles.testimonialsOuter__bg}></div>
         <div className={styles.testimonialsOuter__container}>

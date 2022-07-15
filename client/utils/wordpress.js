@@ -29,3 +29,9 @@ export async function getAchievements() {
     const achievements = await achievementsRes.json();
     return achievements;
 }
+
+export async function getTeam() {
+    const teamRes = await fetch(BASE_URL + '/team?_embed');
+    const team = await teamRes.json();
+    return team;
+}
