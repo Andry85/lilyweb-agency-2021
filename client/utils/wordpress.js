@@ -35,3 +35,16 @@ export async function getTeam() {
     const team = await teamRes.json();
     return team;
 }
+
+export async function getPosts() {
+    const postsRes = await fetch(BASE_URL + '/posts?_embed');
+    const posts = await postsRes.json();
+    return posts;
+}
+
+export async function getPost(slug) {
+    const posts = await getPosts();
+    const postArray = posts.filter((post) => post.slug == slug);
+    const post = postArray.length > 0 ? postArray[0] : null;
+    return post;
+}

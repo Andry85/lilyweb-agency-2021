@@ -7,21 +7,29 @@ import Post from './Post/Post';
 type PostsProp = {
   dataItem: {
     id: number;
-    img: string;
-    url: string;
+    acf: {
+      pic: {
+        url: string;
+      }
+    };
+    slug: string;
     date: string;
-    title: string;
-    text: string;
+    title: {
+      rendered: string;
+    };
+    excerpt: {
+      rendered: string;
+    };
     author?: string;
   }[];
 }
-          
 
-function Posts({dataItem}: PostsProp): JSX.Element {
+
+function Posts({ dataItem }: PostsProp): JSX.Element {
   return (
     <div className={styles.posts}>
       <div className={styles.posts__inner}>
-        <Post dataItem = {dataItem} />
+        <Post dataItem={dataItem} />
       </div>
     </div>
   )

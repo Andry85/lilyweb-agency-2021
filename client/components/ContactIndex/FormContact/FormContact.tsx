@@ -19,7 +19,7 @@ interface MyFormValues {
 
 
 export const FormContact: React.FC<{}> = () => {
-  const initialValues: MyFormValues = { 
+  const initialValues: MyFormValues = {
     firstName: '',
     lastName: '',
     email: '',
@@ -27,6 +27,8 @@ export const FormContact: React.FC<{}> = () => {
   };
   return (
     <div className={styles.form}>
+
+
       <Formik
         initialValues={initialValues}
         onSubmit={(values, actions) => {

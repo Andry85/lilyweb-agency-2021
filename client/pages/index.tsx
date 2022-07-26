@@ -15,7 +15,7 @@ import Team from '../components/Team/Team';
 import Testimonials from '../components/Testimonials/Testimonials';
 import Posts from '../components/Posts/Posts';
 import ContactIndex from '../components/ContactIndex/ContactIndex';
-import { getPage, getServices, getlastProject, getBrands, getAchievements, getTeam } from '../utils/wordpress';
+import { getPage, getServices, getlastProject, getBrands, getAchievements, getTeam, getPosts } from '../utils/wordpress';
 
 
 
@@ -32,11 +32,13 @@ export async function getStaticProps(context) {
   const brands = await getBrands();
   const achievements = await getAchievements();
   const team = await getTeam();
+  const posts = await getPosts();
 
 
 
 
-  if (!data || !page || !services || !lastProject || !brands || !achievements || !team) {
+
+  if (!data || !page || !services || !lastProject || !brands || !achievements || !team || !posts) {
     return {
       notFound: true,
     }
@@ -51,6 +53,7 @@ export async function getStaticProps(context) {
       brands,
       achievements,
       team,
+      posts,
     }, // will be passed to the page component as props
     revalidate: 10, // In seconds
   }
@@ -59,8 +62,7 @@ export async function getStaticProps(context) {
 
 
 
-export default function Index({ data, page, services, lastProject, brands, achievements, team }) {
-
+export default function Index({ data, page, services, lastProject, brands, achievements, team, posts }) {
 
   return (
 
@@ -178,23 +180,24 @@ export default function Index({ data, page, services, lastProject, brands, achie
         <div className={styles.testimonialsOuter__bg}></div>
         <div className={styles.testimonialsOuter__container}>
           <Testimonials
-            text={data.indexPage.testimonials.text}
-            author={data.indexPage.testimonials.author}
+            text={page.acf.testemonial_desc}
+            author={page.acf.testemonial_author}
           />
           <div className={styles.testimonialsOuter__latestBlog}>
             <TitleBlock
-              title={data.indexPage.latestBlog.title}
-              text={data.indexPage.latestBlog.text}
+              title={page.acf.latest_blog_title}
+              text={page.acf.latest_blog_desc}
               color="#fff"
             />
           </div>
         </div>
       </div>
       <div className={styles.postsOuter}>
-        <Posts dataItem={data.posts} />
+        <Posts dataItem={posts} />
       </div>
       <ContactIndex
-        contactIndexData={data.indexPage.contactIndexData}
+        formData={page.acf.form}
+        contactIndexData={page.acf.latest_blog_desc}
         contactsList={data.indexPage.contactsList}
       />
 

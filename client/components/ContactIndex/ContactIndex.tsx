@@ -1,5 +1,5 @@
 import styles from './ContactIndex.module.scss'
-import {FormContact} from './FormContact/FormContact';
+import { FormContact } from './FormContact/FormContact';
 import Image from 'next/image';
 
 
@@ -7,6 +7,7 @@ import Image from 'next/image';
 
 
 type ContactIndexProp = {
+  formData: string
   contactIndexData: {
     title: string;
     text: string;
@@ -18,15 +19,16 @@ type ContactIndexProp = {
     text: string;
   }[];
 }
-          
 
-function ContactIndex({contactIndexData, contactsList}: ContactIndexProp): JSX.Element {
+
+function ContactIndex({ contactIndexData, contactsList, formData }: ContactIndexProp): JSX.Element {
   return (
     <div className={styles.contactIndex}>
       <div className={styles.contactIndex__left}>
         <div className={styles.contactIndex__overlay}></div>
         <div className={styles.contactIndex__form}>
-          <FormContact/>
+          <div dangerouslySetInnerHTML={{ __html: formData }}></div>
+          <FormContact />
         </div>
       </div>
       <div className={styles.contactIndex__right}>
@@ -35,18 +37,18 @@ function ContactIndex({contactIndexData, contactsList}: ContactIndexProp): JSX.E
           <p>{contactIndexData.text}</p>
           <h3>{contactIndexData.subtitle}</h3>
           <ul className={styles.contactsList}>
-            {contactsList.map((item) => 
-              <li key={item.id} className={styles.contactsList__item}>     
-                  <div className={styles.contactsList__pic}>
-                      <Image
-                        src={item.icon}
-                        alt=""
-                        width={15}
-                        height={15}
-                        objectFit="contain"
-                    />
-                  </div>
-                  <p>{item.text}</p>
+            {contactsList.map((item) =>
+              <li key={item.id} className={styles.contactsList__item}>
+                <div className={styles.contactsList__pic}>
+                  <Image
+                    src={item.icon}
+                    alt=""
+                    width={15}
+                    height={15}
+                    objectFit="contain"
+                  />
+                </div>
+                <p>{item.text}</p>
               </li>
             )}
           </ul>
