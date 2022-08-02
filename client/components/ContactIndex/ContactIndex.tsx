@@ -14,9 +14,8 @@ type ContactIndexProp = {
     subtitle: string;
   };
   contactsList: {
-    id: number;
-    icon: string;
-    text: string;
+    label: string;
+    pic: string;
   }[];
 }
 
@@ -27,7 +26,7 @@ function ContactIndex({ contactIndexData, contactsList, formData }: ContactIndex
       <div className={styles.contactIndex__left}>
         <div className={styles.contactIndex__overlay}></div>
         <div className={styles.contactIndex__form}>
-          <div dangerouslySetInnerHTML={{ __html: formData }}></div>
+          {/* <div dangerouslySetInnerHTML={{ __html: formData }}></div> */}
           <FormContact />
         </div>
       </div>
@@ -37,18 +36,18 @@ function ContactIndex({ contactIndexData, contactsList, formData }: ContactIndex
           <p>{contactIndexData.text}</p>
           <h3>{contactIndexData.subtitle}</h3>
           <ul className={styles.contactsList}>
-            {contactsList.map((item) =>
-              <li key={item.id} className={styles.contactsList__item}>
+            {contactsList.map((item, index) =>
+              <li key={index} className={styles.contactsList__item}>
                 <div className={styles.contactsList__pic}>
                   <Image
-                    src={item.icon}
+                    src={item.pic}
                     alt=""
                     width={15}
                     height={15}
                     objectFit="contain"
                   />
                 </div>
-                <p>{item.text}</p>
+                <p>{item.label}</p>
               </li>
             )}
           </ul>

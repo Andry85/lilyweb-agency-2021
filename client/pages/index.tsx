@@ -198,7 +198,20 @@ export default function Index({ data, page, services, lastProject, brands, achie
       <ContactIndex
         formData={page.acf.form}
         contactIndexData={page.acf.latest_blog_desc}
-        contactsList={data.indexPage.contactsList}
+        contactsList={[
+          {
+            label: page.acf.contact_adress,
+            pic: page.acf.contact_adress_icon.url
+          },
+          {
+            label: page.acf.contact_phone,
+            pic: page.acf.contact_phone_icon.url
+          },
+          {
+            label: page.acf.contact_email,
+            pic: page.acf.contact_email_icon.url
+          }
+        ]}
       />
 
 
