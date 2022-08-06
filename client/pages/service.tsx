@@ -3,13 +3,17 @@ import styles from '../styles/Sevice.module.scss'
 import Layout from '../components/layout'
 import GridCatalog from '../components/GridCatalog/GridCatalog';
 import ContactService from '../components/ContactService/ContactService';
+import { getPage, getServices } from '../utils/wordpress';
 
 
 export async function getStaticProps(context) {
   const res = await fetch('http://localhost:5000/api/data');
   const data = await res.json()
 
-  if (!data) {
+  const page = await getPage(195);
+  const services = await getServices();
+
+  if (!data || !page || !services) {
     return {
       notFound: true,
     }
@@ -17,29 +21,39 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      data: data
+      data: data,
+      page,
+      services,
     }, // will be passed to the page component as props
   }
 }
 
-export default function Service({data}) {
+export default function Service({ data, page, services }) {
   return (
     <Layout>
-        <Head>
-          <title>Service Page</title>
-        </Head>
-        <div className="headerBottom">
-          <div className="container__inner">
-            <h2 className="headerBottom__title">{data.servicePage.header.title}</h2>
-            <h3 className="headerBottom__subtitle">{data.servicePage.header.subtitle}</h3>
-          </div>  
-        </div>    
+      <Head>
+        <title>{page.acf.title_page}</title>
+      </Head>
+      <div className="headerBottom">
+        <div className="container__inner">
+          <h2 className="headerBottom__title">{page.acf.title_page}</h2>
+          <h3 className="headerBottom__subtitle">{page.acf.subtitle_page}</h3>
+        </div>
+      </div>
       <div className={styles.servicesCatalog}>
-        <GridCatalog dataObg = {data.indexPage.services} />
+        <GridCatalog services={services} />
       </div>
       <div className={styles.contactServiceWrapper}>
         <div className={styles.contactServiceWrapper__inner}>
-          <ContactService сontactServiceData = {data.servicePage.serviceData}/>
+          <ContactService сontactServiceData={{
+            title: page.acf.title_form,
+            subtitle: page.acf.subtitle_form,
+            person: {
+              pic: page.acf.persone_pic.url,
+              email: page.acf.persone_email,
+              phone: page.acf.persone_phone,
+            }
+          }} />
         </div>
       </div>
     </Layout>
