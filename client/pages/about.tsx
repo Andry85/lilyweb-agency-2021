@@ -46,16 +46,16 @@ export default function About({ data, brands, page }) {
       </Head>
       <div className="headerBottom">
         <div className="container__inner">
-          <h2 className="headerBottom__title">{data.aboutUsPage.header.title}</h2>
-          <h3 className="headerBottom__subtitle">{data.aboutUsPage.header.subtitle}</h3>
+          <h2 className="headerBottom__title">{page.acf.page_title}</h2>
+          <h3 className="headerBottom__subtitle">{page.acf.page_subtitle}</h3>
         </div>
       </div>
 
       <div className={styles.offer}>
         <div className="container">
           <TitleText
-            title={data.aboutUsPage.offer.title}
-            text={data.aboutUsPage.offer.text}
+            title={page.acf.servise_title}
+            text={page.acf.servise_subtitle}
             wrapperPaddings="40px 10px 75px 10px"
             wrapperMobilePaddings="10px 10px 50px 10px"
             wrapperMaxWidth="770px"
@@ -67,7 +67,23 @@ export default function About({ data, brands, page }) {
             src={data.indexPage.video.src}
             type={data.indexPage.video.type}
             poster={data.indexPage.video.poster}
-            offerList={data.aboutUsPage.offerList}
+            offerList={[
+              {
+                title: page.acf.servise_bloc_first_title,
+                text: page.acf.servise_bloc_first_subtitle,
+                icon: page.acf.servise_bloc_first_pic.url,
+              },
+              {
+                title: page.acf.servise_bloc_second_title,
+                text: page.acf.servise_bloc_second_subtitle,
+                icon: page.acf.servise_bloc_second_pic.url,
+              },
+              {
+                title: page.acf.servise_bloc_third_title,
+                text: page.acf.servise_bloc_third_subtitle,
+                icon: page.acf.servise_bloc_third_pic.url,
+              }
+            ]}
           />
         </div>
       </div>

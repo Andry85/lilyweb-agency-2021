@@ -7,13 +7,11 @@ import { getPage, getServices } from '../utils/wordpress';
 
 
 export async function getStaticProps(context) {
-  const res = await fetch('http://localhost:5000/api/data');
-  const data = await res.json()
 
   const page = await getPage(195);
   const services = await getServices();
 
-  if (!data || !page || !services) {
+  if (!page || !services) {
     return {
       notFound: true,
     }
@@ -21,14 +19,13 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      data: data,
       page,
       services,
     }, // will be passed to the page component as props
   }
 }
 
-export default function Service({ data, page, services }) {
+export default function Service({ page, services }) {
   return (
     <Layout>
       <Head>
