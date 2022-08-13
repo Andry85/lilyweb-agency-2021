@@ -6,7 +6,7 @@ import Offer from '../components/Offer/Offer';
 import AboutList from '../components/AboutList/AboutList';
 import AboutSlider from '../components/AboutSlider/AboutSlider';
 import Partners from '../components/Partners/Partners';
-import { getPage, getBrands } from '../utils/wordpress';
+import { getPage, getBrands, getProcesses } from '../utils/wordpress';
 
 
 
@@ -18,8 +18,9 @@ export async function getStaticProps(context) {
 
   const page = await getPage(101);
   const brands = await getBrands();
+  const processes = await getProcesses();
 
-  if (!data || !page || !brands) {
+  if (!data || !page || !brands || !processes) {
     return {
       notFound: true,
     }
@@ -29,14 +30,16 @@ export async function getStaticProps(context) {
     props: {
       data,
       brands,
-      page
+      page,
+      processes
     }, // will be passed to the page component as props
   }
 }
 
 
 
-export default function About({ data, brands, page }) {
+export default function About({ data, brands, page, processes }) {
+
 
 
   return (
@@ -64,9 +67,9 @@ export default function About({ data, brands, page }) {
             titlePaddings="0 0 34px 0"
           />
           <Offer
-            src={data.indexPage.video.src}
-            type={data.indexPage.video.type}
-            poster={data.indexPage.video.poster}
+            src={page.acf.video_file.url}
+            type={page.acf.video_type}
+            poster={page.acf.video_image.url}
             offerList={[
               {
                 title: page.acf.servise_bloc_first_title,
@@ -90,8 +93,8 @@ export default function About({ data, brands, page }) {
 
       <div className="container__inner">
         <TitleText
-          title={data.aboutUsPage.work.title}
-          text={data.aboutUsPage.work.text}
+          title={page.acf.process_title}
+          text={page.acf.process_subrirtle}
           titleTextAlign="left"
           textTextAlign="left"
           titleFontSize="5rem"
@@ -104,7 +107,7 @@ export default function About({ data, brands, page }) {
           textTextTransform="none"
           textLineHeight="1.5"
         />
-        <AboutList obj={data.aboutUsPage.aboutList} />
+        <AboutList obj={processes} />
       </div>
 
       <div className={styles.aboutSlider}>

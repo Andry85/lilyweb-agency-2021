@@ -48,3 +48,9 @@ export async function getPost(slug) {
     const post = postArray.length > 0 ? postArray[0] : null;
     return post;
 }
+
+export async function getProcesses() {
+    const processesRes = await fetch(BASE_URL + '/processes?_embed');
+    const processes = await processesRes.json();
+    return processes;
+}
