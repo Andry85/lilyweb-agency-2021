@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import WorkTabs from '../components/WorkTabs/WorkTabs';
 import TitleText from '../components/TitleText/TitleText';
 import Button from '../components/Button/Button'
-import { getPage, } from '../utils/wordpress';
+import { getPage, getWorks } from '../utils/wordpress';
 
 
 
@@ -13,8 +13,9 @@ export async function getStaticProps(context) {
   const data = await res.json();
 
   const page = await getPage(262);
+  const works = await getWorks();
 
-  if (!data || !page) {
+  if (!data || !page || !works) {
     return {
       notFound: true,
     }
@@ -23,16 +24,20 @@ export async function getStaticProps(context) {
   return {
     props: {
       data,
-      page
+      page,
+      works
     }, // will be passed to the page component as props
   }
 }
 
-export default function Portfolio({ data, page }) {
+export default function Portfolio({ data, page, works }) {
+
+  console.log(works, 'works');
+
   return (
     <Layout>
       <Head>
-        <title>Our works</title>
+        <title>{page.acf.portfolio_title}</title>
       </Head>
       <div className="headerBottom">
         <div className="container__inner">
@@ -47,7 +52,7 @@ export default function Portfolio({ data, page }) {
           <h2 className={styles.worksWrapper__subtitle}>{page.acf.portfolio_subtitle}</h2>
         </div>
         <WorkTabs
-          categories={data.worksPage.categories}
+          works={works}
         />
       </div>
       <div className={styles.progect}>

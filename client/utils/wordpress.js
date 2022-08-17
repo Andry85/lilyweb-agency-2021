@@ -60,3 +60,16 @@ export async function getReviews() {
     const reviews = await reviewsRes.json();
     return reviews;
 }
+
+export async function getWorks() {
+    const worksRes = await fetch(BASE_URL + '/works?_embed');
+    const works = await worksRes.json();
+    return works;
+}
+
+export async function getWork(slug) {
+    const works = await getWorks();
+    const workArray = works.filter((work) => work.slug == slug);
+    const work = workArray.length > 0 ? workArray[0] : null;
+    return work;
+}
