@@ -11,15 +11,23 @@ type AboutSliderProp = {
   };
   dataSlider: {
     id: number;
-    title: string;
-    text: string;
-    img: string;
+    title: {
+      rendered: string;
+    };
+    content: {
+      rendered: string;
+    };
+    acf: {
+      pic: {
+        url: string;
+      }
+    };
   }[];
 }
 
 
 function NextArrow(props) {
-  const {onClick } = props;
+  const { onClick } = props;
   return (
     <div
       className={styles.nextArrowSlide}
@@ -29,7 +37,7 @@ function NextArrow(props) {
 }
 
 function PrevArrow(props) {
-  const {onClick} = props;
+  const { onClick } = props;
   return (
     <div
       className={styles.prevArrowSlide}
@@ -54,27 +62,27 @@ export default class AboutSlider extends Component<AboutSliderProp, {}>  {
         <h2 className={styles.aboutSlider__title}>{this.props.testemonials.title}</h2>
         <h3 className={styles.aboutSlider__subtitle}>{this.props.testemonials.subtitle}</h3>
         <Slider {...settings}>
-        {this.props.dataSlider.map((item) =>
-          <div key={item.id}>
-            <div className={styles.aboutSlider__item}>
-              <div className={styles.aboutSlider__media}>
-                <Image
-                  src={item.img}
-                  alt=""
-                  width={270}
-                  height={270}
-                  layout="responsive"
-              />
-              </div>
-              <div className={styles.aboutSlider__content}>
-                <div className={styles.aboutSlider__contentInner}>
-                  <h2>{item.title}</h2>
-                  <p>{item.text}</p>
+          {this.props.dataSlider.map((item) =>
+            <div key={item.id}>
+              <div className={styles.aboutSlider__item}>
+                <div className={styles.aboutSlider__media}>
+                  <Image
+                    src={item.acf.pic.url}
+                    alt=""
+                    width={270}
+                    height={270}
+                    layout="responsive"
+                  />
+                </div>
+                <div className={styles.aboutSlider__content}>
+                  <div className={styles.aboutSlider__contentInner}>
+                    <h2 dangerouslySetInnerHTML={{ __html: item.title.rendered }}></h2>
+                    <p dangerouslySetInnerHTML={{ __html: item.content.rendered }}></p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
         </Slider>
       </div>
     );

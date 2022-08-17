@@ -6,7 +6,7 @@ import Offer from '../components/Offer/Offer';
 import AboutList from '../components/AboutList/AboutList';
 import AboutSlider from '../components/AboutSlider/AboutSlider';
 import Partners from '../components/Partners/Partners';
-import { getPage, getBrands, getProcesses } from '../utils/wordpress';
+import { getPage, getBrands, getProcesses, getReviews } from '../utils/wordpress';
 
 
 
@@ -19,8 +19,9 @@ export async function getStaticProps(context) {
   const page = await getPage(101);
   const brands = await getBrands();
   const processes = await getProcesses();
+  const reviews = await getReviews();
 
-  if (!data || !page || !brands || !processes) {
+  if (!data || !page || !brands || !processes || !reviews) {
     return {
       notFound: true,
     }
@@ -31,14 +32,15 @@ export async function getStaticProps(context) {
       data,
       brands,
       page,
-      processes
+      processes,
+      reviews
     }, // will be passed to the page component as props
   }
 }
 
 
 
-export default function About({ data, brands, page, processes }) {
+export default function About({ data, brands, page, processes, reviews }) {
 
 
 
@@ -112,7 +114,10 @@ export default function About({ data, brands, page, processes }) {
 
       <div className={styles.aboutSlider}>
         <div className="container__inner">
-          <AboutSlider dataSlider={data.aboutUsPage.aboutSlider} testemonials={data.aboutUsPage.testemonials} />
+          <AboutSlider dataSlider={reviews} testemonials={{
+            title: page.acf.response_title,
+            subtitle: page.acf.response_subtitle,
+          }} />
         </div>
       </div>
 

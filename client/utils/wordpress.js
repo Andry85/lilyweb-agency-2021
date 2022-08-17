@@ -54,3 +54,9 @@ export async function getProcesses() {
     const processes = await processesRes.json();
     return processes;
 }
+
+export async function getReviews() {
+    const reviewsRes = await fetch(BASE_URL + '/reviews?_embed');
+    const reviews = await reviewsRes.json();
+    return reviews;
+}
