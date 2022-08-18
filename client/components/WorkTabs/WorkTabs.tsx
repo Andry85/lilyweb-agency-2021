@@ -74,7 +74,7 @@ function WorkTabs({ works }: WorkTabsProp): JSX.Element {
                 <div className={styles.workTabsContainer__content}>
                   <div className={styles.workTabsContainer__body}>
                     <div className={styles.workTabsContainer__link}>
-                      <Link href={item.acf.url}>
+                      <Link href={`/works/${item.slug}`}>
                         <a className={styles.workTabsContainer__linkPic}><FontAwesomeIcon icon={faLink} /></a>
                       </Link>
                       <h3>{item.acf.title}</h3>

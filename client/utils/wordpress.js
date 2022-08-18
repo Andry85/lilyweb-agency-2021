@@ -73,3 +73,26 @@ export async function getWork(slug) {
     const work = workArray.length > 0 ? workArray[0] : null;
     return work;
 }
+
+export async function getSlugs(type) {
+    let elements = [];
+    switch (type) {
+        case 'posts':
+            elements = await getPosts();
+            break;
+        case 'works':
+            elements = await getWorks();
+            break;
+    }
+    const elementsIds = elements.map((element) => {
+        return {
+            params: {
+                slug: element.slug,
+                id: element.id.toString(),
+            },
+        };
+    });
+
+
+    return elementsIds;
+}
