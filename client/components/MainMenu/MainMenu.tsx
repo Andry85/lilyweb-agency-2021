@@ -1,7 +1,6 @@
 import styles from './MainMenu.module.scss'
 import Link from 'next/link'
-import {useSelector, useDispatch} from 'react-redux'; 
-import {changeMenuVisibility} from "../../redux/actions/actions"; 
+import {useSelector} from 'react-redux'; 
 import type {RootState} from '../../redux/store';
 
 

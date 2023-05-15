@@ -9,7 +9,6 @@ import MainMenu from '../components/MainMenu/MainMenu';
 import Button from '../components/Button/Button';
 import SocialMedia from '../components/SocialMedia/SocialMedia';
 import Social from './Social/Social';
-import Search from './Search/Search';
 
 
 
@@ -42,84 +41,50 @@ export default function Layout({ children, home}: Props) {
         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
         <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fa50fc57dde6683" />
       </Head>
-        {home ? (
-          <>
-            <header className={[styles.header, styles.headerHome].join(' ')}>
-              <div className={styles.container}>
-                <div className={styles.header__top}>
-                  <HeaderLogo name = {logo} ishome = {true} />
-                  <MainMenu ishome = {true} pagesList = {paesList} />
-                  <HeaderBurger ishome = {true} />
-                </div>
-                <div className={styles.header__middle}>
-                  <h1 className={styles.header__titleHome}>Ми проектуємо та створюємо Landing pages, щоб допомогти малому бізнесу рости</h1>
-                  <Button 
-                    href="/" 
-                    title="Зв'язатись" 
-                    color = "#2341dd" 
-                    background = "transparent" 
-                    border = "2px solid #2341dd"
-                    borderRadius = "30px"
-                    textTransform = "uppercase"
-                    colorHover = "#fff"
-                    backgroundHover = "#2341dd"
-                    paddings = "10px 20px"
-                    margings = "0 auto"
-                    mobilePaddings = "5px"
-                    mobileMargings = "0 auto"
-                  />
-                </div>
-                <span className={styles.animationIconOne}></span>
-                <span className={styles.animationIconTwo}></span>
-                <span className={styles.animationIconThree}></span>
-                <span className={styles.animationIconFour}></span>
-                <span className={styles.animationIconFive}></span>
-                <span className={styles.animationIconSix}></span>
-                <span className={styles.animationIconSeven}></span>
-                <span className={styles.animationIconEight}></span>
-                <span className={styles.animationIconNine}></span>
-                <span className={styles.animationIconTen}></span>
-                <span className={styles.animationIconEleven}></span>
-                <span className={styles.animationIconTwelve}></span>
-                <span className={styles.animationIconThirteen}></span>
-                <span className={styles.animationIconFourteen}></span>
-              </div>
-              <SocialMedia/>
-            </header>
-          </>
-        ) : (
-          <>
-            <header className={[styles.header, styles.headerInnerPage].join(' ')}>
-              <div className={styles.container}>
-                <div className={styles.header__top}>
-                  <HeaderLogo name = {logo} />
-                  <MainMenu  pagesList = {paesList} />
-                  <Button 
-                    href="/" 
-                    title="get a quote" 
-                    color = "#b988f8" 
-                    background = "transparent" 
-                    border = "2px solid #b988f8"
-                    borderRadius = "0px"
-                    textTransform = "uppercase"
-                    colorHover = "#fff"
-                    backgroundHover = "#4923b7"
-                    paddings = "5px 10px"
-                    margings = "0 0 0 auto"
-                    mobilePaddings = "5px"
-                    mobileMargings = "0 auto"
-                    width= "160px"
-                    fontSizeMobile = "1.2rem"
-                  />
-                  <div className={styles.header__search}>
-                    <Search/>
-                  </div>
-                  <HeaderBurger />
-                </div>
-              </div>
-            </header>
-          </>
-        )}
+      <>
+        <header className={[styles.header, styles.headerHome].join(' ')}>
+          <div className={styles.container}>
+            <div className={styles.header__top}>
+              <HeaderLogo name = {logo} ishome = {true} />
+              <MainMenu ishome = {true} pagesList = {paesList} />
+              <HeaderBurger ishome = {true} />
+            </div>
+            <div className={styles.header__middle}>
+              <h1 className={styles.header__titleHome}>Ми проектуємо та створюємо Landing pages, щоб допомогти малому бізнесу рости</h1>
+              <Button 
+                href="#contact" 
+                title="Зв'язатись" 
+                color = "#2341dd" 
+                background = "transparent" 
+                border = "2px solid #2341dd"
+                borderRadius = "30px"
+                textTransform = "uppercase"
+                colorHover = "#fff"
+                backgroundHover = "#2341dd"
+                paddings = "10px 20px"
+                margings = "0 auto"
+                mobilePaddings = "5px"
+                mobileMargings = "0 auto"
+              />
+            </div>
+            <span className={styles.animationIconOne}></span>
+            <span className={styles.animationIconTwo}></span>
+            <span className={styles.animationIconThree}></span>
+            <span className={styles.animationIconFour}></span>
+            <span className={styles.animationIconFive}></span>
+            <span className={styles.animationIconSix}></span>
+            <span className={styles.animationIconSeven}></span>
+            <span className={styles.animationIconEight}></span>
+            <span className={styles.animationIconNine}></span>
+            <span className={styles.animationIconTen}></span>
+            <span className={styles.animationIconEleven}></span>
+            <span className={styles.animationIconTwelve}></span>
+            <span className={styles.animationIconThirteen}></span>
+            <span className={styles.animationIconFourteen}></span>
+          </div>
+          <SocialMedia/>
+        </header>
+      </>
       <main className={styles.main}>{children}</main>
       <footer className={`${styles.footerIndex} ${home ? "" : `${styles.footerIndexInnarPages}`}`}>
         <div className={styles.footerIndex__inner}>

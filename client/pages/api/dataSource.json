@@ -14,27 +14,22 @@
         {
             "id": 1,
             "name": "Service",
-            "path": "/service"
+            "path": "#services"
         },
         {
             "id": 2,
             "name": "About Us",
-            "path": "/about"
+            "path": "#about"
         },
         {
             "id": 3,
             "name": "Works",
-            "path": "/portfolio"
+            "path": "#works"
         },
         {
             "id": 4,
-            "name": "Blog",
-            "path": "/blogs"
-        },
-        {
-            "id": 5,
             "name": "Contact",
-            "path": "/contact"
+            "path": "#contact"
         }
     ],
     "indexPage": {
