@@ -52,10 +52,10 @@ export default function Layout({ children, home}: Props) {
                   <HeaderBurger ishome = {true} />
                 </div>
                 <div className={styles.header__middle}>
-                  <h1 className={styles.header__titleHome}>{title}</h1>
+                  <h1 className={styles.header__titleHome}>Ми проектуємо та створюємо Landing pages, щоб допомогти малому бізнесу рости</h1>
                   <Button 
-                    href="/contact" 
-                    title="Contact now" 
+                    href="/" 
+                    title="Зв'язатись" 
                     color = "#2341dd" 
                     background = "transparent" 
                     border = "2px solid #2341dd"

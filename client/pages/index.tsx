@@ -13,7 +13,6 @@ import Achievement from '../components/Achievement/Achievement';
 import Video from '../components/Video/Video';
 import Team from '../components/Team/Team';
 import Testimonials from '../components/Testimonials/Testimonials';
-import Posts from '../components/Posts/Posts';
 import ContactIndex from '../components/ContactIndex/ContactIndex';
 
 
@@ -50,23 +49,8 @@ export default function Index({data}) {
         </Head>
         <div className={styles.preambule}>
           <div className={styles.preambule__left}>
-            <h2>{data.indexPage.preambule.title}</h2>
-            <p>{data.indexPage.preambule.text}</p>
-            <Button 
-                href="/about" 
-                title="More about us" 
-                color = "#fff" 
-                background = "#2341dd" 
-                border = "2px solid #2341dd"
-                borderRadius = "0px"
-                textTransform = "uppercase"
-                colorHover = "#2341dd"
-                backgroundHover = "#fff"
-                paddings = "10px 20px"
-                margings = "10px 0"
-                mobilePaddings = "5px"
-                mobileMargings = "0 auto"
-              />
+            <h2>Ми допомагаємо розвивати ваш бізнес.</h2>
+            <p>Ми допомагаємо малому бізнесу просувати їхні продукти та послуги за допомогую ствроння Landing Pages.</p>
           </div>
           <div className={styles.preambule__right}>
             <ul className={styles.aboutList}>
@@ -75,10 +59,10 @@ export default function Index({data}) {
                 <article className={styles.aboutList__content}>
                   <h2>
                     <Link href="/">
-                      <a>{data.indexPage.preambule.about[0].title}</a>
+                      <a>Що ми робимо</a>
                     </Link>
                   </h2>
-                  <p>{data.indexPage.preambule.about[0].text}</p>
+                  <p>Проектуєм односторінкові веб сайти (landing pages) які найкраще підходять для промоції продукту чи послуги і є швидкими в виготовлення та доступними по ціні.</p>
                 </article>
               </li>
               <li>
@@ -86,10 +70,10 @@ export default function Index({data}) {
                 <article className={styles.aboutList__content}>
                   <h2>
                     <Link href="/">
-                      <a>{data.indexPage.preambule.about[1].title}</a>
+                      <a>Наша команда</a>
                     </Link>
                   </h2>
-                  <p>{data.indexPage.preambule.about[1].text}</p>
+                  <p>Це творчі спеціалісти які допоможуть вам підібрати краще рішення що задовільнить ваші потреби.</p>
                 </article>
               </li>
               <li>
@@ -97,17 +81,17 @@ export default function Index({data}) {
                 <article className={styles.aboutList__content}>
                   <h2>
                     <Link href="/">
-                      <a>{data.indexPage.preambule.about[2].title}</a>
+                      <a>Наші роботи</a>
                     </Link>
                   </h2>
-                  <p>{data.indexPage.preambule.about[2].text}</p>
+                  <p>Кращі виконані рішення  ви можете переглянути на нашому сайті.</p>
                 </article>
               </li>
             </ul>
           </div>
         </div>
-        <Partners title={data.indexPage.partners.title} subtitle={data.indexPage.partners.subtitle} />
-        <TitleBlock title={data.indexPage.latestProject.title} text={data.indexPage.latestProject.text} />
+        <Partners title="15 років досвіду" subtitle="Наші спеціалісти мають більш ніж 15 років досвіду в розробці веб сайтів різних типів і складностей." />
+        <TitleBlock title="Останні проекти" text="Нижче приведені наші останні роботи які варті вашої уваги" />
       </div>
       <IndexSlider dataSlider = {data.indexPage.indexSlider} />
       <div className="container">
@@ -148,17 +132,7 @@ export default function Index({data}) {
               text={data.indexPage.testimonials.text}
               author={data.indexPage.testimonials.author}  
             />
-            <div className={styles.testimonialsOuter__latestBlog}>
-              <TitleBlock 
-                title={data.indexPage.latestBlog.title} 
-                text={data.indexPage.latestBlog.text} 
-                color = "#fff"
-              />
-            </div>
         </div>
-      </div>
-      <div className={styles.postsOuter}>
-        <Posts dataItem = {data.posts} />
       </div>
       <ContactIndex
        contactIndexData = {data.indexPage.contactIndexData}
