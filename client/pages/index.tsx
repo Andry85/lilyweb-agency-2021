@@ -20,7 +20,7 @@ import ContactIndex from '../components/ContactIndex/ContactIndex';
 
 
 export async function getStaticProps(context) {
-  const res = await fetch('http://localhost:5000/api/data');
+  const res = await fetch('http://localhost:3000/api/data');
   const data = await res.json()
 
   if (!data) {
@@ -98,7 +98,7 @@ export default function Index({data}) {
       <IndexSlider dataSlider = {data.indexPage.indexSlider} />
       <div className="container">
         <div className="container__brands" id="services">
-          <TitleBlock title={data.indexPage.brandingServices.title} text={data.indexPage.brandingServices.text} />
+          <TitleBlock title="Розробляємо односторінкові веб сайти (landing pages)" text="Допомогаємо створити накращі сторінки які опишуть ваш товар чи послуги в найдоступнішому і зрозумілому вигляді" />
         </div>
         <GridCatalog dataObg = {data.indexPage.services} />
       </div>
